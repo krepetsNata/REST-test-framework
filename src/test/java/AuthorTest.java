@@ -1,3 +1,8 @@
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+import entity.ListOptions;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -6,6 +11,9 @@ import pojo.AuthorBirth;
 import pojo.AuthorName;
 import pojoActions.AuthorService;
 import response.BaseResponse;
+import utils.PrettyJsonPrinting;
+
+import java.util.List;
 
 public class AuthorTest {
 
@@ -30,6 +38,14 @@ public class AuthorTest {
     public void getRequest() {
         AuthorService authorService = new AuthorService();
         BaseResponse response = authorService.getAuthorByAuthorIdGet(author.getAuthorId());
+        Assert.assertEquals(response.getStatusCode(), 200);
+    }
+
+    @Test
+    public void getAllRequest() {
+        AuthorService authorService = new AuthorService();
+        BaseResponse response = authorService.getAuthors(new ListOptions());
+        //System.out.println(PrettyJsonPrinting.getPrettyJsonString(response.getBody()));
         Assert.assertEquals(response.getStatusCode(), 200);
     }
 
