@@ -33,6 +33,7 @@ public class HttpClient {
     private static BaseResponse sendRequest(Method method, String endpoint, String body) {
         String url = ServiceConfig.HOST + endpoint;
         RequestSpecification spec = given();
+        spec.header("Content-Type", "application/json");
         if (body != null) spec.body(body);
         Response rawResponse = spec.request(method, url);
         return new BaseResponse(rawResponse);
