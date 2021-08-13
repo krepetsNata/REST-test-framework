@@ -6,13 +6,14 @@ import java.util.Date;
 public class AuthorBirth {
     String city;
     String country;
-    LocalDate date;
+    //LocalDate date;
+    String date;
 
     public AuthorBirth() {
 
     }
 
-    public AuthorBirth(String city, String country, LocalDate date) {
+    public AuthorBirth(String city, String country, String date) {
         this.city = city;
         this.country = country;
         this.date = date;
@@ -26,28 +27,31 @@ public class AuthorBirth {
         return country;
     }
 
-    public LocalDate getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setCity(String city) {
+    public AuthorBirth setCity(String city) {
         this.city = city;
+        return this;
     }
 
-    public void setCountry(String country) {
+    public AuthorBirth setCountry(String country) {
         this.country = country;
+        return this;
     }
 
-    public void setDate(LocalDate date) {
+    public AuthorBirth setDate(String date) {
         this.date = date;
+        return this;
     }
 
     @Override
     public String toString() {
-        return "\nAuthorBirthData{" +
-                "city='" + city + '\'' +
-                ", country='" + country + '\'' +
-                ", date='" + date + '\'' +
-                '}';
+        return "{" +
+                "\"city\":\"" + city + "\"" +
+                ", \"country\":\"" + country + "\"" +
+                ", \"date\":\"" + date + "\"" +
+                "}";
     }
 }

@@ -1,66 +1,74 @@
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
+import dataProviders.DataProviderAuthor;
 import entity.ListOptions;
-import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pojo.Author;
-import pojo.AuthorBirth;
-import pojo.AuthorName;
-import pojoActions.AuthorService;
+import service.AuthorService;
 import response.BaseResponse;
-import utils.PrettyJsonPrinting;
+import utils.Validator;
 
-import java.util.List;
+import static org.apache.http.HttpStatus.*;
 
-public class AuthorTest {
+public class AuthorTest extends BaseTest {
 
-    Author author = new Author(1112, new AuthorBirth("Mykolaiv", "Ukraine", java.time.LocalDate.now()), "new author", new AuthorName("firstName", "secondName"), "ukrainian");
-
-    @Test
-    public void postRequest() {
+    @Test(description = "Verifying creating new Author object with POST method",
+            dataProvider = "dpTestAuthor", dataProviderClass = DataProviderAuthor.class)
+    public void verifyCreatedAuthorPostRequest(Author author) {
         AuthorService authorService = new AuthorService();
-        BaseResponse response = authorService.addAuthorPost(author);
-        Assert.assertEquals(response.getStatusCode(), 201);
+        BaseResponse baseResponse = authorService.addAuthorPost(author);
+        Validator.validateStatusCode(baseResponse, SC_CREATED);
+        Validator.validateSameObjects(baseResponse, author);
     }
 
-    @Test
-    public void putRequest() {
+    @Test(description = "Verifying updating Author object with PUT method",
+            dataProvider = "dpTestAuthor", dataProviderClass = DataProviderAuthor.class)
+    public void verifyUpdatedAuthorPutRequest(Author author) {
         AuthorService authorService = new AuthorService();
-        author.setAuthorDescription("updated author descr");
-        BaseResponse response = authorService.updateAuthorPut(author);
-        Assert.assertEquals(response.getStatusCode(), 200);
+        author.setAuthorDescription("updated author description");
+        BaseResponse baseResponse = authorService.updateAuthorPut(author);
+        Validator.validateStatusCode(baseResponse, SC_OK);
+        Validator.validateSameObjects(baseResponse, author);
     }
 
-    @Test
-    public void getRequest() {
+    @Test(description = "Verifying getting 1 Author object by id with GET method",
+            dataProvider = "dpTestAuthor", dataProviderClass = DataProviderAuthor.class)
+    public void verifyGetAuthorByIdGetRequest(Author author) {
         AuthorService authorService = new AuthorService();
-        BaseResponse response = authorService.getAuthorByAuthorIdGet(author.getAuthorId());
-        Assert.assertEquals(response.getStatusCode(), 200);
+        BaseResponse baseResponse = authorService.getAuthorByAuthorIdGet(author.getAuthorId());
+        Validator.validateStatusCode(baseResponse, SC_OK);
     }
 
-    @Test
-    public void getAllRequest() {
+    @Test(description = "Verifying getting all Author objects with GET method")
+    public void verifyGetAllAuthorsGetRequest() {//verify that list contain more than 1 authors or list not empty
         AuthorService authorService = new AuthorService();
-        BaseResponse response = authorService.getAuthors(new ListOptions());
-        //System.out.println(PrettyJsonPrinting.getPrettyJsonString(response.getBody()));
-        Assert.assertEquals(response.getStatusCode(), 200);
+        BaseResponse baseResponse = authorService.getAuthors(new ListOptions());
+        Validator.validateStatusCode(baseResponse, SC_OK);
     }
 
-    @Test
-    public void delRequest() {
+    @Test(description = "Verifying deleting 1 Author object by id with DELETE method",
+            dataProvider = "dpTestAuthor", dataProviderClass = DataProviderAuthor.class)
+    public void verifyDeleteAuthorByIdDeleteRequest(Author author) {
         AuthorService authorService = new AuthorService();
-        BaseResponse response = authorService.deleteAuthorDelete(author.getAuthorId());
-        Assert.assertEquals(response.getStatusCode(), 204);
+        BaseResponse baseResponse = authorService.deleteAuthorDelete(author.getAuthorId());
+
+        Validator.validateStatusCode(baseResponse, SC_NO_CONTENT);
+
+        baseResponse = authorService.getAuthorByAuthorIdGet(author.getAuthorId());
+        Validator.validateStatusCode(baseResponse, SC_NOT_FOUND);
+        Author author1 = (Author) Validator.getActualObject(baseResponse, author);
+        Assert.assertEquals(author1.getAuthorId(), 0, "object exists");
     }
 
-    @Test(description = "Negative case when element not found")
-    public void getRequestNegativeCase() {
+    @Test(description = "Negative case when element not found - verifying getting 1 Author object by id with GET method",
+            dataProvider = "dpTestAuthor", dataProviderClass = DataProviderAuthor.class)
+    public void verifyGetNotFoundAuthorByIdGetRequestNegativeCase(Author author) {
         AuthorService authorService = new AuthorService();
         author.setAuthorId(1113);
-        BaseResponse response = authorService.getAuthorByAuthorIdGet(author.getAuthorId());
-        Assert.assertEquals(response.getStatusCode(), 404);
+        BaseResponse baseResponse = authorService.getAuthorByAuthorIdGet(author.getAuthorId());
+
+        Validator.validateStatusCode(baseResponse, SC_NOT_FOUND);
+
+        Author authorActual = (Author) Validator.getActualObject(baseResponse, author);
+        Assert.assertEquals(authorActual.getAuthorId(), 0, "object exists");
     }
 }

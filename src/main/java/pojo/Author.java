@@ -1,21 +1,20 @@
 package pojo;
 
 public class Author {
-
-    int authorId;
-    AuthorBirth birth;
     String authorDescription;
+    int authorId;
     AuthorName authorName;
+    AuthorBirth birth;
     String nationality;
 
     public Author() {
     }
 
-    public Author(int authorId, AuthorBirth birth, String authorDescription, AuthorName authorName, String nationality) {
-        this.authorId = authorId;
-        this.birth = birth;
+    public Author(String authorDescription, int authorId, AuthorName authorName, AuthorBirth birth, String nationality) {
         this.authorDescription = authorDescription;
+        this.authorId = authorId;
         this.authorName = authorName;
+        this.birth = birth;
         this.nationality = nationality;
     }
 
@@ -39,34 +38,39 @@ public class Author {
         return authorName;
     }
 
-    public void setAuthorId(int authorId) {
+    public Author setAuthorId(int authorId) {
         this.authorId = authorId;
+        return this;
     }
 
-    public void setBirth(AuthorBirth birth) {
+    public Author setBirth(AuthorBirth birth) {
         this.birth = birth;
+        return this;
     }
 
-    public void setAuthorDescription(String authorDescription) {
+    public Author setAuthorDescription(String authorDescription) {
         this.authorDescription = authorDescription;
+        return this;
     }
 
-    public void setAuthorName(AuthorName authorName) {
+    public Author setAuthorName(AuthorName authorName) {
         this.authorName = authorName;
+        return this;
     }
 
-    public void setNationality(String nationality) {
+    public Author setNationality(String nationality) {
         this.nationality = nationality;
+        return this;
     }
 
     @Override
     public String toString() {
-        return "\nAuthor{" +
-                "authorId='" + authorId + '\'' +
-                ", birth=" + birth +
-                ", authorDescription='" + authorDescription + '\'' +
-                ", authorName=" + authorName +
-                ", nationality='" + nationality + '\'' +
-                '}';
+        return "{" +
+                "\"authorDescription\":\"" + authorDescription + "\"" +
+                ", \"authorId\":" + authorId +
+                ", \"authorName\":" + authorName +
+                ", \"birth\":" + birth +
+                ", \"nationality\":\"" + nationality + "\"" +
+                "}";
     }
 }

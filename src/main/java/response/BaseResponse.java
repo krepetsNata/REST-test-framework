@@ -2,7 +2,9 @@ package response;
 
 import io.restassured.response.Response;
 
+
 public class BaseResponse {
+
     private Response response;
 
     public BaseResponse(Response response) {
@@ -19,5 +21,13 @@ public class BaseResponse {
 
     public String getBody() {
         return this.response.body().asString();
+    }
+
+    public Response getResponse() {
+        return this.response;
+    }
+
+    public String getResponseLog() {
+        return "";
     }
 }

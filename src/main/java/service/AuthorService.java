@@ -1,4 +1,4 @@
-package pojoActions;
+package service;
 
 import client.HttpClient;
 import config.ServiceConfig;
@@ -41,7 +41,7 @@ public class AuthorService {
         int pageNum = 1;
         List<Author> partAuthors = null;
         do {
-            responseAuthor = given().param("page", pageNum).get("/api/library/authors");
+            responseAuthor = given().param("page", pageNum).get("authors");
             partAuthors = responseAuthor.jsonPath().getList(".", Author.class);
             if (partAuthors.size() != 0) {
                 authors.addAll(partAuthors);
@@ -68,5 +68,17 @@ public class AuthorService {
     public BaseResponse deleteAuthorDelete(int authorId) {
         String endpoint = new EndpointBuilder().pathParameter("author").pathParameter(authorId).get();
         return HttpClient.delete(endpoint);
+    }
+
+    /**
+     * Method returns actual Author object from response
+     *
+     * @param baseResponse wrapper for Response which we got
+     * @return actual Author object from response
+     */
+    public static Author getActualAuthor(BaseResponse baseResponse) {
+        Response response = baseResponse.getResponse();
+        Author actualObj = response.jsonPath().getObject(".", Author.class);
+        return actualObj;
     }
 }

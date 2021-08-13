@@ -20,19 +20,21 @@ public class AuthorName {
         return second;
     }
 
-    public void setFirst(String first) {
+    public AuthorName setFirst(String first) {
         this.first = first;
+        return this;
     }
 
-    public void setSecond(String second) {
+    public AuthorName setSecond(String second) {
         this.second = second;
+        return this;
     }
 
     @Override
     public String toString() {
-        return "\nAuthorNameData{" +
-                "first='" + first + '\'' +
-                ", second='" + second + '\'' +
-                '}';
+        return "{" +
+                "\"first\":\"" + first + "\"" +
+                ", \"second\":\"" + second + "\"" +
+                "}";
     }
 }

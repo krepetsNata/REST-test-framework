@@ -1,4 +1,4 @@
-package pojoActions;
+package DRAFTpojoActions;
 
 import static io.restassured.RestAssured.*;
 
@@ -7,6 +7,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import pojo.*;
+import utils.ParsingAndConvertations;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -69,25 +70,23 @@ public class AuthorActions {
     }
 
     public static void main(String[] args) {
-        Author author = new Author(9999, new AuthorBirth("Mykolaiv", "Ukraine", java.time.LocalDate.now()), "new author", new AuthorName("firstName", "secondName"), "ukrainian");
+        ParsingAndConvertations parsingAndConvertations = new ParsingAndConvertations();
 
-        Response response = addAuthorPost(author);
+        List<Author> authorsObjList = parsingAndConvertations.getAuthorsList();
+        authorsObjList.forEach(System.out::println);
 
-//        author.setAuthorDescription("updated author descr");
-//        System.out.println(updateAuthorPut(author).asPrettyString());
-//
-//        System.out.println(getAuthorByAuthorIdGet(author.getAuthorId()).asPrettyString());
-//
-//        deleteAuthorDelete(author.getAuthorId());
-//
-//        getAllAuthorsGet().forEach(System.out::println);
-//
-//        Response responseBook = get("/api/library/books");
-//        List<Book> books = responseBook.jsonPath().getList(".", Book.class);
-//        books.forEach(System.out::println);
-//
-//        Response responseGenre = get("/api/library/genres");
-//        List<Genre> genres = responseGenre.jsonPath().getList(".", Genre.class);
-//        genres.forEach(System.out::println);
+
+        Object[][] authorsObj = new Object[authorsObjList.size()][];
+
+
+        for (int i = 0; i < authorsObjList.size(); i++) {
+            for (int j = 0; j < 1; j++) {
+                authorsObj[i] = new Object[1];
+                authorsObj[i][j] = authorsObjList.get(i);
+            }
+        }
+
+
     }
+
 }
