@@ -1,0 +1,15 @@
+{
+    "bookId": 292,
+    "bookName": "Ipsa dolor laboriosam",
+    "bookLanguage": "croatian",
+    "bookDescription": "Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.",
+    "additional": {
+        "pageCount": 682,
+        "size": {
+            "height": 16.1,
+            "width": 22.4,
+            "length": 3.2
+        }
+    },
+    "publicationYear": 2008
+}

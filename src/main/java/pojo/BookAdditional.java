@@ -20,11 +20,21 @@ public class BookAdditional {
         return size;
     }
 
+    public BookAdditional setPageCount(int pageCount) {
+        this.pageCount = pageCount;
+        return this;
+    }
+
+    public BookAdditional setSize(BookAdditionalSize size) {
+        this.size = size;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return "\nBookAdditional{" +
-                "pageCount=" + pageCount +
-                ", size=" + size +
-                '}';
+        return "{" +
+                "\"pageCount\":" + pageCount +
+                ", \"size\":" + size +
+                "}";
     }
 }

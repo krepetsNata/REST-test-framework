@@ -1,0 +1,142 @@
+[
+    {
+        "authorId": 97,
+        "authorName": {
+            "first": "Willa",
+            "second": "Herzog"
+        },
+        "nationality": "Irish",
+        "birth": {
+            "date": "1965-03-28",
+            "country": "Kiribati",
+            "city": "Port Terrill"
+        },
+        "authorDescription": "Dolorum voluptatem quo aspernatur illo sed mollitia blanditiis. Quia voluptas libero. Facilis nobis et aliquid voluptatem enim est consequuntur. Velit non nisi tempora modi fugit dolorum sequi. Dolores similique voluptate at."
+    },
+    {
+        "authorId": 763,
+        "authorName": {
+            "first": "Arjun",
+            "second": "Hettinger"
+        },
+        "nationality": "Nepalese",
+        "birth": {
+            "date": "1977-04-21",
+            "country": "Finland",
+            "city": "Fletcherside"
+        },
+        "authorDescription": "Autem amet nam quo pariatur unde iste omnis. Eos dolore deleniti dolorem sunt velit sunt. Quisquam ut iusto. Qui blanditiis quos voluptates. Unde eum a dicta repellendus."
+    },
+    {
+        "authorId": 835,
+        "authorName": {
+            "first": "Nyah",
+            "second": "Hermann"
+        },
+        "nationality": "Angolan",
+        "birth": {
+            "date": "1982-10-02",
+            "country": "Bouvet Island (Bouvetoya)",
+            "city": "Gilberttown"
+        },
+        "authorDescription": "Qui aliquam dolorem accusamus esse vitae. Vitae ducimus odit modi. Iusto nisi quas eius quo harum. Voluptatem officia est sit iste quibusdam. Repudiandae laudantium corporis aut dignissimos."
+    },
+    {
+        "authorId": 2207,
+        "authorName": {
+            "first": "Caleb",
+            "second": "Jast"
+        },
+        "nationality": "Belgian",
+        "birth": {
+            "date": "1997-05-14",
+            "country": "Bahrain",
+            "city": "New Marcia"
+        },
+        "authorDescription": "Ullam et minus dolor accusantium non voluptatem esse. Enim maxime alias voluptates et omnis minus. Id id sint eligendi occaecati. Consequatur consequuntur incidunt voluptate dolore sapiente totam perferendis."
+    },
+    {
+        "authorId": 5202,
+        "authorName": {
+            "first": "Emily",
+            "second": "Parisian"
+        },
+        "nationality": "New Zealander",
+        "birth": {
+            "date": "1959-01-09",
+            "country": "Equatorial Guinea",
+            "city": "South Demetriusfurt"
+        },
+        "authorDescription": "Nulla assumenda ipsum. Voluptatem non ratione quas quo. Rerum voluptas nihil eaque et ea. Doloribus repudiandae cumque."
+    },
+    {
+        "authorId": 5294,
+        "authorName": {
+            "first": "Lisandro",
+            "second": "Crooks"
+        },
+        "nationality": "Dutch",
+        "birth": {
+            "date": "1938-11-04",
+            "country": "Qatar",
+            "city": "Burdettemouth"
+        },
+        "authorDescription": "Facere similique non sint eius quos dolores. Eum cupiditate fugiat consequatur eum sequi. Sunt nihil quis."
+    },
+    {
+        "authorId": 5628,
+        "authorName": {
+            "first": "Cassie",
+            "second": "Braun"
+        },
+        "nationality": "American",
+        "birth": {
+            "date": "1956-05-17",
+            "country": "Belarus",
+            "city": "New Domenicashire"
+        },
+        "authorDescription": "Minima quia libero numquam deserunt quia ut. Ut nam repellat. Placeat laudantium quos et. Saepe ut exercitationem doloremque aut."
+    },
+    {
+        "authorId": 5877,
+        "authorName": {
+            "first": "Grace",
+            "second": "Herzog"
+        },
+        "nationality": "Slovenian",
+        "birth": {
+            "date": "1932-05-18",
+            "country": "Spain",
+            "city": "Ivoryfurt"
+        },
+        "authorDescription": "Repellat culpa nulla sapiente veritatis et qui. Tempore molestiae laborum magnam delectus est nulla. Tempore minima ut cum aliquid iste ut voluptas."
+    },
+    {
+        "authorId": 7310,
+        "authorName": {
+            "first": "Eden",
+            "second": "Stoltenberg"
+        },
+        "nationality": "Maldivan",
+        "birth": {
+            "date": "1933-12-31",
+            "country": "Moldova",
+            "city": "Port Jana"
+        },
+        "authorDescription": "Voluptates iste incidunt aut voluptatum. Et tempore quis enim ex quas. Ducimus quo voluptates iure. Officiis dignissimos corrupti voluptas."
+    },
+    {
+        "authorId": 7715,
+        "authorName": {
+            "first": "Noe",
+            "second": "Maggio"
+        },
+        "nationality": "French",
+        "birth": {
+            "date": "1960-10-30",
+            "country": "Botswana",
+            "city": "Brodyberg"
+        },
+        "authorDescription": "Sed aliquam vel quasi quaerat perferendis. Omnis modi vitae aspernatur omnis. Vel iure sed dignissimos. Voluptatem dolor ab minima."
+    }
+]

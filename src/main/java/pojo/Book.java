@@ -45,15 +45,45 @@ public class Book {
         return additional;
     }
 
+    public Book setBookId(int bookId) {
+        this.bookId = bookId;
+        return this;
+    }
+
+    public Book setBookName(String bookName) {
+        this.bookName = bookName;
+        return this;
+    }
+
+    public Book setBookLanguage(String bookLanguage) {
+        this.bookLanguage = bookLanguage;
+        return this;
+    }
+
+    public Book setBookDescription(String bookDescription) {
+        this.bookDescription = bookDescription;
+        return this;
+    }
+
+    public Book setPublicationYear(int publicationYear) {
+        this.publicationYear = publicationYear;
+        return this;
+    }
+
+    public Book setAdditional(BookAdditional additional) {
+        this.additional = additional;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return "\nBook{" +
-                "bookId=" + bookId +
-                ", bookName='" + bookName + '\'' +
-                ", bookLanguage='" + bookLanguage + '\'' +
-                ", bookDescription='" + bookDescription + '\'' +
-                ", publicationYear='" + publicationYear + '\'' +
-                ", additional=" + additional +
-                '}';
+        return "{" +
+                "\"bookId\":" + bookId +
+                ", \"bookName\":\"" + bookName + "\"" +
+                ", \"bookLanguage\":\"" + bookLanguage + "\"" +
+                ", \"bookDescription\":\"" + bookDescription + "\"" +
+                ", \"publicationYear\":" + publicationYear +
+                ", \"additional\":" + additional +
+                "}";
     }
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="GenreTest">
+        <methods>
+          <include name="verifyGetGenresByBookIdGetRequest" invocation-numbers="0"/>
+          <include name="verifyGetNotFoundGenreByIdGetRequestNegativeCase" invocation-numbers="0"/>
+          <include name="verifyDeleteGenreByIdDeleteRequest" invocation-numbers="0"/>
+          <include name="verifySearchGenressGetRequest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- GenreTest -->
+      <class name="AuthorTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyDeleteAuthorByIdDeleteRequest" invocation-numbers="0"/>
+          <include name="verifyGetNotFoundAuthorByIdGetRequestNegativeCase" invocation-numbers="0"/>
+          <include name="verifySearchAuthorsGetRequest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- AuthorTest -->
+      <class name="BookTest">
+        <methods>
+          <include name="verifyGetNotFoundBookByIdGetRequestNegativeCase" invocation-numbers="0"/>
+          <include name="verifyGetBooksByAuthorIdGenreIdGetRequest"/>
+          <include name="verifySearchBooksGetRequest"/>
+          <include name="afterMethod"/>
+          <include name="verifyCreatedBookPostRequest"/>
+          <include name="verifyDeleteBookByIdDeleteRequest" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- BookTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

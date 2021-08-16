@@ -1,0 +1,6 @@
+{
+    "timeStamp": "20:34:34.355 16-08-2021",
+    "statusCode": 405,
+    "error": "Method Not Allowed",
+    "errorMessage": "Method 'GET' mapped by '/api/library/book/292/genres' not supported!"
+}

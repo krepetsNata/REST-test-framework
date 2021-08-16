@@ -26,12 +26,27 @@ public class BookAdditionalSize {
         return width;
     }
 
+    public BookAdditionalSize setHeight(float height) {
+        this.height = height;
+        return this;
+    }
+
+    public BookAdditionalSize setLength(float length) {
+        this.length = length;
+        return this;
+    }
+
+    public BookAdditionalSize setWidth(float width) {
+        this.width = width;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return "\nBookAdditionalSize{" +
-                "height=" + height +
-                ", lenght=" + length +
-                ", width=" + width +
-                '}';
+        return "{" +
+                "\"height\":" + height +
+                ", \"width\":" + width +
+                ", \"lenght\":" + length +
+                "}";
     }
 }

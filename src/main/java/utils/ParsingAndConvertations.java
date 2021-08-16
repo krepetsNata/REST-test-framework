@@ -4,9 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
-import pojo.Author;
-import pojo.AuthorBirth;
-import pojo.AuthorName;
+import pojo.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,14 +16,20 @@ import java.util.List;
 
 public class ParsingAndConvertations {
 
+    public static String getPrettyJsonString(String uglyJson) {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        JsonElement je = JsonParser.parseString(uglyJson);
+        String prettyJsonString = gson.toJson(je);
+        return prettyJsonString;
+    }
+
+
     //*********************************************************************************************
     //this methods use for convert csv file to pojo
 
-    final static String CSV_FILE = "src/test/java/dataProviders/AuthorTestObject.csv";
-
-    public List<Author> getAuthorsList() {
+    public List<Author> getAuthorsList(String CSV_FILE_AUTHORS) {
         List<Author> authorsList = new ArrayList<>();
-        Path pathToFile = Paths.get(CSV_FILE);
+        Path pathToFile = Paths.get(CSV_FILE_AUTHORS);
         try (BufferedReader buffer = Files.newBufferedReader(pathToFile)) {
             String row = buffer.readLine();
             while (row != null) {
@@ -60,12 +64,73 @@ public class ParsingAndConvertations {
 
         return author;
     }
+
+    public List<Book> getBooksList(String CSV_FILE_BOOKS) {
+        List<Book> booksList = new ArrayList<>();
+        Path pathToFile = Paths.get(CSV_FILE_BOOKS);
+        try (BufferedReader buffer = Files.newBufferedReader(pathToFile)) {
+            String row = buffer.readLine();
+            while (row != null) {
+                String[] attrib = row.split(",");
+                Book book = getBookObj(attrib);
+                booksList.add(book);
+                row = buffer.readLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return booksList;
+    }
+
+    private Book getBookObj(String[] attrib) {
+        Book book = new Book();
+        BookAdditional bookAdditional = new BookAdditional();
+        BookAdditionalSize bookAdditionalSize = new BookAdditionalSize();
+
+        bookAdditionalSize.setHeight(Float.parseFloat(attrib[1].trim()))
+                        .setWidth(Float.parseFloat(attrib[3].trim()))
+                        .setLength(Float.parseFloat(attrib[2].trim()));
+
+        bookAdditional.setPageCount(Integer.parseInt(attrib[0].trim()))
+                .setSize(bookAdditionalSize);
+
+        book.setAdditional(bookAdditional)
+                .setBookDescription(attrib[4].trim())
+                .setBookId(Integer.parseInt(attrib[5].trim()))
+                .setBookLanguage(attrib[6].trim())
+                .setBookName(attrib[7].trim())
+                .setPublicationYear(Integer.parseInt(attrib[8].trim()));
+
+        return book;
+    }
+
+    public List<Genre> getGenresList(String CSV_FILE_GENRES) {
+        List<Genre> genresList = new ArrayList<>();
+        Path pathToFile = Paths.get(CSV_FILE_GENRES);
+        try (BufferedReader buffer = Files.newBufferedReader(pathToFile)) {
+            String row = buffer.readLine();
+            while (row != null) {
+                String[] attrib = row.split(",");
+                Genre genre = getGenreObj(attrib);
+                genresList.add(genre);
+                row = buffer.readLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return genresList;
+    }
+
+    private Genre getGenreObj(String[] attrib) {
+        Genre genre = new Genre();
+
+        genre.setGenreDescription(attrib[0].trim())
+                .setGenreId(Integer.parseInt(attrib[1].trim()))
+                .setGenreName(attrib[2].trim());
+
+        return genre;
+    }
     //*******************************************************************************
 
-    public static String getPrettyJsonString(String uglyJson) {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        JsonElement je = JsonParser.parseString(uglyJson);
-        String prettyJsonString = gson.toJson(je);
-        return prettyJsonString;
-    }
+
 }

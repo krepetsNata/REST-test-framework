@@ -26,12 +26,27 @@ public class Genre {
         return genreName;
     }
 
+    public Genre setGenreId(int genreId) {
+        this.genreId = genreId;
+        return this;
+    }
+
+    public Genre setGenreName(String genreName) {
+        this.genreName = genreName;
+        return this;
+    }
+
+    public Genre setGenreDescription(String genreDescription) {
+        this.genreDescription = genreDescription;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return "\nGenre{" +
-                "genreDescription='" + genreDescription + '\'' +
-                ", genreId=" + genreId +
-                ", genreName='" + genreName + '\'' +
-                '}';
+        return "{" +
+                "\"genreDescription\":\"" + genreDescription + "\"" +
+                ", \"genreId\":" + genreId +
+                ", \"genreName\":\"" + genreName + "\"" +
+                "}";
     }
 }
