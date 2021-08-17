@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite of suites">
+    <suite-files>
+        <suite-file path="book-suite.xml"/>
+        <suite-file path="author-suite.xml"/>
+        <suite-file path="genre-suite.xml"/>
+    </suite-files>
+</suite>

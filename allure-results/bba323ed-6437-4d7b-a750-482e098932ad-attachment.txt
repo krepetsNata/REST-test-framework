@@ -1,0 +1,6 @@
+{
+    "timeStamp": "22:32:11.429 17-08-2021",
+    "statusCode": 409,
+    "error": "Conflict",
+    "errorMessage": "Book with such 'bookId' already exists!"
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "bookId": 7019,
+        "bookName": "Aliquam quia ut",
+        "bookLanguage": "german",
+        "bookDescription": "Vel praesentium in illo natus aliquam. Dolor excepturi qui est et velit magnam. Quaerat earum nulla dolores quisquam. Aut saepe in quo laborum sed. Ut repellendus nihil similique voluptatem tenetur.",
+        "additional": {
+            "pageCount": 766,
+            "size": {
+                "height": 28.2,
+                "width": 13.9,
+                "length": 1.2
+            }
+        },
+        "publicationYear": 1976
+    },
+    {
+        "bookId": 9377,
+        "bookName": "Necessitatibus debitis aut",
+        "bookLanguage": "spanish",
+        "bookDescription": "Unde similique cum praesentium quo molestias ut nihil. Voluptas quibusdam qui perspiciatis vel. Eveniet repellat molestias ratione vel. Aspernatur expedita minima.",
+        "additional": {
+            "pageCount": 713,
+            "size": {
+                "height": 27.1,
+                "width": 25.5,
+                "length": 3.1
+            }
+        },
+        "publicationYear": 1997
+    }
+]

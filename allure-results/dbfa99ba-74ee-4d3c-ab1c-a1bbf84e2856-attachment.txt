@@ -1,0 +1,6 @@
+{
+    "timeStamp": "21:27:37.724 17-08-2021",
+    "statusCode": 404,
+    "error": "Not Found",
+    "errorMessage": "Genre with 'genreId' = '9999' doesn't exist!"
+}

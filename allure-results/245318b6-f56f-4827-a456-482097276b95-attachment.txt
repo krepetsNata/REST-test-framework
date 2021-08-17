@@ -1,6 +1,0 @@
-{
-    "timeStamp": "20:34:31.816 16-08-2021",
-    "statusCode": 404,
-    "error": "Not Found",
-    "errorMessage": "Author with 'authorId' = '9999' doesn't exist!"
-}

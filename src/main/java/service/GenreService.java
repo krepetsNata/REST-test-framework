@@ -11,6 +11,8 @@ import utils.EndpointBuilder;
 
 import java.util.List;
 
+import static org.apache.http.HttpStatus.SC_NOT_FOUND;
+
 public class GenreService {
 
     ///api/library/genre
@@ -68,7 +70,9 @@ public class GenreService {
     @Step("Return actual Genre object from response")
     public static Genre getActualObjGenre(BaseResponse baseResponse) {
         Response response = baseResponse.getResponse();
-        Genre actualObj = response.jsonPath().getObject(".", Genre.class);
+        Genre actualObj = null;
+        if(response.getStatusCode() != SC_NOT_FOUND)
+            actualObj = response.jsonPath().getObject(".", Genre.class);
         return actualObj;
     }
 
@@ -96,8 +100,8 @@ public class GenreService {
     ///api/library/book/{bookId}/genre
     //get Genre of special Book
     @Step("Get Genre of special Book.")
-    public BaseResponse<Genre> getGenresByBookIdGet(ListOptions options,int bookId) {
-        EndpointBuilder endpoint = new EndpointBuilder().pathParameter("book").pathParameter(bookId).pathParameter("genres");
+    public BaseResponse<Genre> getGenreByBookIdGet(ListOptions options, int bookId) {
+        EndpointBuilder endpoint = new EndpointBuilder().pathParameter("book").pathParameter(bookId).pathParameter("genre");
         if (options.orderType != null) endpoint.queryParam("orderType", options.orderType);
         endpoint
                 .queryParam("page", options.page)

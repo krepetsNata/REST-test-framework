@@ -52,8 +52,8 @@ public class HttpClient {
 
         //PrintStream logStream = LOG.IoBuilder.forLogger(logger).buildPrintStream();
         RequestSpecification spec = builder
-                .addFilter(new RequestLoggingFilter())// RequestLoggingFilter.logRequestTo(logStream))
-                .addFilter(new ResponseLoggingFilter())// ResponseLoggingFilter.logResponseTo(logStream))
+                //.addFilter(new RequestLoggingFilter())// RequestLoggingFilter.logRequestTo(logStream))
+                //.addFilter(new ResponseLoggingFilter())// ResponseLoggingFilter.logResponseTo(logStream))
                 .build().given();
         RequestSpecification specification = RestAssured.given(spec);
         Response rawResponse = specification.request(method);

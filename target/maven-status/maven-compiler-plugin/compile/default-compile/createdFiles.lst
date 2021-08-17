@@ -1,4 +1,5 @@
 pojo\Author.class
+constants\FileNames.class
 pojo\AuthorBirth.class
 service\BookService.class
 pojo\Genre.class

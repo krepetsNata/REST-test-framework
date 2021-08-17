@@ -34,7 +34,7 @@ public class ParsingAndConvertations {
             String row = buffer.readLine();
             while (row != null) {
                 String[] attrib = row.split(",");
-                Author author = getAuthorObj(attrib);
+                Author author = setAuthorObj(attrib);
                 authorsList.add(author);
                 row = buffer.readLine();
             }
@@ -44,7 +44,7 @@ public class ParsingAndConvertations {
         return authorsList;
     }
 
-    private Author getAuthorObj(String[] attrib) {
+    private Author setAuthorObj(String[] attrib) {
         Author author = new Author();
         AuthorName authorName = new AuthorName();
         AuthorBirth authorBirth = new AuthorBirth();
@@ -72,7 +72,7 @@ public class ParsingAndConvertations {
             String row = buffer.readLine();
             while (row != null) {
                 String[] attrib = row.split(",");
-                Book book = getBookObj(attrib);
+                Book book = setBookObj(attrib);
                 booksList.add(book);
                 row = buffer.readLine();
             }
@@ -82,7 +82,7 @@ public class ParsingAndConvertations {
         return booksList;
     }
 
-    private Book getBookObj(String[] attrib) {
+    private Book setBookObj(String[] attrib) {
         Book book = new Book();
         BookAdditional bookAdditional = new BookAdditional();
         BookAdditionalSize bookAdditionalSize = new BookAdditionalSize();
@@ -111,7 +111,7 @@ public class ParsingAndConvertations {
             String row = buffer.readLine();
             while (row != null) {
                 String[] attrib = row.split(",");
-                Genre genre = getGenreObj(attrib);
+                Genre genre = setGenreObj(attrib);
                 genresList.add(genre);
                 row = buffer.readLine();
             }
@@ -121,7 +121,7 @@ public class ParsingAndConvertations {
         return genresList;
     }
 
-    private Genre getGenreObj(String[] attrib) {
+    private Genre setGenreObj(String[] attrib) {
         Genre genre = new Genre();
 
         genre.setGenreDescription(attrib[0].trim())
@@ -132,5 +132,18 @@ public class ParsingAndConvertations {
     }
     //*******************************************************************************
 
+    public Book getNewBookObj(String CSV_FILE_NEW_BOOK){
+        Book bookObj = getBooksList(CSV_FILE_NEW_BOOK).get(0);
+        return bookObj;
+    }
 
+    public Genre getNewGenreObj(String CSV_FILE_NEW_GENRE){
+        Genre genreObj = getGenresList(CSV_FILE_NEW_GENRE).get(0);
+        return genreObj;
+    }
+
+    public Author getNewAuthorObj(String CSV_FILE_NEW_AUTHOR){
+        Author authorObj = getAuthorsList(CSV_FILE_NEW_AUTHOR).get(0);
+        return authorObj;
+    }
 }

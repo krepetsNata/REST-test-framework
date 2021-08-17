@@ -1,68 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 28, Failures: 12, Errors: 0, Skipped: 0, Time elapsed: 13.776 s <<< FAILURE! - in TestSuite
-AuthorTest.verifyDeleteAuthorByIdDeleteRequest[{"authorDescription":"updated author descr", "authorId":9999, "authorName":{"first":"firstName", "second":"secondName"}, "birth":{"city":"Mykolaiv", "country":"Ukraine", "date":"1990-11-17"}, "nationality":"ukrainian"}](1)  Time elapsed: 0.387 s  <<< FAILURE!
-com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
-Unrecognized field "timeStamp" (class pojo.Author), not marked as ignorable (5 known properties: "authorDescription", "nationality", "authorId", "birth", "authorName"])
- at [Source: (String)"{"timeStamp":"20:34:31.816 16-08-2021","statusCode":404,"error":"Not Found","errorMessage":"Author with 'authorId' = '9999' doesn't exist!"}"; line: 1, column: 15] (through reference chain: pojo.Author["timeStamp"])
-	at AuthorTest.verifyDeleteAuthorByIdDeleteRequest(AuthorTest.java:64)
-
-AuthorTest.verifyGetNotFoundAuthorByIdGetRequestNegativeCase[{"authorDescription":"updated author descr", "authorId":9999, "authorName":{"first":"firstName", "second":"secondName"}, "birth":{"city":"Mykolaiv", "country":"Ukraine", "date":"1990-11-17"}, "nationality":"ukrainian"}](1)  Time elapsed: 0.12 s  <<< FAILURE!
-com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
-Unrecognized field "timeStamp" (class pojo.Author), not marked as ignorable (5 known properties: "authorDescription", "nationality", "authorId", "birth", "authorName"])
- at [Source: (String)"{"timeStamp":"20:34:32.413 16-08-2021","statusCode":404,"error":"Not Found","errorMessage":"Author with 'authorId' = '9999' doesn't exist!"}"; line: 1, column: 15] (through reference chain: pojo.Author["timeStamp"])
-	at AuthorTest.verifyGetNotFoundAuthorByIdGetRequestNegativeCase(AuthorTest.java:73)
-
-AuthorTest.verifySearchAuthorsGetRequest  Time elapsed: 0.07 s  <<< FAILURE!
+Tests run: 28, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 11.275 s <<< FAILURE! - in TestSuite
+BookTest.verifySearchBooksGetRequest  Time elapsed: 0.037 s  <<< FAILURE!
 java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
-	at AuthorTest.verifySearchAuthorsGetRequest(AuthorTest.java:95)
+	at BookTest.verifySearchBooksGetRequest(BookTest.java:118)
 
-BookTest.verifyCreatedBookPostRequest  Time elapsed: 0.322 s  <<< FAILURE!
-org.testng.internal.reflect.MethodMatcherException: 
-
-[public void BookTest.verifyCreatedBookPostRequest(pojo.Book,pojo.Author,pojo.Genre)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: verifyCreatedBookPostRequest([Parameter{index=0, type=pojo.Book, declaredAnnotations=[]}, Parameter{index=1, type=pojo.Author, declaredAnnotations=[]}, Parameter{index=2, type=pojo.Genre, declaredAnnotations=[]}])
-Arguments: [(pojo.Book) {"bookId":536, "bookName":"Sed sunt et quas", "bookLanguage":"spanish", "bookDescription":"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.", "publicationYear":1974, "additional":{"pageCount":573, "size":{"height":14.9, "width":0.0, "lenght":0.0}}}]
-
-BookTest.verifyDeleteBookByIdDeleteRequest[{"bookId":536, "bookName":"Sed sunt et quas", "bookLanguage":"spanish", "bookDescription":"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.", "publicationYear":1974, "additional":{"pageCount":573, "size":{"height":14.9, "width":0.0, "lenght":0.0}}}](1)  Time elapsed: 0.261 s  <<< FAILURE!
-com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
-Unrecognized field "timeStamp" (class pojo.Book), not marked as ignorable (6 known properties: "bookLanguage", "bookDescription", "bookId", "additional", "publicationYear", "bookName"])
- at [Source: (String)"{"timeStamp":"20:34:32.983 16-08-2021","statusCode":404,"error":"Not Found","errorMessage":"Book with 'bookId' = '536' doesn't exist!"}"; line: 1, column: 15] (through reference chain: pojo.Book["timeStamp"])
-	at BookTest.verifyDeleteBookByIdDeleteRequest(BookTest.java:69)
-
-BookTest.verifyGetBooksByAuthorIdGenreIdGetRequest  Time elapsed: 0.064 s  <<< FAILURE!
-java.lang.AssertionError: List of books is empty expected [false] but found [true]
-	at BookTest.verifyGetBooksByAuthorIdGenreIdGetRequest(BookTest.java:105)
-
-BookTest.verifyGetNotFoundBookByIdGetRequestNegativeCase[{"bookId":536, "bookName":"Sed sunt et quas", "bookLanguage":"spanish", "bookDescription":"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.", "publicationYear":1974, "additional":{"pageCount":573, "size":{"height":14.9, "width":0.0, "lenght":0.0}}}](1)  Time elapsed: 0.076 s  <<< FAILURE!
-com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
-Unrecognized field "timeStamp" (class pojo.Book), not marked as ignorable (6 known properties: "bookLanguage", "bookDescription", "bookId", "additional", "publicationYear", "bookName"])
- at [Source: (String)"{"timeStamp":"20:34:33.647 16-08-2021","statusCode":404,"error":"Not Found","errorMessage":"Book with 'bookId' = '536' doesn't exist!"}"; line: 1, column: 15] (through reference chain: pojo.Book["timeStamp"])
-	at BookTest.verifyGetNotFoundBookByIdGetRequestNegativeCase(BookTest.java:78)
-
-BookTest.verifySearchBooksGetRequest  Time elapsed: 0.048 s  <<< FAILURE!
+AuthorTest.verifySearchAuthorsGetRequest  Time elapsed: 0.03 s  <<< FAILURE!
 java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
-	at BookTest.verifySearchBooksGetRequest(BookTest.java:112)
+	at AuthorTest.verifySearchAuthorsGetRequest(AuthorTest.java:101)
 
-GenreTest.verifyDeleteGenreByIdDeleteRequest[{"genreDescription":"genre description", "genreId":9999, "genreName":"genre name"}](1)  Time elapsed: 0.218 s  <<< FAILURE!
-com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
-Unrecognized field "timeStamp" (class pojo.Genre), not marked as ignorable (3 known properties: "genreDescription", "genreId", "genreName"])
- at [Source: (String)"{"timeStamp":"20:34:34.150 16-08-2021","statusCode":404,"error":"Not Found","errorMessage":"Genre with 'genreId' = '9999' doesn't exist!"}"; line: 1, column: 15] (through reference chain: pojo.Genre["timeStamp"])
-	at GenreTest.verifyDeleteGenreByIdDeleteRequest(GenreTest.java:65)
-
-GenreTest.verifyGetGenresByBookIdGetRequest[{"bookId":292, "bookName":"Ipsa dolor laboriosam", "bookLanguage":"croatian", "bookDescription":"Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.", "publicationYear":2008, "additional":{"pageCount":682, "size":{"height":16.1, "width":0.0, "lenght":0.0}}}](1)  Time elapsed: 0.072 s  <<< FAILURE!
-java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [405]
-	at GenreTest.verifyGetGenresByBookIdGetRequest(GenreTest.java:91)
-
-GenreTest.verifyGetNotFoundGenreByIdGetRequestNegativeCase[{"genreDescription":"genre description", "genreId":9999, "genreName":"genre name"}](1)  Time elapsed: 0.067 s  <<< FAILURE!
-com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
-Unrecognized field "timeStamp" (class pojo.Genre), not marked as ignorable (3 known properties: "genreDescription", "genreId", "genreName"])
- at [Source: (String)"{"timeStamp":"20:34:34.397 16-08-2021","statusCode":404,"error":"Not Found","errorMessage":"Genre with 'genreId' = '9999' doesn't exist!"}"; line: 1, column: 15] (through reference chain: pojo.Genre["timeStamp"])
-	at GenreTest.verifyGetNotFoundGenreByIdGetRequestNegativeCase(GenreTest.java:74)
-
-GenreTest.verifySearchGenressGetRequest  Time elapsed: 0.049 s  <<< FAILURE!
+GenreTest.verifySearchGenresGetRequest  Time elapsed: 0.029 s  <<< FAILURE!
 java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
-	at GenreTest.verifySearchGenressGetRequest(GenreTest.java:100)
+	at GenreTest.verifySearchGenresGetRequest(GenreTest.java:106)
 

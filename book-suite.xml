@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="book_tests_in_groups">
+    <test name="book_tests">
+        <groups>
+            <run>
+                <include name="bookGroup"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="BookTest" />
+        </classes>
+    </test>
+
+    <test name="book_tests_without_precondition">
+        <groups>
+            <run>
+                <include name="withoutPreconditionGroup"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="BookTest">
+<!--                <methods>-->
+<!--                    <include name="verifyGetBooksByAuthorIdGenreIdGetRequest"/>-->
+<!--                </methods>-->
+            </class>
+        </classes>
+    </test>
+
+</suite>

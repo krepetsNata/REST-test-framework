@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
+import static org.apache.http.HttpStatus.SC_NOT_FOUND;
 
 public class AuthorService {
 
@@ -96,7 +97,9 @@ public class AuthorService {
     @Step("Return actual Author object from response.")
     public Author getActualObjAuthor(BaseResponse baseResponse) {
         Response response = baseResponse.getResponse();
-        Author actualObj = response.jsonPath().getObject(".", Author.class);
+        Author actualObj = null;
+        if(response.getStatusCode() != SC_NOT_FOUND)
+            actualObj = response.jsonPath().getObject(".", Author.class);
         return actualObj;
     }
 

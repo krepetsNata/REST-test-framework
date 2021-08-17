@@ -11,6 +11,8 @@ import utils.EndpointBuilder;
 
 import java.util.List;
 
+import static org.apache.http.HttpStatus.SC_NOT_FOUND;
+
 public class BookService {
 
 
@@ -69,14 +71,18 @@ public class BookService {
     @Step("Return actual Book object from response.")
     public static Book getActualObjBook(BaseResponse baseResponse) {
         Response response = baseResponse.getResponse();
-        Book actualObj = response.jsonPath().getObject(".", Book.class);
+        Book actualObj = null;
+        if(response.getStatusCode() != SC_NOT_FOUND)
+            actualObj = response.jsonPath().getObject(".", Book.class);
         return actualObj;
     }
 
     @Step("Return actual Book List from response.")
     public List<Book> getActualListBooks(BaseResponse baseResponse) {
         Response response = baseResponse.getResponse();
-        List<Book> actualList = response.jsonPath().getList(".", Book.class);
+        List<Book> actualList = null;
+        if(response.getStatusCode() != SC_NOT_FOUND)
+            actualList = response.jsonPath().getList(".", Book.class);
         return actualList;
     }
 
@@ -142,8 +148,8 @@ public class BookService {
     public BaseResponse<Book> getBooksSearchGet(ListOptions options, String queryWord) {
         EndpointBuilder endpoint = new EndpointBuilder()
                 .pathParameter("books")
-                .pathParameter("search")
-                .queryParam("q", queryWord);
+                .pathParameter("search");
+        endpoint.queryParam("q", queryWord);
         if (options.orderType != null) endpoint.queryParam("orderType", options.orderType);
         endpoint
                 .queryParam("page", options.page)

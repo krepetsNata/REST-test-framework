@@ -5,6 +5,9 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import response.BaseResponse;
 
+import java.util.List;
+import java.util.Objects;
+
 public class Validator {
 
     /**
@@ -45,5 +48,43 @@ public class Validator {
         Response response1 = baseResponse.getResponse();
         Object actualObj = response1.jsonPath().getObject(".", expectedObj.getClass());
         return actualObj;
+    }
+
+    /**
+     * Method returns actual object from response
+     *
+     * @param list list with objects
+     * @return actual object from response
+     */
+    public static boolean validateListIsEmpty(List list, boolean expectedState) {
+        boolean empty = list.isEmpty();
+
+        boolean result = empty & expectedState;
+//        if(!expectedState)
+//            result = true;
+//        if(!empty & !expectedState)
+//            result = true;
+
+        if (result)
+            Assert.assertTrue(empty, "List is Not empty");
+        else
+            Assert.assertFalse(empty, "List is empty");
+        return result;
+    }
+
+    public static boolean validateObjectIsNull(Object obj, boolean expectedState) {
+        boolean empty = Objects.isNull(obj);
+
+        boolean result = empty & expectedState;
+//        if(expectedState == false)
+//            result = empty & expectedState?true:true;
+//        if(empty == false & expectedState == false)
+//            result = empty & expectedState?false:true;
+
+        if (result)
+            Assert.assertTrue(empty, "Obj is NOT null");
+        else
+            Assert.assertFalse(empty, "Obj is null");
+        return result;
     }
 }

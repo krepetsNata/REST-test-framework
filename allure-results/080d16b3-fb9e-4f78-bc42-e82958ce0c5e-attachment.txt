@@ -1,0 +1,6 @@
+{
+    "timeStamp": "22:33:50.046 17-08-2021",
+    "statusCode": 404,
+    "error": "Not Found",
+    "errorMessage": "Book with 'bookId' = '536' doesn't exist!"
+}
