@@ -11,9 +11,9 @@ config\ServiceConfig.class
 pojo\BookAdditionalSize.class
 service\GenreService.class
 response\BaseResponse.class
-utils\ParsingAndConvertations.class
 entity\ListOptions.class
 pojo\Book.class
+utils\ParsingAndConvert.class
 pojo\AuthorName.class
 pojo\BookAdditional.class
 utils\EndpointBuilder.class

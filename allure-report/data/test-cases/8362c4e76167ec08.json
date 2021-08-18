@@ -1,0 +1,324 @@
+{
+  "uid" : "8362c4e76167ec08",
+  "name" : "Verifying updating Genre object with PUT method",
+  "fullName" : "GenreTest.verifyUpdatingGenrePutRequest",
+  "historyId" : "dde51c1a689b6746cec56e885f6f8fb3",
+  "time" : {
+    "start" : 1629297396291,
+    "stop" : 1629297396338,
+    "duration" : 47
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethodGenre",
+    "time" : {
+      "start" : 1629297396238,
+      "stop" : 1629297396287,
+      "duration" : 49
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create new Genre.",
+      "time" : {
+        "start" : 1629297396238,
+        "stop" : 1629297396286,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "41f3006f04351338",
+        "name" : "My request",
+        "source" : "41f3006f04351338.txt",
+        "type" : "text/plain",
+        "size" : 172
+      }, {
+        "uid" : "7a77b2642960b7bf",
+        "name" : "My response",
+        "source" : "7a77b2642960b7bf.txt",
+        "type" : "text/plain",
+        "size" : 145
+      }, {
+        "uid" : "b4bf3d2a5c88173b",
+        "name" : "sendRequest",
+        "source" : "b4bf3d2a5c88173b.txt",
+        "type" : "text/plain",
+        "size" : 55
+      } ],
+      "parameters" : [ {
+        "name" : "genre",
+        "value" : "{\"genreDescription\":\"genre description\", \"genreId\":9999, \"genreName\":\"genre name\"}"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1629297396235,
+      "stop" : 1629297396235,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get Genre object by 'genreId'.",
+      "time" : {
+        "start" : 1629297396292,
+        "stop" : 1629297396328,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "255677e896053c57",
+        "name" : "My request",
+        "source" : "255677e896053c57.txt",
+        "type" : "text/plain",
+        "size" : 179
+      }, {
+        "uid" : "24505c218270c014",
+        "name" : "My response",
+        "source" : "24505c218270c014.txt",
+        "type" : "text/plain",
+        "size" : 153
+      }, {
+        "uid" : "8cad8bcf39da6666",
+        "name" : "sendRequest",
+        "source" : "8cad8bcf39da6666.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "author",
+        "value" : "{\"genreDescription\":\"updated genre description\", \"genreId\":9999, \"genreName\":\"genre name\"}"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629297396328,
+        "stop" : 1629297396330,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c31085f5d77ca6f2",
+        "name" : "Response for validate status code",
+        "source" : "c31085f5d77ca6f2.txt",
+        "type" : "text/plain",
+        "size" : 107
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@5602e540"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "200"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Check if the data of the objects is the same before the CRUD operation and after.",
+      "time" : {
+        "start" : 1629297396332,
+        "stop" : 1629297396337,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d5b9cb1758fd0d75",
+        "name" : "Response for validate same objects",
+        "source" : "d5b9cb1758fd0d75.txt",
+        "type" : "text/plain",
+        "size" : 107
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@5602e540"
+      }, {
+        "name" : "expectedObj",
+        "value" : "{\"genreDescription\":\"updated genre description\", \"genreId\":9999, \"genreName\":\"genre name\"}"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "340e4189c44e9228",
+      "name" : "validateStatusCode",
+      "source" : "340e4189c44e9228.txt",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "80831dddc5b85425",
+      "name" : "validateSameObjects",
+      "source" : "80831dddc5b85425.txt",
+      "type" : "text/plain",
+      "size" : 90
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1629297396340,
+      "stop" : 1629297396340,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterMethodGenre",
+    "time" : {
+      "start" : 1629297396343,
+      "stop" : 1629297396386,
+      "duration" : 43
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Delete existed Genre.",
+      "time" : {
+        "start" : 1629297396343,
+        "stop" : 1629297396386,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2902bf9859db9fc4",
+        "name" : "My request",
+        "source" : "2902bf9859db9fc4.txt",
+        "type" : "text/plain",
+        "size" : 101
+      }, {
+        "uid" : "6e949ad51f155b98",
+        "name" : "My response",
+        "source" : "6e949ad51f155b98.txt",
+        "type" : "text/plain",
+        "size" : 46
+      }, {
+        "uid" : "7ea6988231ee0ce",
+        "name" : "sendRequest",
+        "source" : "7ea6988231ee0ce.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "genreId",
+        "value" : "9999"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "GenreTest"
+  }, {
+    "name" : "testClass",
+    "value" : "GenreTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyUpdatingGenrePutRequest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "genre_tests_in_groups"
+  }, {
+    "name" : "suite",
+    "value" : "genre_tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "GenreTest"
+  }, {
+    "name" : "host",
+    "value" : "NATA-PC"
+  }, {
+    "name" : "thread",
+    "value" : "19660@NATA-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Genre api tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{\"genreDescription\":\"genre description\", \"genreId\":9999, \"genreName\":\"genre name\"}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "254da900cca463be",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295461758,
+        "stop" : 1629295461798,
+        "duration" : 40
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8362c4e76167ec08.json",
+  "parameterValues" : [ "{\"genreDescription\":\"genre description\", \"genreId\":9999, \"genreName\":\"genre name\"}" ]
+}

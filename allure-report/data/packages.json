@@ -1,0 +1,381 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "BookTest",
+    "children" : [ {
+      "name" : "verifyCreatingBookPostRequest",
+      "uid" : "836bf01da76e4eb0",
+      "parentUid" : "7908f3e7450be02f5dd0af3da0f79b18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295455502,
+        "stop" : 1629295459241,
+        "duration" : 3739
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"bookId\":536, \"bookName\":\"Sed sunt et quas\", \"bookLanguage\":\"spanish\", \"bookDescription\":\"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.\", \"publicationYear\":1974, \"additional\":{\"pageCount\":573, \"size\":{\"height\":14.9, \"width\":0.0, \"lenght\":0.0}}}", "{\"authorDescription\":\"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.\", \"authorId\":37, \"authorName\":{\"first\":\"Alexandro\", \"second\":\"Kris\"}, \"birth\":{\"city\":\"Doylechester\", \"country\":\"Venezuela\", \"date\":\"1930-09-19\"}, \"nationality\":\"Turkish\"}", "{\"genreDescription\":\"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.\", \"genreId\":7448, \"genreName\":\"Folklore\"}" ]
+    }, {
+      "name" : "verifyDeletingBookByIdDeleteRequest",
+      "uid" : "9fd5d43e1999bab1",
+      "parentUid" : "7908f3e7450be02f5dd0af3da0f79b18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295459413,
+        "stop" : 1629295459536,
+        "duration" : 123
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"bookId\":536, \"bookName\":\"Sed sunt et quas\", \"bookLanguage\":\"spanish\", \"bookDescription\":\"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.\", \"publicationYear\":1974, \"additional\":{\"pageCount\":573, \"size\":{\"height\":14.9, \"width\":0.0, \"lenght\":0.0}}}" ]
+    }, {
+      "name" : "verifyUpdatingBookPutRequest",
+      "uid" : "6fce0590f7e281b9",
+      "parentUid" : "7908f3e7450be02f5dd0af3da0f79b18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295459610,
+        "stop" : 1629295459692,
+        "duration" : 82
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"bookId\":536, \"bookName\":\"Sed sunt et quas\", \"bookLanguage\":\"spanish\", \"bookDescription\":\"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.\", \"publicationYear\":1974, \"additional\":{\"pageCount\":573, \"size\":{\"height\":14.9, \"width\":0.0, \"lenght\":0.0}}}" ]
+    }, {
+      "name" : "verifyGetAllBooksGetRequest",
+      "uid" : "c1b63b28b62b594f",
+      "parentUid" : "7908f3e7450be02f5dd0af3da0f79b18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295459787,
+        "stop" : 1629295459944,
+        "duration" : 157
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "verifyGetBookByIdGetRequest",
+      "uid" : "943d62750974e3b1",
+      "parentUid" : "7908f3e7450be02f5dd0af3da0f79b18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295459973,
+        "stop" : 1629295460122,
+        "duration" : 149
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"bookId\":292, \"bookName\":\"Ipsa dolor laboriosam\", \"bookLanguage\":\"croatian\", \"bookDescription\":\"Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.\", \"publicationYear\":2008, \"additional\":{\"pageCount\":682, \"size\":{\"height\":16.1, \"width\":0.0, \"lenght\":0.0}}}" ]
+    }, {
+      "name" : "verifyGetBooksByAuthorIdGenreIdGetRequest",
+      "uid" : "57b727bf9fa231fd",
+      "parentUid" : "7908f3e7450be02f5dd0af3da0f79b18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295460133,
+        "stop" : 1629295460227,
+        "duration" : 94
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"authorDescription\":\"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.\", \"authorId\":37, \"authorName\":{\"first\":\"Alexandro\", \"second\":\"Kris\"}, \"birth\":{\"city\":\"Doylechester\", \"country\":\"Venezuela\", \"date\":\"1930-09-19\"}, \"nationality\":\"Turkish\"}", "{\"genreDescription\":\"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.\", \"genreId\":7448, \"genreName\":\"Folklore\"}" ]
+    }, {
+      "name" : "verifyGetBooksByAuthorIdGetRequest",
+      "uid" : "bff9f7e51795604b",
+      "parentUid" : "7908f3e7450be02f5dd0af3da0f79b18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295460238,
+        "stop" : 1629295460345,
+        "duration" : 107
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"authorDescription\":\"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.\", \"authorId\":37, \"authorName\":{\"first\":\"Alexandro\", \"second\":\"Kris\"}, \"birth\":{\"city\":\"Doylechester\", \"country\":\"Venezuela\", \"date\":\"1930-09-19\"}, \"nationality\":\"Turkish\"}" ]
+    }, {
+      "name" : "verifyGetBooksByGenreIdGetRequest",
+      "uid" : "44268785da01886",
+      "parentUid" : "7908f3e7450be02f5dd0af3da0f79b18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295460357,
+        "stop" : 1629295460467,
+        "duration" : 110
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"genreDescription\":\"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.\", \"genreId\":7448, \"genreName\":\"Folklore\"}" ]
+    }, {
+      "name" : "verifyGetNotFoundBookByIdGetRequestNegativeCase",
+      "uid" : "e4ba2a4c8a13cb6a",
+      "parentUid" : "7908f3e7450be02f5dd0af3da0f79b18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295460478,
+        "stop" : 1629295460535,
+        "duration" : 57
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"bookId\":536, \"bookName\":\"Sed sunt et quas\", \"bookLanguage\":\"spanish\", \"bookDescription\":\"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.\", \"publicationYear\":1974, \"additional\":{\"pageCount\":573, \"size\":{\"height\":14.9, \"width\":0.0, \"lenght\":0.0}}}" ]
+    }, {
+      "name" : "verifySearchBooksGetRequest",
+      "uid" : "214583d6f3774687",
+      "parentUid" : "7908f3e7450be02f5dd0af3da0f79b18",
+      "status" : "failed",
+      "time" : {
+        "start" : 1629295460544,
+        "stop" : 1629295460578,
+        "duration" : 34
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7908f3e7450be02f5dd0af3da0f79b18"
+  }, {
+    "name" : "AuthorTest",
+    "children" : [ {
+      "name" : "verifyCreatingAuthorPostRequest",
+      "uid" : "a742f804cafeca12",
+      "parentUid" : "213e5aeca7b21fa619b5d31e1970187b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295460613,
+        "stop" : 1629295460676,
+        "duration" : 63
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"authorDescription\":\"updated author descr\", \"authorId\":9999, \"authorName\":{\"first\":\"firstName\", \"second\":\"secondName\"}, \"birth\":{\"city\":\"Mykolaiv\", \"country\":\"Ukraine\", \"date\":\"1990-11-17\"}, \"nationality\":\"ukrainian\"}" ]
+    }, {
+      "name" : "verifyDeletingAuthorByIdDeleteRequest",
+      "uid" : "eb3498d5b555ada8",
+      "parentUid" : "213e5aeca7b21fa619b5d31e1970187b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295460778,
+        "stop" : 1629295460877,
+        "duration" : 99
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"authorDescription\":\"updated author descr\", \"authorId\":9999, \"authorName\":{\"first\":\"firstName\", \"second\":\"secondName\"}, \"birth\":{\"city\":\"Mykolaiv\", \"country\":\"Ukraine\", \"date\":\"1990-11-17\"}, \"nationality\":\"ukrainian\"}" ]
+    }, {
+      "name" : "verifyUpdatingAuthorPutRequest",
+      "uid" : "90b535470107b9b5",
+      "parentUid" : "213e5aeca7b21fa619b5d31e1970187b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295460945,
+        "stop" : 1629295461009,
+        "duration" : 64
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"authorDescription\":\"updated author descr\", \"authorId\":9999, \"authorName\":{\"first\":\"firstName\", \"second\":\"secondName\"}, \"birth\":{\"city\":\"Mykolaiv\", \"country\":\"Ukraine\", \"date\":\"1990-11-17\"}, \"nationality\":\"ukrainian\"}" ]
+    }, {
+      "name" : "verifyGetAllAuthorsGetRequest",
+      "uid" : "e6a6c40ebbc2f91b",
+      "parentUid" : "213e5aeca7b21fa619b5d31e1970187b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295461074,
+        "stop" : 1629295461146,
+        "duration" : 72
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "verifyGetAuthorByBookIdGetRequest",
+      "uid" : "3dea1c5055516d25",
+      "parentUid" : "213e5aeca7b21fa619b5d31e1970187b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295461159,
+        "stop" : 1629295461213,
+        "duration" : 54
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"bookId\":292, \"bookName\":\"Ipsa dolor laboriosam\", \"bookLanguage\":\"croatian\", \"bookDescription\":\"Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.\", \"publicationYear\":2008, \"additional\":{\"pageCount\":682, \"size\":{\"height\":16.1, \"width\":0.0, \"lenght\":0.0}}}" ]
+    }, {
+      "name" : "verifyGetAuthorByIdGetRequest",
+      "uid" : "9130212e603004e1",
+      "parentUid" : "213e5aeca7b21fa619b5d31e1970187b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295461228,
+        "stop" : 1629295461281,
+        "duration" : 53
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"authorDescription\":\"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.\", \"authorId\":37, \"authorName\":{\"first\":\"Alexandro\", \"second\":\"Kris\"}, \"birth\":{\"city\":\"Doylechester\", \"country\":\"Venezuela\", \"date\":\"1930-09-19\"}, \"nationality\":\"Turkish\"}" ]
+    }, {
+      "name" : "verifyGetAuthorsByGenreIdGetRequest",
+      "uid" : "4b3447f69a5322f4",
+      "parentUid" : "213e5aeca7b21fa619b5d31e1970187b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295461293,
+        "stop" : 1629295461355,
+        "duration" : 62
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"genreDescription\":\"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.\", \"genreId\":7448, \"genreName\":\"Folklore\"}" ]
+    }, {
+      "name" : "verifyGetNotFoundAuthorByIdGetRequestNegativeCase",
+      "uid" : "264d1afccc3adaf2",
+      "parentUid" : "213e5aeca7b21fa619b5d31e1970187b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295461364,
+        "stop" : 1629295461412,
+        "duration" : 48
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"authorDescription\":\"updated author descr\", \"authorId\":9999, \"authorName\":{\"first\":\"firstName\", \"second\":\"secondName\"}, \"birth\":{\"city\":\"Mykolaiv\", \"country\":\"Ukraine\", \"date\":\"1990-11-17\"}, \"nationality\":\"ukrainian\"}" ]
+    }, {
+      "name" : "verifySearchAuthorsGetRequest",
+      "uid" : "70af82236b81c36b",
+      "parentUid" : "213e5aeca7b21fa619b5d31e1970187b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1629295461421,
+        "stop" : 1629295461454,
+        "duration" : 33
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "213e5aeca7b21fa619b5d31e1970187b"
+  }, {
+    "name" : "GenreTest",
+    "children" : [ {
+      "name" : "verifyCreatingGenrePostRequest",
+      "uid" : "4e1a8788a6b9c7d9",
+      "parentUid" : "0ddafd24475a7b9b66325983901cc68b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629297392213,
+        "stop" : 1629297395997,
+        "duration" : 3784
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"genreDescription\":\"genre description\", \"genreId\":9999, \"genreName\":\"genre name\"}" ]
+    }, {
+      "name" : "verifyDeletingGenreByIdDeleteRequest",
+      "uid" : "7a0e5e0a40388a5e",
+      "parentUid" : "0ddafd24475a7b9b66325983901cc68b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629297396140,
+        "stop" : 1629297396223,
+        "duration" : 83
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"genreDescription\":\"genre description\", \"genreId\":9999, \"genreName\":\"genre name\"}" ]
+    }, {
+      "name" : "verifyUpdatingGenrePutRequest",
+      "uid" : "8362c4e76167ec08",
+      "parentUid" : "0ddafd24475a7b9b66325983901cc68b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629297396291,
+        "stop" : 1629297396338,
+        "duration" : 47
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"genreDescription\":\"genre description\", \"genreId\":9999, \"genreName\":\"genre name\"}" ]
+    }, {
+      "name" : "verifyGetAllGenresByAuthorIdGetRequest",
+      "uid" : "725d6220cfa737c3",
+      "parentUid" : "0ddafd24475a7b9b66325983901cc68b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629297396405,
+        "stop" : 1629297396478,
+        "duration" : 73
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"authorDescription\":\"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.\", \"authorId\":37, \"authorName\":{\"first\":\"Alexandro\", \"second\":\"Kris\"}, \"birth\":{\"city\":\"Doylechester\", \"country\":\"Venezuela\", \"date\":\"1930-09-19\"}, \"nationality\":\"Turkish\"}" ]
+    }, {
+      "name" : "verifyGetAllGenresGetRequest",
+      "uid" : "2c2584f18fb1642e",
+      "parentUid" : "0ddafd24475a7b9b66325983901cc68b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629297396490,
+        "stop" : 1629297396553,
+        "duration" : 63
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "verifyGetGenreByBookIdGetRequest",
+      "uid" : "448688141fda4b6d",
+      "parentUid" : "0ddafd24475a7b9b66325983901cc68b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629297396569,
+        "stop" : 1629297396640,
+        "duration" : 71
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"bookId\":292, \"bookName\":\"Ipsa dolor laboriosam\", \"bookLanguage\":\"croatian\", \"bookDescription\":\"Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.\", \"publicationYear\":2008, \"additional\":{\"pageCount\":682, \"size\":{\"height\":16.1, \"width\":0.0, \"lenght\":0.0}}}" ]
+    }, {
+      "name" : "verifyGetGenreByIdGetRequest",
+      "uid" : "a5a3d55c7d148ce",
+      "parentUid" : "0ddafd24475a7b9b66325983901cc68b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629297396650,
+        "stop" : 1629297396685,
+        "duration" : 35
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"genreDescription\":\"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.\", \"genreId\":7448, \"genreName\":\"Folklore\"}" ]
+    }, {
+      "name" : "verifyGetNotFoundGenreByIdGetRequestNegativeCase",
+      "uid" : "1dca6d80f5384d5f",
+      "parentUid" : "0ddafd24475a7b9b66325983901cc68b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629297396708,
+        "stop" : 1629297396770,
+        "duration" : 62
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{\"genreDescription\":\"genre description\", \"genreId\":9999, \"genreName\":\"genre name\"}" ]
+    }, {
+      "name" : "verifySearchGenresGetRequest",
+      "uid" : "a6eb8e4473af3fac",
+      "parentUid" : "0ddafd24475a7b9b66325983901cc68b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1629297396780,
+        "stop" : 1629297396808,
+        "duration" : 28
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0ddafd24475a7b9b66325983901cc68b"
+  } ]
+}

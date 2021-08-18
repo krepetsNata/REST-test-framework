@@ -1,0 +1,20 @@
+
+
+RESPONSE:
+status line: HTTP/1.1 200 
+location: null
+body:
+{
+    "authorId": 37,
+    "authorName": {
+        "first": "Alexandro",
+        "second": "Kris"
+    },
+    "nationality": "Turkish",
+    "birth": {
+        "date": "1930-09-19",
+        "country": "Venezuela",
+        "city": "Doylechester"
+    },
+    "authorDescription": "Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint."
+}

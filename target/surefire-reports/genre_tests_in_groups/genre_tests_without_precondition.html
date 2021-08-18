@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 17 21:27:37 EEST 2021</td>
+<td>Started on:</td><td>Wed Aug 18 17:04:21 EEST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (277 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (301 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>withoutPreconditionGroup </td>
 </tr><tr>
@@ -77,17 +77,17 @@ function toggleAllBoxes() {
 <tr>
 <td title='GenreTest.verifySearchGenresGetRequest()'><b>verifySearchGenresGetRequest</b><br>Test class: GenreTest<br>Test method: Verifying searching Genres by its name</td>
 <td><div><pre>java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
-	at utils.Validator.validateStatusCode(Validator.java:21)
+	at utils.Validator.validateStatusCode(Validator.java:25)
 	at GenreTest.verifySearchGenresGetRequest(GenreTest.java:106)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2101977504", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2101977504'><pre>java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1660124157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1660124157'><pre>java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:907)
-	at utils.Validator.validateStatusCode(Validator.java:21)
+	at utils.Validator.validateStatusCode(Validator.java:25)
 	at GenreTest.verifySearchGenresGetRequest(GenreTest.java:106)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -124,7 +124,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 </pre></div></td>
 <td>0</td>
-<td>GenreTest@42b6d0cc</td></tr>
+<td>GenreTest@3d37203b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -134,30 +134,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='GenreTest.verifyGetGenreByIdGetRequest()'><b>verifyGetGenreByIdGetRequest</b><br>Test class: GenreTest<br>Test method: Verifying getting 1 Genre object by id with GET method<br>Parameters: {"genreDescription":"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.", "genreId":7448, "genreName":"Folklore"}</td>
+<td></td>
+<td>0</td>
+<td>GenreTest@3d37203b</td></tr>
+<tr>
 <td title='GenreTest.verifyGetGenreByBookIdGetRequest()'><b>verifyGetGenreByBookIdGetRequest</b><br>Test class: GenreTest<br>Test method: Verifying getting all Genre objects by BookId with GET method<br>Parameters: {"bookId":292, "bookName":"Ipsa dolor laboriosam", "bookLanguage":"croatian", "bookDescription":"Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.", "publicationYear":2008, "additional":{"pageCount":682, "size":{"height":16.1, "width":0.0, "lenght":0.0}}}</td>
 <td></td>
 <td>0</td>
-<td>GenreTest@42b6d0cc</td></tr>
-<tr>
-<td title='GenreTest.verifyGetNotFoundGenreByIdGetRequestNegativeCase()'><b>verifyGetNotFoundGenreByIdGetRequestNegativeCase</b><br>Test class: GenreTest<br>Test method: Negative case when element not found - verifying getting 1 Genre object by id with GET method<br>Parameters: {"genreDescription":"genre description", "genreId":9999, "genreName":"genre name"}</td>
-<td></td>
-<td>0</td>
-<td>GenreTest@42b6d0cc</td></tr>
+<td>GenreTest@3d37203b</td></tr>
 <tr>
 <td title='GenreTest.verifyGetAllGenresByAuthorIdGetRequest()'><b>verifyGetAllGenresByAuthorIdGetRequest</b><br>Test class: GenreTest<br>Test method: Verifying getting all Genre objects by AuthorId with GET method<br>Parameters: {"authorDescription":"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.", "authorId":37, "authorName":{"first":"Alexandro", "second":"Kris"}, "birth":{"city":"Doylechester", "country":"Venezuela", "date":"1930-09-19"}, "nationality":"Turkish"}</td>
 <td></td>
 <td>0</td>
-<td>GenreTest@42b6d0cc</td></tr>
+<td>GenreTest@3d37203b</td></tr>
 <tr>
 <td title='GenreTest.verifyGetAllGenresGetRequest()'><b>verifyGetAllGenresGetRequest</b><br>Test class: GenreTest<br>Test method: Verifying getting all Genre objects with GET method</td>
 <td></td>
 <td>0</td>
-<td>GenreTest@42b6d0cc</td></tr>
+<td>GenreTest@3d37203b</td></tr>
 <tr>
-<td title='GenreTest.verifyGetGenreByIdGetRequest()'><b>verifyGetGenreByIdGetRequest</b><br>Test class: GenreTest<br>Test method: Verifying getting 1 Genre object by id with GET method<br>Parameters: {"genreDescription":"Id voluptatibus qui ullam omnis laboriosam maxime laudantium. Vel aut dolorem dolorem facilis officiis. Voluptate impedit repellendus iure enim. Modi in sed alias eum. Eaque sunt nihil rerum.", "genreId":644, "genreName":"Metafiction"}</td>
+<td title='GenreTest.verifyGetNotFoundGenreByIdGetRequestNegativeCase()'><b>verifyGetNotFoundGenreByIdGetRequestNegativeCase</b><br>Test class: GenreTest<br>Test method: Negative case when element not found - verifying getting 1 Genre object by id with GET method<br>Parameters: {"genreDescription":"genre description", "genreId":9999, "genreName":"genre name"}</td>
 <td></td>
 <td>0</td>
-<td>GenreTest@42b6d0cc</td></tr>
+<td>GenreTest@3d37203b</td></tr>
 </table><p>
 </body>
 </html>

@@ -36,7 +36,12 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyGetAuthorByBookIdGetRequest</td>
+<td>verifyGetAuthorByIdGetRequest</td>
+<td>withoutPreconditionGroup </td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyGetAllAuthorsGetRequest</td>
 <td>withoutPreconditionGroup </td>
 </tr>
 <tr>
@@ -46,12 +51,7 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyGetAuthorByIdGetRequest</td>
-<td>withoutPreconditionGroup </td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>verifyGetAllAuthorsGetRequest</td>
+<td>verifyGetAuthorByBookIdGetRequest</td>
 <td>withoutPreconditionGroup </td>
 </tr>
 <tr>
@@ -87,12 +87,12 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyGetNotFoundGenreByIdGetRequestNegativeCase</td>
+<td>verifyGetGenreByIdGetRequest</td>
 <td>withoutPreconditionGroup </td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyGetGenreByIdGetRequest</td>
+<td>verifyGetNotFoundGenreByIdGetRequestNegativeCase</td>
 <td>withoutPreconditionGroup </td>
 </tr>
 <tr>
@@ -112,12 +112,12 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyGetAllGenresByAuthorIdGetRequest</td>
+<td>verifyGetAllGenresGetRequest</td>
 <td>withoutPreconditionGroup </td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyGetAllGenresGetRequest</td>
+<td>verifyGetAllGenresByAuthorIdGetRequest</td>
 <td>withoutPreconditionGroup </td>
 </tr>
 <tr>
@@ -153,12 +153,17 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyGetBooksByGenreIdGetRequest</td>
+<td>verifyCreatingBookPostRequest</td>
+<td>bookGroup </td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyGetBooksByAuthorIdGenreIdGetRequest</td>
 <td>withoutPreconditionGroup </td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyGetNotFoundBookByIdGetRequestNegativeCase</td>
+<td>verifyGetBooksByGenreIdGetRequest</td>
 <td>withoutPreconditionGroup </td>
 </tr>
 <tr>
@@ -168,7 +173,7 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyGetBooksByAuthorIdGetRequest</td>
+<td>verifyGetNotFoundBookByIdGetRequestNegativeCase</td>
 <td>withoutPreconditionGroup </td>
 </tr>
 <tr>
@@ -178,8 +183,8 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyUpdatingBookPutRequest</td>
-<td>bookGroup </td>
+<td>verifyGetBooksByAuthorIdGetRequest</td>
+<td>withoutPreconditionGroup </td>
 </tr>
 <tr>
 <td>&nbsp;</td>
@@ -188,17 +193,12 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyGetBooksByAuthorIdGenreIdGetRequest</td>
-<td>withoutPreconditionGroup </td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>verifyDeletingBookByIdDeleteRequest</td>
+<td>verifyUpdatingBookPutRequest</td>
 <td>bookGroup </td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyCreatingBookPostRequest</td>
+<td>verifyDeletingBookByIdDeleteRequest</td>
 <td>bookGroup </td>
 </tr>
 <tr>

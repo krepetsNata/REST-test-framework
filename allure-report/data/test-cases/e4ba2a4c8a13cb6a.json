@@ -1,0 +1,209 @@
+{
+  "uid" : "e4ba2a4c8a13cb6a",
+  "name" : "Negative case when element not found - verifying getting 1 Book object by id with GET method",
+  "fullName" : "BookTest.verifyGetNotFoundBookByIdGetRequestNegativeCase",
+  "historyId" : "4c6ed68da0e729f030d0aad59c3d702a",
+  "time" : {
+    "start" : 1629295460478,
+    "stop" : 1629295460535,
+    "duration" : 57
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1629295460473,
+      "stop" : 1629295460473,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get Book object by 'bookId'.",
+      "time" : {
+        "start" : 1629295460478,
+        "stop" : 1629295460529,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4176338e39ebb7ed",
+        "name" : "My request",
+        "source" : "4176338e39ebb7ed.txt",
+        "type" : "text/plain",
+        "size" : 96
+      }, {
+        "uid" : "354bfec20c693fa1",
+        "name" : "My response",
+        "source" : "354bfec20c693fa1.txt",
+        "type" : "text/plain",
+        "size" : 221
+      }, {
+        "uid" : "2abefad70c6f38bf",
+        "name" : "sendRequest",
+        "source" : "2abefad70c6f38bf.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "bookId",
+        "value" : "536"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629295460529,
+        "stop" : 1629295460531,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c9fe506d5ab4fc05",
+        "name" : "Response for validate status code",
+        "source" : "c9fe506d5ab4fc05.txt",
+        "type" : "text/plain",
+        "size" : 160
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@7381d6f0"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "404"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Return actual Book object from response.",
+      "time" : {
+        "start" : 1629295460533,
+        "stop" : 1629295460533,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@7381d6f0"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "99859bb8721a4c59",
+      "name" : "validateStatusCode",
+      "source" : "99859bb8721a4c59.txt",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "aae23d3a01c50cc4",
+      "name" : "List is empty attachment",
+      "source" : "aae23d3a01c50cc4.txt",
+      "type" : "text/plain",
+      "size" : 38
+    }, {
+      "uid" : "9f5d373f4353af03",
+      "name" : "validateObjectIsNull",
+      "source" : "9f5d373f4353af03.txt",
+      "type" : "text/plain",
+      "size" : 4
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1629295460538,
+      "stop" : 1629295460538,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "BookTest"
+  }, {
+    "name" : "testClass",
+    "value" : "BookTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyGetNotFoundBookByIdGetRequestNegativeCase"
+  }, {
+    "name" : "parentSuite",
+    "value" : "book_tests_in_groups"
+  }, {
+    "name" : "suite",
+    "value" : "book_tests_without_precondition"
+  }, {
+    "name" : "subSuite",
+    "value" : "BookTest"
+  }, {
+    "name" : "host",
+    "value" : "NATA-PC"
+  }, {
+    "name" : "thread",
+    "value" : "23996@NATA-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Book api tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{\"bookId\":536, \"bookName\":\"Sed sunt et quas\", \"bookLanguage\":\"spanish\", \"bookDescription\":\"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.\", \"publicationYear\":1974, \"additional\":{\"pageCount\":573, \"size\":{\"height\":14.9, \"width\":0.0, \"lenght\":0.0}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e4ba2a4c8a13cb6a.json",
+  "parameterValues" : [ "{\"bookId\":536, \"bookName\":\"Sed sunt et quas\", \"bookLanguage\":\"spanish\", \"bookDescription\":\"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.\", \"publicationYear\":1974, \"additional\":{\"pageCount\":573, \"size\":{\"height\":14.9, \"width\":0.0, \"lenght\":0.0}}}" ]
+}

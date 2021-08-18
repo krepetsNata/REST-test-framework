@@ -1,0 +1,8 @@
+
+
+REQUEST:
+method: POST
+uri: http://localhost:8080/api/library/book/37/7448/
+queryParam: 
+body:
+{"bookId":536, "bookName":"Sed sunt et quas", "bookLanguage":"spanish", "bookDescription":"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.", "publicationYear":1974, "additional":{"pageCount":573, "size":{"height":14.9, "width":0.0, "lenght":0.0}}}

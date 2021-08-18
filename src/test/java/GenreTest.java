@@ -82,7 +82,7 @@ public class GenreTest extends BaseTest {
             dataProvider = "dpTestAuthor", dataProviderClass = DataProviderPOJO.class,
             groups = "withoutPreconditionGroup")
     public void verifyGetAllGenresByAuthorIdGetRequest(Author author) {
-        BaseResponse<Genre> baseResponse = genreService.getGenresByAuthorIdGet(new ListOptions(),author.getAuthorId());
+        BaseResponse<Genre> baseResponse = genreService.getGenresByAuthorIdGet(new ListOptions(), author.getAuthorId());
         Validator.validateStatusCode(baseResponse, SC_OK);
         List<Genre> genresActualList = genreService.getActualListGenres(baseResponse);
         Validator.validateListIsEmpty(genresActualList, false);

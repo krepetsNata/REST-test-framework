@@ -2,29 +2,29 @@
 <testng-results skipped="0" failed="3" ignored="28" total="56" passed="25">
   <reporter-output>
   </reporter-output>
-  <suite name="author_tests_in_groups" duration-ms="839" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:37 EEST">
+  <suite name="author_tests_in_groups" duration-ms="859" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:21 EEST">
     <groups>
       <group name="authorGroup">
-        <method signature="AuthorTest.verifyCreatingAuthorPostRequest(pojo.Author)[pri:0, instance:AuthorTest@3e47a03]" name="verifyCreatingAuthorPostRequest" class="AuthorTest"/>
-        <method signature="AuthorTest.verifyDeletingAuthorByIdDeleteRequest(pojo.Author)[pri:0, instance:AuthorTest@3e47a03]" name="verifyDeletingAuthorByIdDeleteRequest" class="AuthorTest"/>
-        <method signature="AuthorTest.verifyUpdatingAuthorPutRequest(pojo.Author)[pri:0, instance:AuthorTest@3e47a03]" name="verifyUpdatingAuthorPutRequest" class="AuthorTest"/>
+        <method signature="AuthorTest.verifyCreatingAuthorPostRequest(pojo.Author)[pri:0, instance:AuthorTest@e042c99]" name="verifyCreatingAuthorPostRequest" class="AuthorTest"/>
+        <method signature="AuthorTest.verifyDeletingAuthorByIdDeleteRequest(pojo.Author)[pri:0, instance:AuthorTest@e042c99]" name="verifyDeletingAuthorByIdDeleteRequest" class="AuthorTest"/>
+        <method signature="AuthorTest.verifyUpdatingAuthorPutRequest(pojo.Author)[pri:0, instance:AuthorTest@e042c99]" name="verifyUpdatingAuthorPutRequest" class="AuthorTest"/>
       </group> <!-- authorGroup -->
       <group name="withoutPreconditionGroup">
-        <method signature="AuthorTest.verifyGetAllAuthorsGetRequest()[pri:0, instance:AuthorTest@5d425813]" name="verifyGetAllAuthorsGetRequest" class="AuthorTest"/>
-        <method signature="AuthorTest.verifyGetAuthorByBookIdGetRequest(pojo.Book)[pri:0, instance:AuthorTest@5d425813]" name="verifyGetAuthorByBookIdGetRequest" class="AuthorTest"/>
-        <method signature="AuthorTest.verifyGetAuthorByIdGetRequest(pojo.Author)[pri:0, instance:AuthorTest@5d425813]" name="verifyGetAuthorByIdGetRequest" class="AuthorTest"/>
-        <method signature="AuthorTest.verifyGetAuthorsByGenreIdGetRequest(pojo.Genre)[pri:0, instance:AuthorTest@5d425813]" name="verifyGetAuthorsByGenreIdGetRequest" class="AuthorTest"/>
-        <method signature="AuthorTest.verifyGetNotFoundAuthorByIdGetRequestNegativeCase(pojo.Author)[pri:0, instance:AuthorTest@5d425813]" name="verifyGetNotFoundAuthorByIdGetRequestNegativeCase" class="AuthorTest"/>
-        <method signature="AuthorTest.verifySearchAuthorsGetRequest()[pri:0, instance:AuthorTest@5d425813]" name="verifySearchAuthorsGetRequest" class="AuthorTest"/>
+        <method signature="AuthorTest.verifyGetAllAuthorsGetRequest()[pri:0, instance:AuthorTest@3f4f5330]" name="verifyGetAllAuthorsGetRequest" class="AuthorTest"/>
+        <method signature="AuthorTest.verifyGetAuthorByBookIdGetRequest(pojo.Book)[pri:0, instance:AuthorTest@3f4f5330]" name="verifyGetAuthorByBookIdGetRequest" class="AuthorTest"/>
+        <method signature="AuthorTest.verifyGetAuthorByIdGetRequest(pojo.Author)[pri:0, instance:AuthorTest@3f4f5330]" name="verifyGetAuthorByIdGetRequest" class="AuthorTest"/>
+        <method signature="AuthorTest.verifyGetAuthorsByGenreIdGetRequest(pojo.Genre)[pri:0, instance:AuthorTest@3f4f5330]" name="verifyGetAuthorsByGenreIdGetRequest" class="AuthorTest"/>
+        <method signature="AuthorTest.verifyGetNotFoundAuthorByIdGetRequestNegativeCase(pojo.Author)[pri:0, instance:AuthorTest@3f4f5330]" name="verifyGetNotFoundAuthorByIdGetRequestNegativeCase" class="AuthorTest"/>
+        <method signature="AuthorTest.verifySearchAuthorsGetRequest()[pri:0, instance:AuthorTest@3f4f5330]" name="verifySearchAuthorsGetRequest" class="AuthorTest"/>
       </group> <!-- withoutPreconditionGroup -->
     </groups>
-    <test name="author_tests" duration-ms="451" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:37 EEST">
+    <test name="author_tests" duration-ms="461" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:21 EEST">
       <class name="AuthorTest">
-        <test-method status="PASS" signature="beforeGroupAuthor()[pri:0, instance:AuthorTest@3e47a03]" name="beforeGroupAuthor" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="beforeGroupAuthor()[pri:0, instance:AuthorTest@e042c99]" name="beforeGroupAuthor" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeGroupAuthor -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3e47a03]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@e042c99]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -35,7 +35,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethodAuthor(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3e47a03]" name="beforeMethodAuthor" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="beforeMethodAuthor(java.lang.reflect.Method)[pri:0, instance:AuthorTest@e042c99]" name="beforeMethodAuthor" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodAuthor -->
-        <test-method status="PASS" signature="verifyCreatingAuthorPostRequest(pojo.Author)[pri:0, instance:AuthorTest@3e47a03]" name="verifyCreatingAuthorPostRequest" duration-ms="70" started-at="2021-08-17T21:27:36 EEST" description="Verifying creating new Author object with POST method" data-provider="dpNewAuthor" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="verifyCreatingAuthorPostRequest(pojo.Author)[pri:0, instance:AuthorTest@e042c99]" name="verifyCreatingAuthorPostRequest" duration-ms="65" started-at="2021-08-18T17:04:20 EEST" description="Verifying creating new Author object with POST method" data-provider="dpNewAuthor" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -57,7 +57,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreatingAuthorPostRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3e47a03]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@e042c99]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -68,7 +68,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethodAuthor(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3e47a03]" name="afterMethodAuthor" is-config="true" duration-ms="59" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="afterMethodAuthor(java.lang.reflect.Method)[pri:0, instance:AuthorTest@e042c99]" name="afterMethodAuthor" is-config="true" duration-ms="56" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -79,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodAuthor -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3e47a03]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@e042c99]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -90,7 +90,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethodAuthor(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3e47a03]" name="beforeMethodAuthor" is-config="true" duration-ms="37" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="beforeMethodAuthor(java.lang.reflect.Method)[pri:0, instance:AuthorTest@e042c99]" name="beforeMethodAuthor" is-config="true" duration-ms="33" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodAuthor -->
-        <test-method status="PASS" signature="verifyDeletingAuthorByIdDeleteRequest(pojo.Author)[pri:0, instance:AuthorTest@3e47a03]" name="verifyDeletingAuthorByIdDeleteRequest" duration-ms="98" started-at="2021-08-17T21:27:36 EEST" description="Verifying deleting 1 Author object by id with DELETE method" data-provider="dpNewAuthor" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="verifyDeletingAuthorByIdDeleteRequest(pojo.Author)[pri:0, instance:AuthorTest@e042c99]" name="verifyDeletingAuthorByIdDeleteRequest" duration-ms="102" started-at="2021-08-18T17:04:20 EEST" description="Verifying deleting 1 Author object by id with DELETE method" data-provider="dpNewAuthor" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -112,7 +112,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeletingAuthorByIdDeleteRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3e47a03]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@e042c99]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -123,7 +123,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethodAuthor(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3e47a03]" name="afterMethodAuthor" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="afterMethodAuthor(java.lang.reflect.Method)[pri:0, instance:AuthorTest@e042c99]" name="afterMethodAuthor" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -134,7 +134,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodAuthor -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3e47a03]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@e042c99]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -145,7 +145,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethodAuthor(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3e47a03]" name="beforeMethodAuthor" is-config="true" duration-ms="34" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethodAuthor(java.lang.reflect.Method)[pri:0, instance:AuthorTest@e042c99]" name="beforeMethodAuthor" is-config="true" duration-ms="53" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -156,7 +156,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodAuthor -->
-        <test-method status="PASS" signature="verifyUpdatingAuthorPutRequest(pojo.Author)[pri:0, instance:AuthorTest@3e47a03]" name="verifyUpdatingAuthorPutRequest" duration-ms="62" started-at="2021-08-17T21:27:37 EEST" description="Verifying updating Author object with PUT method" data-provider="dpNewAuthor" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="verifyUpdatingAuthorPutRequest(pojo.Author)[pri:0, instance:AuthorTest@e042c99]" name="verifyUpdatingAuthorPutRequest" duration-ms="66" started-at="2021-08-18T17:04:20 EEST" description="Verifying updating Author object with PUT method" data-provider="dpNewAuthor" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -167,7 +167,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUpdatingAuthorPutRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3e47a03]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@e042c99]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -178,7 +178,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethodAuthor(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3e47a03]" name="afterMethodAuthor" is-config="true" duration-ms="49" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethodAuthor(java.lang.reflect.Method)[pri:0, instance:AuthorTest@e042c99]" name="afterMethodAuthor" is-config="true" duration-ms="50" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -189,15 +189,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodAuthor -->
-        <test-method status="PASS" signature="afterGroupAuthor()[pri:0, instance:AuthorTest@3e47a03]" name="afterGroupAuthor" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterGroupAuthor()[pri:0, instance:AuthorTest@e042c99]" name="afterGroupAuthor" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterGroupAuthor -->
       </class> <!-- AuthorTest -->
     </test> <!-- author_tests -->
-    <test name="author_tests_without_precondition" duration-ms="380" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+    <test name="author_tests_without_precondition" duration-ms="391" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
       <class name="AuthorTest">
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@5d425813]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3f4f5330]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -208,11 +208,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetAllAuthorsGetRequest()[pri:0, instance:AuthorTest@5d425813]" name="verifyGetAllAuthorsGetRequest" duration-ms="97" started-at="2021-08-17T21:27:37 EEST" description="Verifying getting all Author objects with GET method" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="verifyGetAllAuthorsGetRequest()[pri:0, instance:AuthorTest@3f4f5330]" name="verifyGetAllAuthorsGetRequest" duration-ms="73" started-at="2021-08-18T17:04:21 EEST" description="Verifying getting all Author objects with GET method" finished-at="2021-08-18T17:04:21 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllAuthorsGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@5d425813]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3f4f5330]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -223,7 +223,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@5d425813]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3f4f5330]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -234,7 +234,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetAuthorByBookIdGetRequest(pojo.Book)[pri:0, instance:AuthorTest@5d425813]" name="verifyGetAuthorByBookIdGetRequest" duration-ms="57" started-at="2021-08-17T21:27:37 EEST" description="Verifying getting 1 Author object by Book id with GET method" data-provider="dpTestBook" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="verifyGetAuthorByBookIdGetRequest(pojo.Book)[pri:0, instance:AuthorTest@3f4f5330]" name="verifyGetAuthorByBookIdGetRequest" duration-ms="56" started-at="2021-08-18T17:04:21 EEST" description="Verifying getting 1 Author object by Book id with GET method" data-provider="dpTestBook" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -245,7 +245,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAuthorByBookIdGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@5d425813]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3f4f5330]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -256,7 +256,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@5d425813]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3f4f5330]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -267,7 +267,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetAuthorByIdGetRequest(pojo.Author)[pri:0, instance:AuthorTest@5d425813]" name="verifyGetAuthorByIdGetRequest" duration-ms="45" started-at="2021-08-17T21:27:37 EEST" description="Verifying getting 1 Author object by id with GET method" data-provider="dpTestAuthor" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="verifyGetAuthorByIdGetRequest(pojo.Author)[pri:0, instance:AuthorTest@3f4f5330]" name="verifyGetAuthorByIdGetRequest" duration-ms="58" started-at="2021-08-18T17:04:21 EEST" description="Verifying getting 1 Author object by id with GET method" data-provider="dpTestAuthor" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -278,7 +278,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAuthorByIdGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@5d425813]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3f4f5330]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -289,7 +289,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@5d425813]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3f4f5330]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -300,18 +300,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetAuthorsByGenreIdGetRequest(pojo.Genre)[pri:0, instance:AuthorTest@5d425813]" name="verifyGetAuthorsByGenreIdGetRequest" duration-ms="69" started-at="2021-08-17T21:27:37 EEST" description="Verifying getting 1 Author object by Book id with GET method" data-provider="dpTestGenre" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="verifyGetAuthorsByGenreIdGetRequest(pojo.Genre)[pri:0, instance:AuthorTest@3f4f5330]" name="verifyGetAuthorsByGenreIdGetRequest" duration-ms="64" started-at="2021-08-18T17:04:21 EEST" description="Verifying getting 1 Author object by Book id with GET method" data-provider="dpTestGenre" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"genreDescription":"Id voluptatibus qui ullam omnis laboriosam maxime laudantium. Vel aut dolorem dolorem facilis officiis. Voluptate impedit repellendus iure enim. Modi in sed alias eum. Eaque sunt nihil rerum.", "genreId":644, "genreName":"Metafiction"}]]>
+                <![CDATA[{"genreDescription":"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.", "genreId":7448, "genreName":"Folklore"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAuthorsByGenreIdGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@5d425813]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3f4f5330]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -322,7 +322,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@5d425813]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3f4f5330]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -333,7 +333,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetNotFoundAuthorByIdGetRequestNegativeCase(pojo.Author)[pri:0, instance:AuthorTest@5d425813]" name="verifyGetNotFoundAuthorByIdGetRequestNegativeCase" duration-ms="45" started-at="2021-08-17T21:27:37 EEST" description="Negative case when element not found - verifying getting 1 Author object by id with GET method" data-provider="dpNewAuthor" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="verifyGetNotFoundAuthorByIdGetRequestNegativeCase(pojo.Author)[pri:0, instance:AuthorTest@3f4f5330]" name="verifyGetNotFoundAuthorByIdGetRequestNegativeCase" duration-ms="49" started-at="2021-08-18T17:04:21 EEST" description="Negative case when element not found - verifying getting 1 Author object by id with GET method" data-provider="dpNewAuthor" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -344,7 +344,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetNotFoundAuthorByIdGetRequestNegativeCase -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@5d425813]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3f4f5330]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -355,7 +355,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@5d425813]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3f4f5330]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -366,7 +366,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="verifySearchAuthorsGetRequest()[pri:0, instance:AuthorTest@5d425813]" name="verifySearchAuthorsGetRequest" duration-ms="21" started-at="2021-08-17T21:27:37 EEST" description="Verifying searching books by its name" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="FAIL" signature="verifySearchAuthorsGetRequest()[pri:0, instance:AuthorTest@3f4f5330]" name="verifySearchAuthorsGetRequest" duration-ms="34" started-at="2021-08-18T17:04:21 EEST" description="Verifying searching books by its name" finished-at="2021-08-18T17:04:21 EEST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Actual StatusCode not matching to Expected one. expected [200] but found [400]]]>
@@ -378,7 +378,7 @@ at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:907)
-at utils.Validator.validateStatusCode(Validator.java:21)
+at utils.Validator.validateStatusCode(Validator.java:25)
 at AuthorTest.verifySearchAuthorsGetRequest(AuthorTest.java:101)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -419,7 +419,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchAuthorsGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@5d425813]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:AuthorTest@3f4f5330]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -433,89 +433,99 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
       </class> <!-- AuthorTest -->
     </test> <!-- author_tests_without_precondition -->
   </suite> <!-- author_tests_in_groups -->
-  <suite name="suite of suites" duration-ms="0" started-at="2021-08-17T21:27:38 EEST" finished-at="2021-08-17T21:27:38 EEST">
+  <suite name="suite of suites" duration-ms="0" started-at="2021-08-18T17:04:22 EEST" finished-at="2021-08-18T17:04:22 EEST">
     <groups>
     </groups>
   </suite> <!-- suite of suites -->
-  <suite name="book_tests_in_groups" duration-ms="5478" started-at="2021-08-17T21:27:31 EEST" finished-at="2021-08-17T21:27:36 EEST">
+  <suite name="book_tests_in_groups" duration-ms="5457" started-at="2021-08-18T17:04:15 EEST" finished-at="2021-08-18T17:04:20 EEST">
     <groups>
       <group name="bookGroup">
-        <method signature="BookTest.verifyCreatingBookPostRequest(pojo.Book)[pri:0, instance:BookTest@34acbc60]" name="verifyCreatingBookPostRequest" class="BookTest"/>
-        <method signature="BookTest.verifyDeletingBookByIdDeleteRequest(pojo.Book)[pri:0, instance:BookTest@34acbc60]" name="verifyDeletingBookByIdDeleteRequest" class="BookTest"/>
-        <method signature="BookTest.verifyUpdatingBookPutRequest(pojo.Book)[pri:0, instance:BookTest@34acbc60]" name="verifyUpdatingBookPutRequest" class="BookTest"/>
+        <method signature="BookTest.verifyCreatingBookPostRequest(pojo.Book,pojo.Author,pojo.Genre)[pri:0, instance:BookTest@282ffbf5]" name="verifyCreatingBookPostRequest" class="BookTest"/>
+        <method signature="BookTest.verifyDeletingBookByIdDeleteRequest(pojo.Book)[pri:0, instance:BookTest@282ffbf5]" name="verifyDeletingBookByIdDeleteRequest" class="BookTest"/>
+        <method signature="BookTest.verifyUpdatingBookPutRequest(pojo.Book)[pri:0, instance:BookTest@282ffbf5]" name="verifyUpdatingBookPutRequest" class="BookTest"/>
       </group> <!-- bookGroup -->
       <group name="withoutPreconditionGroup">
-        <method signature="BookTest.verifyGetAllBooksGetRequest()[pri:0, instance:BookTest@26221bad]" name="verifyGetAllBooksGetRequest" class="BookTest"/>
-        <method signature="BookTest.verifyGetBookByIdGetRequest(pojo.Book)[pri:0, instance:BookTest@26221bad]" name="verifyGetBookByIdGetRequest" class="BookTest"/>
-        <method signature="BookTest.verifyGetBooksByAuthorIdGenreIdGetRequest()[pri:0, instance:BookTest@26221bad]" name="verifyGetBooksByAuthorIdGenreIdGetRequest" class="BookTest"/>
-        <method signature="BookTest.verifyGetBooksByAuthorIdGetRequest(pojo.Author)[pri:0, instance:BookTest@26221bad]" name="verifyGetBooksByAuthorIdGetRequest" class="BookTest"/>
-        <method signature="BookTest.verifyGetBooksByGenreIdGetRequest(pojo.Genre)[pri:0, instance:BookTest@26221bad]" name="verifyGetBooksByGenreIdGetRequest" class="BookTest"/>
-        <method signature="BookTest.verifyGetNotFoundBookByIdGetRequestNegativeCase(pojo.Book)[pri:0, instance:BookTest@26221bad]" name="verifyGetNotFoundBookByIdGetRequestNegativeCase" class="BookTest"/>
-        <method signature="BookTest.verifySearchBooksGetRequest()[pri:0, instance:BookTest@26221bad]" name="verifySearchBooksGetRequest" class="BookTest"/>
+        <method signature="BookTest.verifyGetAllBooksGetRequest()[pri:0, instance:BookTest@6a937336]" name="verifyGetAllBooksGetRequest" class="BookTest"/>
+        <method signature="BookTest.verifyGetBookByIdGetRequest(pojo.Book)[pri:0, instance:BookTest@6a937336]" name="verifyGetBookByIdGetRequest" class="BookTest"/>
+        <method signature="BookTest.verifyGetBooksByAuthorIdGenreIdGetRequest(pojo.Author,pojo.Genre)[pri:0, instance:BookTest@6a937336]" name="verifyGetBooksByAuthorIdGenreIdGetRequest" class="BookTest"/>
+        <method signature="BookTest.verifyGetBooksByAuthorIdGetRequest(pojo.Author)[pri:0, instance:BookTest@6a937336]" name="verifyGetBooksByAuthorIdGetRequest" class="BookTest"/>
+        <method signature="BookTest.verifyGetBooksByGenreIdGetRequest(pojo.Genre)[pri:0, instance:BookTest@6a937336]" name="verifyGetBooksByGenreIdGetRequest" class="BookTest"/>
+        <method signature="BookTest.verifyGetNotFoundBookByIdGetRequestNegativeCase(pojo.Book)[pri:0, instance:BookTest@6a937336]" name="verifyGetNotFoundBookByIdGetRequestNegativeCase" class="BookTest"/>
+        <method signature="BookTest.verifySearchBooksGetRequest()[pri:0, instance:BookTest@6a937336]" name="verifySearchBooksGetRequest" class="BookTest"/>
       </group> <!-- withoutPreconditionGroup -->
     </groups>
-    <test name="book_tests" duration-ms="4824" started-at="2021-08-17T21:27:31 EEST" finished-at="2021-08-17T21:27:35 EEST">
+    <test name="book_tests" duration-ms="4630" started-at="2021-08-18T17:04:15 EEST" finished-at="2021-08-18T17:04:19 EEST">
       <class name="BookTest">
-        <test-method status="PASS" signature="beforeGroupBook()[pri:0, instance:BookTest@34acbc60]" name="beforeGroupBook" is-config="true" duration-ms="6" started-at="2021-08-17T21:27:31 EEST" finished-at="2021-08-17T21:27:31 EEST">
+        <test-method status="PASS" signature="beforeGroupBook()[pri:0, instance:BookTest@282ffbf5]" name="beforeGroupBook" is-config="true" duration-ms="5" started-at="2021-08-18T17:04:15 EEST" finished-at="2021-08-18T17:04:15 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeGroupBook -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@34acbc60]" name="beforeMethod" is-config="true" duration-ms="14" started-at="2021-08-17T21:27:31 EEST" finished-at="2021-08-17T21:27:31 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@282ffbf5]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2021-08-18T17:04:15 EEST" finished-at="2021-08-18T17:04:15 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void BookTest.verifyCreatingBookPostRequest(pojo.Book)]]>
+                <![CDATA[public void BookTest.verifyCreatingBookPostRequest(pojo.Book,pojo.Author,pojo.Genre)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethodBook(java.lang.reflect.Method)[pri:0, instance:BookTest@34acbc60]" name="beforeMethodBook" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:31 EEST" finished-at="2021-08-17T21:27:31 EEST">
+        <test-method status="PASS" signature="beforeMethodBook(java.lang.reflect.Method)[pri:0, instance:BookTest@282ffbf5]" name="beforeMethodBook" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:15 EEST" finished-at="2021-08-18T17:04:15 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void BookTest.verifyCreatingBookPostRequest(pojo.Book)]]>
+                <![CDATA[public void BookTest.verifyCreatingBookPostRequest(pojo.Book,pojo.Author,pojo.Genre)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodBook -->
-        <test-method status="PASS" signature="verifyCreatingBookPostRequest(pojo.Book)[pri:0, instance:BookTest@34acbc60]" name="verifyCreatingBookPostRequest" duration-ms="3936" started-at="2021-08-17T21:27:31 EEST" description="Verifying creating new Book object by Author id and Genre idwith POST method" data-provider="dpNewBook" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="verifyCreatingBookPostRequest(pojo.Book,pojo.Author,pojo.Genre)[pri:0, instance:BookTest@282ffbf5]" name="verifyCreatingBookPostRequest" duration-ms="3786" started-at="2021-08-18T17:04:15 EEST" description="Verifying creating new Book object by Author id and Genre idwith POST method" data-provider="combinedDPNewBookOldAuthorOldGenre" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
                 <![CDATA[{"bookId":536, "bookName":"Sed sunt et quas", "bookLanguage":"spanish", "bookDescription":"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.", "publicationYear":1974, "additional":{"pageCount":573, "size":{"height":14.9, "width":0.0, "lenght":0.0}}}]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"authorDescription":"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.", "authorId":37, "authorName":{"first":"Alexandro", "second":"Kris"}, "birth":{"city":"Doylechester", "country":"Venezuela", "date":"1930-09-19"}, "nationality":"Turkish"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"genreDescription":"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.", "genreId":7448, "genreName":"Folklore"}]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreatingBookPostRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@34acbc60]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:35 EEST" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@282ffbf5]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void BookTest.verifyCreatingBookPostRequest(pojo.Book)]]>
+                <![CDATA[public void BookTest.verifyCreatingBookPostRequest(pojo.Book,pojo.Author,pojo.Genre)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethodBook(java.lang.reflect.Method)[pri:0, instance:BookTest@34acbc60]" name="afterMethodBook" is-config="true" duration-ms="98" started-at="2021-08-17T21:27:35 EEST" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="afterMethodBook(java.lang.reflect.Method)[pri:0, instance:BookTest@282ffbf5]" name="afterMethodBook" is-config="true" duration-ms="92" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void BookTest.verifyCreatingBookPostRequest(pojo.Book)]]>
+                <![CDATA[public void BookTest.verifyCreatingBookPostRequest(pojo.Book,pojo.Author,pojo.Genre)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodBook -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@34acbc60]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:35 EEST" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@282ffbf5]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -526,7 +536,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethodBook(java.lang.reflect.Method)[pri:0, instance:BookTest@34acbc60]" name="beforeMethodBook" is-config="true" duration-ms="55" started-at="2021-08-17T21:27:35 EEST" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="beforeMethodBook(java.lang.reflect.Method)[pri:0, instance:BookTest@282ffbf5]" name="beforeMethodBook" is-config="true" duration-ms="52" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -537,7 +547,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodBook -->
-        <test-method status="PASS" signature="verifyDeletingBookByIdDeleteRequest(pojo.Book)[pri:0, instance:BookTest@34acbc60]" name="verifyDeletingBookByIdDeleteRequest" duration-ms="122" started-at="2021-08-17T21:27:35 EEST" description="Verifying deleting 1 Book object by id with DELETE method" data-provider="dpNewBook" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="verifyDeletingBookByIdDeleteRequest(pojo.Book)[pri:0, instance:BookTest@282ffbf5]" name="verifyDeletingBookByIdDeleteRequest" duration-ms="125" started-at="2021-08-18T17:04:19 EEST" description="Verifying deleting 1 Book object by id with DELETE method" data-provider="dpNewBook" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -548,7 +558,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeletingBookByIdDeleteRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@34acbc60]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-17T21:27:35 EEST" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@282ffbf5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -559,7 +569,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethodBook(java.lang.reflect.Method)[pri:0, instance:BookTest@34acbc60]" name="afterMethodBook" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:35 EEST" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="afterMethodBook(java.lang.reflect.Method)[pri:0, instance:BookTest@282ffbf5]" name="afterMethodBook" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -570,7 +580,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodBook -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@34acbc60]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:35 EEST" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@282ffbf5]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -581,7 +591,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethodBook(java.lang.reflect.Method)[pri:0, instance:BookTest@34acbc60]" name="beforeMethodBook" is-config="true" duration-ms="62" started-at="2021-08-17T21:27:35 EEST" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="beforeMethodBook(java.lang.reflect.Method)[pri:0, instance:BookTest@282ffbf5]" name="beforeMethodBook" is-config="true" duration-ms="58" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -592,7 +602,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodBook -->
-        <test-method status="PASS" signature="verifyUpdatingBookPutRequest(pojo.Book)[pri:0, instance:BookTest@34acbc60]" name="verifyUpdatingBookPutRequest" duration-ms="86" started-at="2021-08-17T21:27:35 EEST" description="Verifying updating Book object with PUT method" data-provider="dpNewBook" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="verifyUpdatingBookPutRequest(pojo.Book)[pri:0, instance:BookTest@282ffbf5]" name="verifyUpdatingBookPutRequest" duration-ms="85" started-at="2021-08-18T17:04:19 EEST" description="Verifying updating Book object with PUT method" data-provider="dpNewBook" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -603,7 +613,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUpdatingBookPutRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@34acbc60]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:35 EEST" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@282ffbf5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -614,7 +624,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethodBook(java.lang.reflect.Method)[pri:0, instance:BookTest@34acbc60]" name="afterMethodBook" is-config="true" duration-ms="63" started-at="2021-08-17T21:27:35 EEST" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="afterMethodBook(java.lang.reflect.Method)[pri:0, instance:BookTest@282ffbf5]" name="afterMethodBook" is-config="true" duration-ms="56" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -625,15 +635,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodBook -->
-        <test-method status="PASS" signature="afterGroupBook()[pri:0, instance:BookTest@34acbc60]" name="afterGroupBook" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:35 EEST" finished-at="2021-08-17T21:27:35 EEST">
+        <test-method status="PASS" signature="afterGroupBook()[pri:0, instance:BookTest@282ffbf5]" name="afterGroupBook" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterGroupBook -->
       </class> <!-- BookTest -->
     </test> <!-- book_tests -->
-    <test name="book_tests_without_precondition" duration-ms="627" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+    <test name="book_tests_without_precondition" duration-ms="803" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:20 EEST">
       <class name="BookTest">
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -644,11 +654,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetAllBooksGetRequest()[pri:0, instance:BookTest@26221bad]" name="verifyGetAllBooksGetRequest" duration-ms="125" started-at="2021-08-17T21:27:36 EEST" description="Verifying getting all Book objects with GET method" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="verifyGetAllBooksGetRequest()[pri:0, instance:BookTest@6a937336]" name="verifyGetAllBooksGetRequest" duration-ms="160" started-at="2021-08-18T17:04:19 EEST" description="Verifying getting all Book objects with GET method" finished-at="2021-08-18T17:04:19 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllBooksGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -659,7 +669,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:19 EEST" finished-at="2021-08-18T17:04:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -670,7 +680,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetBookByIdGetRequest(pojo.Book)[pri:0, instance:BookTest@26221bad]" name="verifyGetBookByIdGetRequest" duration-ms="55" started-at="2021-08-17T21:27:36 EEST" description="Verifying getting 1 Book object by id with GET method" data-provider="dpTestBook" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="verifyGetBookByIdGetRequest(pojo.Book)[pri:0, instance:BookTest@6a937336]" name="verifyGetBookByIdGetRequest" duration-ms="154" started-at="2021-08-18T17:04:19 EEST" description="Verifying getting 1 Book object by id with GET method" data-provider="dpTestBook" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -681,7 +691,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetBookByIdGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -692,33 +702,45 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void BookTest.verifyGetBooksByAuthorIdGenreIdGetRequest()]]>
+                <![CDATA[public void BookTest.verifyGetBooksByAuthorIdGenreIdGetRequest(pojo.Author,pojo.Genre)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetBooksByAuthorIdGenreIdGetRequest()[pri:0, instance:BookTest@26221bad]" name="verifyGetBooksByAuthorIdGenreIdGetRequest" duration-ms="81" started-at="2021-08-17T21:27:36 EEST" description="Verifying getting List of Books object by Author id and Genre id with GET method" finished-at="2021-08-17T21:27:36 EEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGetBooksByAuthorIdGenreIdGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="verifyGetBooksByAuthorIdGenreIdGetRequest(pojo.Author,pojo.Genre)[pri:0, instance:BookTest@6a937336]" name="verifyGetBooksByAuthorIdGenreIdGetRequest" duration-ms="96" started-at="2021-08-18T17:04:20 EEST" description="Verifying getting List of Books object by Author id and Genre id with GET method" data-provider="combinedDPOldAuthorOldGenre" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void BookTest.verifyGetBooksByAuthorIdGenreIdGetRequest()]]>
+                <![CDATA[{"authorDescription":"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.", "authorId":37, "authorName":{"first":"Alexandro", "second":"Kris"}, "birth":{"city":"Doylechester", "country":"Venezuela", "date":"1930-09-19"}, "nationality":"Turkish"}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"genreDescription":"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.", "genreId":7448, "genreName":"Folklore"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetBooksByAuthorIdGenreIdGetRequest -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BookTest.verifyGetBooksByAuthorIdGenreIdGetRequest(pojo.Author,pojo.Genre)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -729,7 +751,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetBooksByAuthorIdGetRequest(pojo.Author)[pri:0, instance:BookTest@26221bad]" name="verifyGetBooksByAuthorIdGetRequest" duration-ms="96" started-at="2021-08-17T21:27:36 EEST" description="Verifying getting List of Books object by Author id with GET method" data-provider="dpTestAuthor" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="verifyGetBooksByAuthorIdGetRequest(pojo.Author)[pri:0, instance:BookTest@6a937336]" name="verifyGetBooksByAuthorIdGetRequest" duration-ms="110" started-at="2021-08-18T17:04:20 EEST" description="Verifying getting List of Books object by Author id with GET method" data-provider="dpTestAuthor" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -740,7 +762,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetBooksByAuthorIdGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -751,7 +773,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -762,18 +784,18 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetBooksByGenreIdGetRequest(pojo.Genre)[pri:0, instance:BookTest@26221bad]" name="verifyGetBooksByGenreIdGetRequest" duration-ms="110" started-at="2021-08-17T21:27:36 EEST" description="Verifying getting List of Books object by Genre id with GET method" data-provider="dpTestGenre" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="verifyGetBooksByGenreIdGetRequest(pojo.Genre)[pri:0, instance:BookTest@6a937336]" name="verifyGetBooksByGenreIdGetRequest" duration-ms="113" started-at="2021-08-18T17:04:20 EEST" description="Verifying getting List of Books object by Genre id with GET method" data-provider="dpTestGenre" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"genreDescription":"Id voluptatibus qui ullam omnis laboriosam maxime laudantium. Vel aut dolorem dolorem facilis officiis. Voluptate impedit repellendus iure enim. Modi in sed alias eum. Eaque sunt nihil rerum.", "genreId":644, "genreName":"Metafiction"}]]>
+                <![CDATA[{"genreDescription":"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.", "genreId":7448, "genreName":"Folklore"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetBooksByGenreIdGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -784,7 +806,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -795,7 +817,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetNotFoundBookByIdGetRequestNegativeCase(pojo.Book)[pri:0, instance:BookTest@26221bad]" name="verifyGetNotFoundBookByIdGetRequestNegativeCase" duration-ms="57" started-at="2021-08-17T21:27:36 EEST" description="Negative case when element not found - verifying getting 1 Book object by id with GET method" data-provider="dpNewBook" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="verifyGetNotFoundBookByIdGetRequestNegativeCase(pojo.Book)[pri:0, instance:BookTest@6a937336]" name="verifyGetNotFoundBookByIdGetRequestNegativeCase" duration-ms="61" started-at="2021-08-18T17:04:20 EEST" description="Negative case when element not found - verifying getting 1 Book object by id with GET method" data-provider="dpNewBook" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -806,7 +828,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetNotFoundBookByIdGetRequestNegativeCase -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -817,7 +839,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -828,7 +850,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="verifySearchBooksGetRequest()[pri:0, instance:BookTest@26221bad]" name="verifySearchBooksGetRequest" duration-ms="25" started-at="2021-08-17T21:27:36 EEST" description="Verifying searching books by its name" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="FAIL" signature="verifySearchBooksGetRequest()[pri:0, instance:BookTest@6a937336]" name="verifySearchBooksGetRequest" duration-ms="26" started-at="2021-08-18T17:04:20 EEST" description="Verifying searching books by its name" finished-at="2021-08-18T17:04:20 EEST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Actual StatusCode not matching to Expected one. expected [200] but found [400]]]>
@@ -840,8 +862,8 @@ at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:907)
-at utils.Validator.validateStatusCode(Validator.java:21)
-at BookTest.verifySearchBooksGetRequest(BookTest.java:118)
+at utils.Validator.validateStatusCode(Validator.java:25)
+at BookTest.verifySearchBooksGetRequest(BookTest.java:116)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -881,7 +903,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchBooksGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@26221bad]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:36 EEST" finished-at="2021-08-17T21:27:36 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:BookTest@6a937336]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:20 EEST" finished-at="2021-08-18T17:04:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -895,29 +917,29 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
       </class> <!-- BookTest -->
     </test> <!-- book_tests_without_precondition -->
   </suite> <!-- book_tests_in_groups -->
-  <suite name="genre_tests_in_groups" duration-ms="619" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:38 EEST">
+  <suite name="genre_tests_in_groups" duration-ms="670" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:22 EEST">
     <groups>
       <group name="genreGroup">
-        <method signature="GenreTest.verifyCreatingGenrePostRequest(pojo.Genre)[pri:0, instance:GenreTest@6b52dd31]" name="verifyCreatingGenrePostRequest" class="GenreTest"/>
-        <method signature="GenreTest.verifyDeletingGenreByIdDeleteRequest(pojo.Genre)[pri:0, instance:GenreTest@6b52dd31]" name="verifyDeletingGenreByIdDeleteRequest" class="GenreTest"/>
-        <method signature="GenreTest.verifyUpdatingGenrePutRequest(pojo.Genre)[pri:0, instance:GenreTest@6b52dd31]" name="verifyUpdatingGenrePutRequest" class="GenreTest"/>
+        <method signature="GenreTest.verifyCreatingGenrePostRequest(pojo.Genre)[pri:0, instance:GenreTest@7c8d5312]" name="verifyCreatingGenrePostRequest" class="GenreTest"/>
+        <method signature="GenreTest.verifyDeletingGenreByIdDeleteRequest(pojo.Genre)[pri:0, instance:GenreTest@7c8d5312]" name="verifyDeletingGenreByIdDeleteRequest" class="GenreTest"/>
+        <method signature="GenreTest.verifyUpdatingGenrePutRequest(pojo.Genre)[pri:0, instance:GenreTest@7c8d5312]" name="verifyUpdatingGenrePutRequest" class="GenreTest"/>
       </group> <!-- genreGroup -->
       <group name="withoutPreconditionGroup">
-        <method signature="GenreTest.verifyGetAllGenresByAuthorIdGetRequest(pojo.Author)[pri:0, instance:GenreTest@42b6d0cc]" name="verifyGetAllGenresByAuthorIdGetRequest" class="GenreTest"/>
-        <method signature="GenreTest.verifyGetAllGenresGetRequest()[pri:0, instance:GenreTest@42b6d0cc]" name="verifyGetAllGenresGetRequest" class="GenreTest"/>
-        <method signature="GenreTest.verifyGetGenreByBookIdGetRequest(pojo.Book)[pri:0, instance:GenreTest@42b6d0cc]" name="verifyGetGenreByBookIdGetRequest" class="GenreTest"/>
-        <method signature="GenreTest.verifyGetGenreByIdGetRequest(pojo.Genre)[pri:0, instance:GenreTest@42b6d0cc]" name="verifyGetGenreByIdGetRequest" class="GenreTest"/>
-        <method signature="GenreTest.verifyGetNotFoundGenreByIdGetRequestNegativeCase(pojo.Genre)[pri:0, instance:GenreTest@42b6d0cc]" name="verifyGetNotFoundGenreByIdGetRequestNegativeCase" class="GenreTest"/>
-        <method signature="GenreTest.verifySearchGenresGetRequest()[pri:0, instance:GenreTest@42b6d0cc]" name="verifySearchGenresGetRequest" class="GenreTest"/>
+        <method signature="GenreTest.verifyGetAllGenresByAuthorIdGetRequest(pojo.Author)[pri:0, instance:GenreTest@3d37203b]" name="verifyGetAllGenresByAuthorIdGetRequest" class="GenreTest"/>
+        <method signature="GenreTest.verifyGetAllGenresGetRequest()[pri:0, instance:GenreTest@3d37203b]" name="verifyGetAllGenresGetRequest" class="GenreTest"/>
+        <method signature="GenreTest.verifyGetGenreByBookIdGetRequest(pojo.Book)[pri:0, instance:GenreTest@3d37203b]" name="verifyGetGenreByBookIdGetRequest" class="GenreTest"/>
+        <method signature="GenreTest.verifyGetGenreByIdGetRequest(pojo.Genre)[pri:0, instance:GenreTest@3d37203b]" name="verifyGetGenreByIdGetRequest" class="GenreTest"/>
+        <method signature="GenreTest.verifyGetNotFoundGenreByIdGetRequestNegativeCase(pojo.Genre)[pri:0, instance:GenreTest@3d37203b]" name="verifyGetNotFoundGenreByIdGetRequestNegativeCase" class="GenreTest"/>
+        <method signature="GenreTest.verifySearchGenresGetRequest()[pri:0, instance:GenreTest@3d37203b]" name="verifySearchGenresGetRequest" class="GenreTest"/>
       </group> <!-- withoutPreconditionGroup -->
     </groups>
-    <test name="genre_tests" duration-ms="336" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+    <test name="genre_tests" duration-ms="361" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
       <class name="GenreTest">
-        <test-method status="PASS" signature="beforeGroupGenre()[pri:0, instance:GenreTest@6b52dd31]" name="beforeGroupGenre" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeGroupGenre()[pri:0, instance:GenreTest@7c8d5312]" name="beforeGroupGenre" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeGroupGenre -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@6b52dd31]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@7c8d5312]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -928,7 +950,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethodGenre(java.lang.reflect.Method)[pri:0, instance:GenreTest@6b52dd31]" name="beforeMethodGenre" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethodGenre(java.lang.reflect.Method)[pri:0, instance:GenreTest@7c8d5312]" name="beforeMethodGenre" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -939,7 +961,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodGenre -->
-        <test-method status="PASS" signature="verifyCreatingGenrePostRequest(pojo.Genre)[pri:0, instance:GenreTest@6b52dd31]" name="verifyCreatingGenrePostRequest" duration-ms="47" started-at="2021-08-17T21:27:37 EEST" description="Verifying creating new Genre object with POST method" data-provider="dpNewGenre" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="verifyCreatingGenrePostRequest(pojo.Genre)[pri:0, instance:GenreTest@7c8d5312]" name="verifyCreatingGenrePostRequest" duration-ms="59" started-at="2021-08-18T17:04:21 EEST" description="Verifying creating new Genre object with POST method" data-provider="dpNewGenre" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -950,7 +972,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreatingGenrePostRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@6b52dd31]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@7c8d5312]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -961,7 +983,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethodGenre(java.lang.reflect.Method)[pri:0, instance:GenreTest@6b52dd31]" name="afterMethodGenre" is-config="true" duration-ms="37" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethodGenre(java.lang.reflect.Method)[pri:0, instance:GenreTest@7c8d5312]" name="afterMethodGenre" is-config="true" duration-ms="31" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -972,7 +994,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodGenre -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@6b52dd31]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@7c8d5312]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -983,7 +1005,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethodGenre(java.lang.reflect.Method)[pri:0, instance:GenreTest@6b52dd31]" name="beforeMethodGenre" is-config="true" duration-ms="41" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethodGenre(java.lang.reflect.Method)[pri:0, instance:GenreTest@7c8d5312]" name="beforeMethodGenre" is-config="true" duration-ms="46" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -994,7 +1016,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodGenre -->
-        <test-method status="PASS" signature="verifyDeletingGenreByIdDeleteRequest(pojo.Genre)[pri:0, instance:GenreTest@6b52dd31]" name="verifyDeletingGenreByIdDeleteRequest" duration-ms="65" started-at="2021-08-17T21:27:37 EEST" description="Verifying deleting 1 Genre object by id with DELETE method" data-provider="dpNewGenre" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="verifyDeletingGenreByIdDeleteRequest(pojo.Genre)[pri:0, instance:GenreTest@7c8d5312]" name="verifyDeletingGenreByIdDeleteRequest" duration-ms="71" started-at="2021-08-18T17:04:21 EEST" description="Verifying deleting 1 Genre object by id with DELETE method" data-provider="dpNewGenre" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1005,7 +1027,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeletingGenreByIdDeleteRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@6b52dd31]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@7c8d5312]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1016,7 +1038,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethodGenre(java.lang.reflect.Method)[pri:0, instance:GenreTest@6b52dd31]" name="afterMethodGenre" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethodGenre(java.lang.reflect.Method)[pri:0, instance:GenreTest@7c8d5312]" name="afterMethodGenre" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1027,7 +1049,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodGenre -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@6b52dd31]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@7c8d5312]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1038,7 +1060,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethodGenre(java.lang.reflect.Method)[pri:0, instance:GenreTest@6b52dd31]" name="beforeMethodGenre" is-config="true" duration-ms="48" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethodGenre(java.lang.reflect.Method)[pri:0, instance:GenreTest@7c8d5312]" name="beforeMethodGenre" is-config="true" duration-ms="46" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1049,7 +1071,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodGenre -->
-        <test-method status="PASS" signature="verifyUpdatingGenrePutRequest(pojo.Genre)[pri:0, instance:GenreTest@6b52dd31]" name="verifyUpdatingGenrePutRequest" duration-ms="33" started-at="2021-08-17T21:27:37 EEST" description="Verifying updating Genre object with PUT method" data-provider="dpNewGenre" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="verifyUpdatingGenrePutRequest(pojo.Genre)[pri:0, instance:GenreTest@7c8d5312]" name="verifyUpdatingGenrePutRequest" duration-ms="42" started-at="2021-08-18T17:04:21 EEST" description="Verifying updating Genre object with PUT method" data-provider="dpNewGenre" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1060,7 +1082,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUpdatingGenrePutRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@6b52dd31]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@7c8d5312]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1071,7 +1093,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethodGenre(java.lang.reflect.Method)[pri:0, instance:GenreTest@6b52dd31]" name="afterMethodGenre" is-config="true" duration-ms="34" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethodGenre(java.lang.reflect.Method)[pri:0, instance:GenreTest@7c8d5312]" name="afterMethodGenre" is-config="true" duration-ms="33" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1082,15 +1104,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodGenre -->
-        <test-method status="PASS" signature="afterGroupGenre()[pri:0, instance:GenreTest@6b52dd31]" name="afterGroupGenre" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterGroupGenre()[pri:0, instance:GenreTest@7c8d5312]" name="afterGroupGenre" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterGroupGenre -->
       </class> <!-- GenreTest -->
     </test> <!-- genre_tests -->
-    <test name="genre_tests_without_precondition" duration-ms="277" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:38 EEST">
+    <test name="genre_tests_without_precondition" duration-ms="301" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:22 EEST">
       <class name="GenreTest">
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@42b6d0cc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@3d37203b]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1101,7 +1123,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetAllGenresByAuthorIdGetRequest(pojo.Author)[pri:0, instance:GenreTest@42b6d0cc]" name="verifyGetAllGenresByAuthorIdGetRequest" duration-ms="49" started-at="2021-08-17T21:27:37 EEST" description="Verifying getting all Genre objects by AuthorId with GET method" data-provider="dpTestAuthor" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="verifyGetAllGenresByAuthorIdGetRequest(pojo.Author)[pri:0, instance:GenreTest@3d37203b]" name="verifyGetAllGenresByAuthorIdGetRequest" duration-ms="59" started-at="2021-08-18T17:04:21 EEST" description="Verifying getting all Genre objects by AuthorId with GET method" data-provider="dpTestAuthor" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1112,7 +1134,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllGenresByAuthorIdGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@42b6d0cc]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@3d37203b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1123,7 +1145,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@42b6d0cc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@3d37203b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1134,11 +1156,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetAllGenresGetRequest()[pri:0, instance:GenreTest@42b6d0cc]" name="verifyGetAllGenresGetRequest" duration-ms="46" started-at="2021-08-17T21:27:37 EEST" description="Verifying getting all Genre objects with GET method" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="verifyGetAllGenresGetRequest()[pri:0, instance:GenreTest@3d37203b]" name="verifyGetAllGenresGetRequest" duration-ms="51" started-at="2021-08-18T17:04:21 EEST" description="Verifying getting all Genre objects with GET method" finished-at="2021-08-18T17:04:21 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetAllGenresGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@42b6d0cc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@3d37203b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1149,7 +1171,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@42b6d0cc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:37 EEST" finished-at="2021-08-17T21:27:37 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@3d37203b]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:21 EEST" finished-at="2021-08-18T17:04:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -1160,7 +1182,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetGenreByBookIdGetRequest(pojo.Book)[pri:0, instance:GenreTest@42b6d0cc]" name="verifyGetGenreByBookIdGetRequest" duration-ms="61" started-at="2021-08-17T21:27:37 EEST" description="Verifying getting all Genre objects by BookId with GET method" data-provider="dpTestBook" finished-at="2021-08-17T21:27:38 EEST">
+        <test-method status="PASS" signature="verifyGetGenreByBookIdGetRequest(pojo.Book)[pri:0, instance:GenreTest@3d37203b]" name="verifyGetGenreByBookIdGetRequest" duration-ms="69" started-at="2021-08-18T17:04:21 EEST" description="Verifying getting all Genre objects by BookId with GET method" data-provider="dpTestBook" finished-at="2021-08-18T17:04:22 EEST">
           <params>
             <param index="0">
               <value>
@@ -1171,7 +1193,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetGenreByBookIdGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@42b6d0cc]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:38 EEST" finished-at="2021-08-17T21:27:38 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@3d37203b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:22 EEST" finished-at="2021-08-18T17:04:22 EEST">
           <params>
             <param index="0">
               <value>
@@ -1182,7 +1204,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@42b6d0cc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:38 EEST" finished-at="2021-08-17T21:27:38 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@3d37203b]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:22 EEST" finished-at="2021-08-18T17:04:22 EEST">
           <params>
             <param index="0">
               <value>
@@ -1193,18 +1215,18 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetGenreByIdGetRequest(pojo.Genre)[pri:0, instance:GenreTest@42b6d0cc]" name="verifyGetGenreByIdGetRequest" duration-ms="29" started-at="2021-08-17T21:27:38 EEST" description="Verifying getting 1 Genre object by id with GET method" data-provider="dpTestGenre" finished-at="2021-08-17T21:27:38 EEST">
+        <test-method status="PASS" signature="verifyGetGenreByIdGetRequest(pojo.Genre)[pri:0, instance:GenreTest@3d37203b]" name="verifyGetGenreByIdGetRequest" duration-ms="26" started-at="2021-08-18T17:04:22 EEST" description="Verifying getting 1 Genre object by id with GET method" data-provider="dpTestGenre" finished-at="2021-08-18T17:04:22 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"genreDescription":"Id voluptatibus qui ullam omnis laboriosam maxime laudantium. Vel aut dolorem dolorem facilis officiis. Voluptate impedit repellendus iure enim. Modi in sed alias eum. Eaque sunt nihil rerum.", "genreId":644, "genreName":"Metafiction"}]]>
+                <![CDATA[{"genreDescription":"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.", "genreId":7448, "genreName":"Folklore"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetGenreByIdGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@42b6d0cc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:38 EEST" finished-at="2021-08-17T21:27:38 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@3d37203b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:22 EEST" finished-at="2021-08-18T17:04:22 EEST">
           <params>
             <param index="0">
               <value>
@@ -1215,7 +1237,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@42b6d0cc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:38 EEST" finished-at="2021-08-17T21:27:38 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@3d37203b]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:22 EEST" finished-at="2021-08-18T17:04:22 EEST">
           <params>
             <param index="0">
               <value>
@@ -1226,7 +1248,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyGetNotFoundGenreByIdGetRequestNegativeCase(pojo.Genre)[pri:0, instance:GenreTest@42b6d0cc]" name="verifyGetNotFoundGenreByIdGetRequestNegativeCase" duration-ms="26" started-at="2021-08-17T21:27:38 EEST" description="Negative case when element not found - verifying getting 1 Genre object by id with GET method" data-provider="dpNewGenre" finished-at="2021-08-17T21:27:38 EEST">
+        <test-method status="PASS" signature="verifyGetNotFoundGenreByIdGetRequestNegativeCase(pojo.Genre)[pri:0, instance:GenreTest@3d37203b]" name="verifyGetNotFoundGenreByIdGetRequestNegativeCase" duration-ms="33" started-at="2021-08-18T17:04:22 EEST" description="Negative case when element not found - verifying getting 1 Genre object by id with GET method" data-provider="dpNewGenre" finished-at="2021-08-18T17:04:22 EEST">
           <params>
             <param index="0">
               <value>
@@ -1237,7 +1259,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetNotFoundGenreByIdGetRequestNegativeCase -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@42b6d0cc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-17T21:27:38 EEST" finished-at="2021-08-17T21:27:38 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@3d37203b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:22 EEST" finished-at="2021-08-18T17:04:22 EEST">
           <params>
             <param index="0">
               <value>
@@ -1248,7 +1270,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@42b6d0cc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:38 EEST" finished-at="2021-08-17T21:27:38 EEST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@3d37203b]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-18T17:04:22 EEST" finished-at="2021-08-18T17:04:22 EEST">
           <params>
             <param index="0">
               <value>
@@ -1259,7 +1281,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="verifySearchGenresGetRequest()[pri:0, instance:GenreTest@42b6d0cc]" name="verifySearchGenresGetRequest" duration-ms="18" started-at="2021-08-17T21:27:38 EEST" description="Verifying searching Genres by its name" finished-at="2021-08-17T21:27:38 EEST">
+        <test-method status="FAIL" signature="verifySearchGenresGetRequest()[pri:0, instance:GenreTest@3d37203b]" name="verifySearchGenresGetRequest" duration-ms="16" started-at="2021-08-18T17:04:22 EEST" description="Verifying searching Genres by its name" finished-at="2021-08-18T17:04:22 EEST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Actual StatusCode not matching to Expected one. expected [200] but found [400]]]>
@@ -1271,7 +1293,7 @@ at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:907)
-at utils.Validator.validateStatusCode(Validator.java:21)
+at utils.Validator.validateStatusCode(Validator.java:25)
 at GenreTest.verifySearchGenresGetRequest(GenreTest.java:106)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1312,7 +1334,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchGenresGetRequest -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@42b6d0cc]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-17T21:27:38 EEST" finished-at="2021-08-17T21:27:38 EEST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:GenreTest@3d37203b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-18T17:04:22 EEST" finished-at="2021-08-18T17:04:22 EEST">
           <params>
             <param index="0">
               <value>

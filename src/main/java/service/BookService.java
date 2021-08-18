@@ -72,7 +72,7 @@ public class BookService {
     public static Book getActualObjBook(BaseResponse baseResponse) {
         Response response = baseResponse.getResponse();
         Book actualObj = null;
-        if(response.getStatusCode() != SC_NOT_FOUND)
+        if (response.getStatusCode() != SC_NOT_FOUND)
             actualObj = response.jsonPath().getObject(".", Book.class);
         return actualObj;
     }
@@ -81,7 +81,7 @@ public class BookService {
     public List<Book> getActualListBooks(BaseResponse baseResponse) {
         Response response = baseResponse.getResponse();
         List<Book> actualList = null;
-        if(response.getStatusCode() != SC_NOT_FOUND)
+        if (response.getStatusCode() != SC_NOT_FOUND)
             actualList = response.jsonPath().getList(".", Book.class);
         return actualList;
     }

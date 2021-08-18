@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 17 21:27:36 EEST 2021</td>
+<td>Started on:</td><td>Wed Aug 18 17:04:19 EEST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (627 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (803 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>withoutPreconditionGroup </td>
 </tr><tr>
@@ -77,18 +77,18 @@ function toggleAllBoxes() {
 <tr>
 <td title='BookTest.verifySearchBooksGetRequest()'><b>verifySearchBooksGetRequest</b><br>Test class: BookTest<br>Test method: Verifying searching books by its name</td>
 <td><div><pre>java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
-	at utils.Validator.validateStatusCode(Validator.java:21)
-	at BookTest.verifySearchBooksGetRequest(BookTest.java:118)
+	at utils.Validator.validateStatusCode(Validator.java:25)
+	at BookTest.verifySearchBooksGetRequest(BookTest.java:116)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace715099463", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace715099463'><pre>java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1132206727", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1132206727'><pre>java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:907)
-	at utils.Validator.validateStatusCode(Validator.java:21)
-	at BookTest.verifySearchBooksGetRequest(BookTest.java:118)
+	at utils.Validator.validateStatusCode(Validator.java:25)
+	at BookTest.verifySearchBooksGetRequest(BookTest.java:116)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -124,7 +124,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 </pre></div></td>
 <td>0</td>
-<td>BookTest@26221bad</td></tr>
+<td>BookTest@6a937336</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -134,35 +134,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='BookTest.verifyGetBooksByAuthorIdGenreIdGetRequest()'><b>verifyGetBooksByAuthorIdGenreIdGetRequest</b><br>Test class: BookTest<br>Test method: Verifying getting List of Books object by Author id and Genre id with GET method</td>
+<td title='BookTest.verifyGetBooksByGenreIdGetRequest()'><b>verifyGetBooksByGenreIdGetRequest</b><br>Test class: BookTest<br>Test method: Verifying getting List of Books object by Genre id with GET method<br>Parameters: {"genreDescription":"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.", "genreId":7448, "genreName":"Folklore"}</td>
 <td></td>
 <td>0</td>
-<td>BookTest@26221bad</td></tr>
-<tr>
-<td title='BookTest.verifyGetNotFoundBookByIdGetRequestNegativeCase()'><b>verifyGetNotFoundBookByIdGetRequestNegativeCase</b><br>Test class: BookTest<br>Test method: Negative case when element not found - verifying getting 1 Book object by id with GET method<br>Parameters: {"bookId":536, "bookName":"Sed sunt et quas", "bookLanguage":"spanish", "bookDescription":"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.", "publicationYear":1974, "additional":{"pageCount":573, "size":{"height":14.9, "width":0.0, "lenght":0.0}}}</td>
-<td></td>
-<td>0</td>
-<td>BookTest@26221bad</td></tr>
-<tr>
-<td title='BookTest.verifyGetBooksByGenreIdGetRequest()'><b>verifyGetBooksByGenreIdGetRequest</b><br>Test class: BookTest<br>Test method: Verifying getting List of Books object by Genre id with GET method<br>Parameters: {"genreDescription":"Id voluptatibus qui ullam omnis laboriosam maxime laudantium. Vel aut dolorem dolorem facilis officiis. Voluptate impedit repellendus iure enim. Modi in sed alias eum. Eaque sunt nihil rerum.", "genreId":644, "genreName":"Metafiction"}</td>
-<td></td>
-<td>0</td>
-<td>BookTest@26221bad</td></tr>
-<tr>
-<td title='BookTest.verifyGetBookByIdGetRequest()'><b>verifyGetBookByIdGetRequest</b><br>Test class: BookTest<br>Test method: Verifying getting 1 Book object by id with GET method<br>Parameters: {"bookId":292, "bookName":"Ipsa dolor laboriosam", "bookLanguage":"croatian", "bookDescription":"Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.", "publicationYear":2008, "additional":{"pageCount":682, "size":{"height":16.1, "width":0.0, "lenght":0.0}}}</td>
-<td></td>
-<td>0</td>
-<td>BookTest@26221bad</td></tr>
-<tr>
-<td title='BookTest.verifyGetBooksByAuthorIdGetRequest()'><b>verifyGetBooksByAuthorIdGetRequest</b><br>Test class: BookTest<br>Test method: Verifying getting List of Books object by Author id with GET method<br>Parameters: {"authorDescription":"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.", "authorId":37, "authorName":{"first":"Alexandro", "second":"Kris"}, "birth":{"city":"Doylechester", "country":"Venezuela", "date":"1930-09-19"}, "nationality":"Turkish"}</td>
-<td></td>
-<td>0</td>
-<td>BookTest@26221bad</td></tr>
+<td>BookTest@6a937336</td></tr>
 <tr>
 <td title='BookTest.verifyGetAllBooksGetRequest()'><b>verifyGetAllBooksGetRequest</b><br>Test class: BookTest<br>Test method: Verifying getting all Book objects with GET method</td>
 <td></td>
 <td>0</td>
-<td>BookTest@26221bad</td></tr>
+<td>BookTest@6a937336</td></tr>
+<tr>
+<td title='BookTest.verifyGetBooksByAuthorIdGetRequest()'><b>verifyGetBooksByAuthorIdGetRequest</b><br>Test class: BookTest<br>Test method: Verifying getting List of Books object by Author id with GET method<br>Parameters: {"authorDescription":"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.", "authorId":37, "authorName":{"first":"Alexandro", "second":"Kris"}, "birth":{"city":"Doylechester", "country":"Venezuela", "date":"1930-09-19"}, "nationality":"Turkish"}</td>
+<td></td>
+<td>0</td>
+<td>BookTest@6a937336</td></tr>
+<tr>
+<td title='BookTest.verifyGetNotFoundBookByIdGetRequestNegativeCase()'><b>verifyGetNotFoundBookByIdGetRequestNegativeCase</b><br>Test class: BookTest<br>Test method: Negative case when element not found - verifying getting 1 Book object by id with GET method<br>Parameters: {"bookId":536, "bookName":"Sed sunt et quas", "bookLanguage":"spanish", "bookDescription":"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.", "publicationYear":1974, "additional":{"pageCount":573, "size":{"height":14.9, "width":0.0, "lenght":0.0}}}</td>
+<td></td>
+<td>0</td>
+<td>BookTest@6a937336</td></tr>
+<tr>
+<td title='BookTest.verifyGetBooksByAuthorIdGenreIdGetRequest()'><b>verifyGetBooksByAuthorIdGenreIdGetRequest</b><br>Test class: BookTest<br>Test method: Verifying getting List of Books object by Author id and Genre id with GET method<br>Parameters: {"authorDescription":"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.", "authorId":37, "authorName":{"first":"Alexandro", "second":"Kris"}, "birth":{"city":"Doylechester", "country":"Venezuela", "date":"1930-09-19"}, "nationality":"Turkish"}, {"genreDescription":"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.", "genreId":7448, "genreName":"Folklore"}</td>
+<td></td>
+<td>0</td>
+<td>BookTest@6a937336</td></tr>
+<tr>
+<td title='BookTest.verifyGetBookByIdGetRequest()'><b>verifyGetBookByIdGetRequest</b><br>Test class: BookTest<br>Test method: Verifying getting 1 Book object by id with GET method<br>Parameters: {"bookId":292, "bookName":"Ipsa dolor laboriosam", "bookLanguage":"croatian", "bookDescription":"Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.", "publicationYear":2008, "additional":{"pageCount":682, "size":{"height":16.1, "width":0.0, "lenght":0.0}}}</td>
+<td></td>
+<td>0</td>
+<td>BookTest@6a937336</td></tr>
 </table><p>
 </body>
 </html>

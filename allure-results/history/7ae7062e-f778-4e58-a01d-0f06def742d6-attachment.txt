@@ -1,0 +1,21 @@
+
+
+RESPONSE:
+status line: HTTP/1.1 201 
+location: null
+body:
+{
+    "bookId": 536,
+    "bookName": "Sed sunt et quas",
+    "bookLanguage": "spanish",
+    "bookDescription": "Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.",
+    "additional": {
+        "pageCount": 573,
+        "size": {
+            "height": 14.9,
+            "width": 0.0,
+            "length": 0.0
+        }
+    },
+    "publicationYear": 1974
+}

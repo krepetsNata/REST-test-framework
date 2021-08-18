@@ -7,15 +7,15 @@ import pojo.Genre;
 import service.AuthorService;
 import service.BookService;
 import service.GenreService;
-import utils.ParsingAndConvertations;
+import utils.ParsingAndConvert;
 
 import java.lang.reflect.Method;
 
 public class BaseTest {
-    private Logger LOG = Logger.getLogger(BaseTest.class);
+    private final Logger LOG = Logger.getLogger(BaseTest.class);
     private Test test;
 
-    ParsingAndConvertations parsingAndConvertations = new ParsingAndConvertations();
+    ParsingAndConvert parsingAndConvert = new ParsingAndConvert();
 
     private BookService bookService = new BookService();
     private AuthorService authorService = new AuthorService();
@@ -40,37 +40,41 @@ public class BaseTest {
     }
 
     @BeforeGroups(groups = "authorGroup")
-    public void beforeGroupAuthor(){
+    public void beforeGroupAuthor() {
         System.out.println("beforeGroupAuthor");
-        baseNewAuthor = parsingAndConvertations.getNewAuthorObj(FileNames.CSV_FILE_NEW_AUTHOR.getFileName());
+        baseNewAuthor = parsingAndConvert.getNewAuthorObj(FileNames.CSV_FILE_NEW_AUTHOR.getFileName());
     }
 
     @AfterGroups(groups = "authorGroup")
-    public void afterGroupAuthor(){
+    public void afterGroupAuthor() {
         System.out.println("afterGroupAuthor");
         baseNewAuthor = null;
     }
 
     @BeforeGroups(groups = "bookGroup")
-    public void beforeGroupBook(){
+    public void beforeGroupBook() {
         System.out.println("beforeGroupBook");
-        baseNewBook = parsingAndConvertations.getNewBookObj(FileNames.CSV_FILE_NEW_BOOK.getFileName());
+        baseNewBook = parsingAndConvert.getNewBookObj(FileNames.CSV_FILE_NEW_BOOK.getFileName());
+        baseNewAuthor = parsingAndConvert.getNewAuthorObj(FileNames.CSV_FILE_AUTHORS.getFileName());//existed author
+        baseNewGenre = parsingAndConvert.getNewGenreObj(FileNames.CSV_FILE_GENRES.getFileName());//existed genre
     }
 
     @AfterGroups(groups = "bookGroup")
-    public void afterGroupBook(){
+    public void afterGroupBook() {
         System.out.println("afterGroupBook");
         baseNewBook = null;
+        baseNewAuthor = null;
+        baseNewGenre = null;
     }
 
     @BeforeGroups(groups = "genreGroup")
-    public void beforeGroupGenre(){
+    public void beforeGroupGenre() {
         System.out.println("beforeGroupGenre");
-        baseNewGenre = parsingAndConvertations.getNewGenreObj(FileNames.CSV_FILE_NEW_GENRE.getFileName());
+        baseNewGenre = parsingAndConvert.getNewGenreObj(FileNames.CSV_FILE_NEW_GENRE.getFileName());
     }
 
     @AfterGroups(groups = "genreGroup")
-    public void afterGroupGenre(){
+    public void afterGroupGenre() {
         System.out.println("afterGroupGenre");
         baseNewGenre = null;
     }
@@ -79,7 +83,7 @@ public class BaseTest {
     public void beforeMethodBook(Method method) {
         System.out.println("beforeMethodBook");
         if (method.getName().contains("verifyDeleting") || method.getName().contains("verifyUpdating")) {
-            bookService.addBookPost(baseNewBook, 37, 644);
+            bookService.addBookPost(baseNewBook, baseNewAuthor.getAuthorId(), baseNewGenre.getGenreId());
         }
     }
 

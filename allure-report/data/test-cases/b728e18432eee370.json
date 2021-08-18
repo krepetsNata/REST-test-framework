@@ -1,0 +1,210 @@
+{
+  "uid" : "b728e18432eee370",
+  "name" : "Verifying getting all Genre objects by BookId with GET method",
+  "fullName" : "GenreTest.verifyGetGenreByBookIdGetRequest",
+  "historyId" : "fbab47c225e93136412ab11ea44a14f5",
+  "time" : {
+    "start" : 1629295461974,
+    "stop" : 1629295462046,
+    "duration" : 72
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1629295461970,
+      "stop" : 1629295461970,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get Genre of special Book.",
+      "time" : {
+        "start" : 1629295461974,
+        "stop" : 1629295462033,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "22080d83786dc87d",
+        "name" : "My request",
+        "source" : "22080d83786dc87d.txt",
+        "type" : "text/plain",
+        "size" : 133
+      }, {
+        "uid" : "d27d899635c89a36",
+        "name" : "My response",
+        "source" : "d27d899635c89a36.txt",
+        "type" : "text/plain",
+        "size" : 334
+      }, {
+        "uid" : "1c3e705119f39bda",
+        "name" : "sendRequest",
+        "source" : "1c3e705119f39bda.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "options",
+        "value" : "entity.ListOptions@681b42d3"
+      }, {
+        "name" : "bookId",
+        "value" : "292"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629295462033,
+        "stop" : 1629295462035,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4d6f4709f41d92c2",
+        "name" : "Response for validate status code",
+        "source" : "4d6f4709f41d92c2.txt",
+        "type" : "text/plain",
+        "size" : 273
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@65a2755e"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "200"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Return actual Genre object from response",
+      "time" : {
+        "start" : 1629295462036,
+        "stop" : 1629295462038,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@65a2755e"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "43e919642a052db8",
+      "name" : "validateStatusCode",
+      "source" : "43e919642a052db8.txt",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "fcec692c820647b",
+      "name" : "List is empty attachment",
+      "source" : "fcec692c820647b.txt",
+      "type" : "text/plain",
+      "size" : 40
+    }, {
+      "uid" : "2f9f0f56b3c680ac",
+      "name" : "validateObjectIsNull",
+      "source" : "2f9f0f56b3c680ac.txt",
+      "type" : "text/plain",
+      "size" : 5
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1629295462048,
+      "stop" : 1629295462049,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "GenreTest"
+  }, {
+    "name" : "testClass",
+    "value" : "GenreTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyGetGenreByBookIdGetRequest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "genre_tests_in_groups"
+  }, {
+    "name" : "suite",
+    "value" : "genre_tests_without_precondition"
+  }, {
+    "name" : "subSuite",
+    "value" : "GenreTest"
+  }, {
+    "name" : "host",
+    "value" : "NATA-PC"
+  }, {
+    "name" : "thread",
+    "value" : "23996@NATA-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Genre api tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{\"bookId\":292, \"bookName\":\"Ipsa dolor laboriosam\", \"bookLanguage\":\"croatian\", \"bookDescription\":\"Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.\", \"publicationYear\":2008, \"additional\":{\"pageCount\":682, \"size\":{\"height\":16.1, \"width\":0.0, \"lenght\":0.0}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b728e18432eee370.json",
+  "parameterValues" : [ "{\"bookId\":292, \"bookName\":\"Ipsa dolor laboriosam\", \"bookLanguage\":\"croatian\", \"bookDescription\":\"Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.\", \"publicationYear\":2008, \"additional\":{\"pageCount\":682, \"size\":{\"height\":16.1, \"width\":0.0, \"lenght\":0.0}}}" ]
+}

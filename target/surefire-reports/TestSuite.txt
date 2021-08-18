@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 28, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 11.275 s <<< FAILURE! - in TestSuite
-BookTest.verifySearchBooksGetRequest  Time elapsed: 0.037 s  <<< FAILURE!
+Tests run: 28, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 10.628 s <<< FAILURE! - in TestSuite
+BookTest.verifySearchBooksGetRequest  Time elapsed: 0.02 s  <<< FAILURE!
 java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
-	at BookTest.verifySearchBooksGetRequest(BookTest.java:118)
+	at BookTest.verifySearchBooksGetRequest(BookTest.java:116)
 
-AuthorTest.verifySearchAuthorsGetRequest  Time elapsed: 0.03 s  <<< FAILURE!
+AuthorTest.verifySearchAuthorsGetRequest  Time elapsed: 0.011 s  <<< FAILURE!
 java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
 	at AuthorTest.verifySearchAuthorsGetRequest(AuthorTest.java:101)
 
-GenreTest.verifySearchGenresGetRequest  Time elapsed: 0.029 s  <<< FAILURE!
+GenreTest.verifySearchGenresGetRequest  Time elapsed: 0.012 s  <<< FAILURE!
 java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
 	at GenreTest.verifySearchGenresGetRequest(GenreTest.java:106)
 

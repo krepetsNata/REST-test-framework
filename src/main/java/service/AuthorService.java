@@ -5,8 +5,6 @@ import entity.ListOptions;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import pojo.Author;
-import pojo.Book;
-import pojo.Genre;
 import response.BaseResponse;
 import utils.EndpointBuilder;
 
@@ -98,7 +96,7 @@ public class AuthorService {
     public Author getActualObjAuthor(BaseResponse baseResponse) {
         Response response = baseResponse.getResponse();
         Author actualObj = null;
-        if(response.getStatusCode() != SC_NOT_FOUND)
+        if (response.getStatusCode() != SC_NOT_FOUND)
             actualObj = response.jsonPath().getObject(".", Author.class);
         return actualObj;
     }
@@ -121,7 +119,7 @@ public class AuthorService {
     ///api/library/genre/{genreId}/authors
     //get all Authors in special Genre
     @Step("Get all Authors in special Genre.")
-    public BaseResponse<Author> getAuthorsByGenreIdGet(ListOptions options,int genreId) {
+    public BaseResponse<Author> getAuthorsByGenreIdGet(ListOptions options, int genreId) {
         EndpointBuilder endpoint = new EndpointBuilder().pathParameter("genre").pathParameter(genreId).pathParameter("authors");
         if (options.orderType != null) endpoint.queryParam("orderType", options.orderType);
         endpoint

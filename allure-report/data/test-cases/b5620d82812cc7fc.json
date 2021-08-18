@@ -1,0 +1,207 @@
+{
+  "uid" : "b5620d82812cc7fc",
+  "name" : "Negative case when element not found - verifying getting 1 Genre object by id with GET method",
+  "fullName" : "GenreTest.verifyGetNotFoundGenreByIdGetRequestNegativeCase",
+  "historyId" : "3b2b94829d0bc041733138937f126e44",
+  "time" : {
+    "start" : 1629295462088,
+    "stop" : 1629295462119,
+    "duration" : 31
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1629295462084,
+      "stop" : 1629295462085,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get Genre object by 'genreId'.",
+      "time" : {
+        "start" : 1629295462088,
+        "stop" : 1629295462114,
+        "duration" : 26
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "df749f49658d885f",
+        "name" : "My request",
+        "source" : "df749f49658d885f.txt",
+        "type" : "text/plain",
+        "size" : 98
+      }, {
+        "uid" : "35809689aa78892",
+        "name" : "My response",
+        "source" : "35809689aa78892.txt",
+        "type" : "text/plain",
+        "size" : 224
+      }, {
+        "uid" : "b8e990c012a5ead3",
+        "name" : "sendRequest",
+        "source" : "b8e990c012a5ead3.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "genreId",
+        "value" : "9999"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629295462114,
+        "stop" : 1629295462116,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "89aa9a6fb441de14",
+        "name" : "Response for validate status code",
+        "source" : "89aa9a6fb441de14.txt",
+        "type" : "text/plain",
+        "size" : 163
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@999cd18"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "404"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Return actual Genre object from response",
+      "time" : {
+        "start" : 1629295462117,
+        "stop" : 1629295462117,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@999cd18"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "94bf00195e8eee19",
+      "name" : "validateStatusCode",
+      "source" : "94bf00195e8eee19.txt",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "e644ee974292b492",
+      "name" : "List is empty attachment",
+      "source" : "e644ee974292b492.txt",
+      "type" : "text/plain",
+      "size" : 38
+    }, {
+      "uid" : "6c8822e9bd1b86a3",
+      "name" : "validateObjectIsNull",
+      "source" : "6c8822e9bd1b86a3.txt",
+      "type" : "text/plain",
+      "size" : 4
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1629295462120,
+      "stop" : 1629295462121,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "GenreTest"
+  }, {
+    "name" : "testClass",
+    "value" : "GenreTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyGetNotFoundGenreByIdGetRequestNegativeCase"
+  }, {
+    "name" : "parentSuite",
+    "value" : "genre_tests_in_groups"
+  }, {
+    "name" : "suite",
+    "value" : "genre_tests_without_precondition"
+  }, {
+    "name" : "subSuite",
+    "value" : "GenreTest"
+  }, {
+    "name" : "host",
+    "value" : "NATA-PC"
+  }, {
+    "name" : "thread",
+    "value" : "23996@NATA-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Genre api tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{\"genreDescription\":\"genre description\", \"genreId\":9999, \"genreName\":\"genre name\"}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b5620d82812cc7fc.json",
+  "parameterValues" : [ "{\"genreDescription\":\"genre description\", \"genreId\":9999, \"genreName\":\"genre name\"}" ]
+}

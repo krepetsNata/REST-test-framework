@@ -1,0 +1,322 @@
+{
+  "uid" : "6fce0590f7e281b9",
+  "name" : "Verifying updating Book object with PUT method",
+  "fullName" : "BookTest.verifyUpdatingBookPutRequest",
+  "historyId" : "e74b2dcaf62ab6980ff646c4ce5b7b14",
+  "time" : {
+    "start" : 1629295459610,
+    "stop" : 1629295459692,
+    "duration" : 82
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1629295459546,
+      "stop" : 1629295459546,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeMethodBook",
+    "time" : {
+      "start" : 1629295459549,
+      "stop" : 1629295459606,
+      "duration" : 57
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create new Book.",
+      "time" : {
+        "start" : 1629295459549,
+        "stop" : 1629295459606,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c1caaa1428a871d2",
+        "name" : "My request",
+        "source" : "c1caaa1428a871d2.txt",
+        "type" : "text/plain",
+        "size" : 435
+      }, {
+        "uid" : "631eaae02fec656c",
+        "name" : "My response",
+        "source" : "631eaae02fec656c.txt",
+        "type" : "text/plain",
+        "size" : 504
+      }, {
+        "uid" : "a2a00a62d71c42d7",
+        "name" : "sendRequest",
+        "source" : "a2a00a62d71c42d7.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "book",
+        "value" : "{\"bookId\":536, \"bookName\":\"Sed sunt et quas\", \"bookLanguage\":\"spanish\", \"bookDescription\":\"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.\", \"publicationYear\":1974, \"additional\":{\"pageCount\":573, \"size\":{\"height\":14.9, \"width\":0.0, \"lenght\":0.0}}}"
+      }, {
+        "name" : "authorId",
+        "value" : "37"
+      }, {
+        "name" : "genreId",
+        "value" : "7448"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Update existed Book.",
+      "time" : {
+        "start" : 1629295459611,
+        "stop" : 1629295459679,
+        "duration" : 68
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8cd32d633bcd34cd",
+        "name" : "My request",
+        "source" : "8cd32d633bcd34cd.txt",
+        "type" : "text/plain",
+        "size" : 312
+      }, {
+        "uid" : "c4a4c443906212d",
+        "name" : "My response",
+        "source" : "c4a4c443906212d.txt",
+        "type" : "text/plain",
+        "size" : 390
+      }, {
+        "uid" : "9ffbf4e466cd2cc5",
+        "name" : "sendRequest",
+        "source" : "9ffbf4e466cd2cc5.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "book",
+        "value" : "{\"bookId\":536, \"bookName\":\"Sed sunt et quas\", \"bookLanguage\":\"spanish\", \"bookDescription\":\"updated book description\", \"publicationYear\":1974, \"additional\":{\"pageCount\":573, \"size\":{\"height\":14.9, \"width\":0.0, \"lenght\":0.0}}}"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629295459680,
+        "stop" : 1629295459682,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a0ebd891c54f0ee8",
+        "name" : "Response for validate status code",
+        "source" : "a0ebd891c54f0ee8.txt",
+        "type" : "text/plain",
+        "size" : 329
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@67b3960b"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "200"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Check if the data of the objects is the same before the CRUD operation and after.",
+      "time" : {
+        "start" : 1629295459684,
+        "stop" : 1629295459691,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f18973ec9a0758dc",
+        "name" : "Response for validate same objects",
+        "source" : "f18973ec9a0758dc.txt",
+        "type" : "text/plain",
+        "size" : 329
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@67b3960b"
+      }, {
+        "name" : "expectedObj",
+        "value" : "{\"bookId\":536, \"bookName\":\"Sed sunt et quas\", \"bookLanguage\":\"spanish\", \"bookDescription\":\"updated book description\", \"publicationYear\":1974, \"additional\":{\"pageCount\":573, \"size\":{\"height\":14.9, \"width\":0.0, \"lenght\":0.0}}}"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "7ee63f83bec1dfd5",
+      "name" : "validateStatusCode",
+      "source" : "7ee63f83bec1dfd5.txt",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "14cd4fc094981c6c",
+      "name" : "validateSameObjects",
+      "source" : "14cd4fc094981c6c.txt",
+      "type" : "text/plain",
+      "size" : 224
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethodBook",
+    "time" : {
+      "start" : 1629295459698,
+      "stop" : 1629295459753,
+      "duration" : 55
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Delete existed Book.",
+      "time" : {
+        "start" : 1629295459698,
+        "stop" : 1629295459753,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b6cac004c4fe648d",
+        "name" : "My request",
+        "source" : "b6cac004c4fe648d.txt",
+        "type" : "text/plain",
+        "size" : 99
+      }, {
+        "uid" : "c7161d179a779fe2",
+        "name" : "My response",
+        "source" : "c7161d179a779fe2.txt",
+        "type" : "text/plain",
+        "size" : 61
+      }, {
+        "uid" : "f26824d4dfae7e90",
+        "name" : "sendRequest",
+        "source" : "f26824d4dfae7e90.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "bookId",
+        "value" : "536"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1629295459695,
+      "stop" : 1629295459695,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "BookTest"
+  }, {
+    "name" : "testClass",
+    "value" : "BookTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyUpdatingBookPutRequest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "book_tests_in_groups"
+  }, {
+    "name" : "suite",
+    "value" : "book_tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "BookTest"
+  }, {
+    "name" : "host",
+    "value" : "NATA-PC"
+  }, {
+    "name" : "thread",
+    "value" : "23996@NATA-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Book api tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{\"bookId\":536, \"bookName\":\"Sed sunt et quas\", \"bookLanguage\":\"spanish\", \"bookDescription\":\"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.\", \"publicationYear\":1974, \"additional\":{\"pageCount\":573, \"size\":{\"height\":14.9, \"width\":0.0, \"lenght\":0.0}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6fce0590f7e281b9.json",
+  "parameterValues" : [ "{\"bookId\":536, \"bookName\":\"Sed sunt et quas\", \"bookLanguage\":\"spanish\", \"bookDescription\":\"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.\", \"publicationYear\":1974, \"additional\":{\"pageCount\":573, \"size\":{\"height\":14.9, \"width\":0.0, \"lenght\":0.0}}}" ]
+}

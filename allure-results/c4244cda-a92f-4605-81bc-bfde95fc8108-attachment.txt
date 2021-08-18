@@ -1,0 +1,10 @@
+
+
+RESPONSE:
+status line: HTTP/1.1 200 
+body:
+{
+    "genreId": 7448,
+    "genreName": "Folklore",
+    "genreDescription": "Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum."
+}

@@ -5,18 +5,13 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.config.LogConfig;
-import io.restassured.config.RestAssuredConfig;
-import io.restassured.filter.log.LogDetail;
-import io.restassured.filter.log.RequestLoggingFilter;
-import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
+import io.restassured.specification.FilterableRequestSpecification;
 import io.restassured.specification.RequestSpecification;
 import org.apache.log4j.Logger;
 
-import java.io.InputStream;
-import java.io.PrintStream;
+import java.util.stream.Collectors;
 
 public class HttpClient {
 
@@ -50,19 +45,23 @@ public class HttpClient {
         builder.addHeader("Content-Type", "application/json");
         if (body != null) builder.setBody(body);
 
-        //PrintStream logStream = LOG.IoBuilder.forLogger(logger).buildPrintStream();
-        RequestSpecification spec = builder
-                //.addFilter(new RequestLoggingFilter())// RequestLoggingFilter.logRequestTo(logStream))
-                //.addFilter(new ResponseLoggingFilter())// ResponseLoggingFilter.logResponseTo(logStream))
-                .build().given();
-        RequestSpecification specification = RestAssured.given(spec);
-        Response rawResponse = specification.request(method);
+        RequestSpecification spec = builder.build().given();
+        Response rawResponse = RestAssured.given(spec).request(method);
 
+        //***logging***//
+        FilterableRequestSpecification httpRequest = (FilterableRequestSpecification) RestAssured.given(spec);
+        String contentQueryParams = httpRequest.getQueryParams().entrySet()
+                .stream()
+                .map(e -> e.getKey() + "=\"" + e.getValue() + "\"")
+                .collect(Collectors.joining(", "));
+        String myRequest = String.format("\n\nREQUEST:\nmethod: %s\nuri: %s\nqueryParam: %s\nbody:\n%s\n", method, httpRequest.getBaseUri()+httpRequest.getBasePath(), contentQueryParams, httpRequest.getBody());
+        String myResponse = String.format("\n\nRESPONSE:\nstatus line: %s\nbody:\n%s\n", rawResponse.getStatusLine(), rawResponse.getBody().asPrettyString());
 
-        Allure.addAttachment("My attachment", rawResponse.getBody().asPrettyString());
+        Allure.addAttachment("My request", myRequest);
+        Allure.addAttachment("My response", myResponse);
 
-        LOG.info(System.out.format("\n\nREQUEST:\nmethod: %s\nuri: %s\nbody:\n%s\n", specification.log().method(), specification.log().uri(), specification.log().body()));
-        LOG.info(System.out.format("\n\nRESPONSE:\nstatus line: %s\nlocation: %s\nbody:\n%s\n", rawResponse.getStatusLine(), rawResponse.getHeader("Location"), rawResponse.getBody().asPrettyString()));
+        LOG.info(myRequest);
+        LOG.info(myResponse);
 
         return rawResponse;
     }

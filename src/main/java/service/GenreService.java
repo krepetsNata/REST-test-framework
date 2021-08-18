@@ -4,7 +4,6 @@ import client.HttpClient;
 import entity.ListOptions;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
-import pojo.Author;
 import pojo.Genre;
 import response.BaseResponse;
 import utils.EndpointBuilder;

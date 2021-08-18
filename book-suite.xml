@@ -21,7 +21,7 @@
         <classes>
             <class name="BookTest">
 <!--                <methods>-->
-<!--                    <include name="verifyGetBooksByAuthorIdGenreIdGetRequest"/>-->
+<!--                    <include name="verifySearchBooksGetRequest"/>-->
 <!--                </methods>-->
             </class>
         </classes>

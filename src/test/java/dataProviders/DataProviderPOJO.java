@@ -5,25 +5,16 @@ import org.testng.annotations.DataProvider;
 import pojo.Author;
 import pojo.Book;
 import pojo.Genre;
-import utils.ParsingAndConvertations;
+import utils.ParsingAndConvert;
 
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class DataProviderPOJO {
 
-//    final static String CSV_FILE_AUTHORS = "src/test/java/dataProviders/AuthorTestObject.csv";
-//    final static String CSV_FILE_NEW_AUTHOR = "src/test/java/dataProviders/NewAuthorTestObject.csv";
-//    final static String CSV_FILE_BOOKS = "src/test/java/dataProviders/BookTestObject.csv";
-//    final static String CSV_FILE_NEW_BOOK = "src/test/java/dataProviders/NewBookTestObject.csv";
-//    final static String CSV_FILE_GENRES = "src/test/java/dataProviders/GenreTestObject.csv";
-//    final static String CSV_FILE_NEW_GENRE = "src/test/java/dataProviders/NewGenreTestObject.csv";
-
     @DataProvider(name = "dpTestAuthor")
     public Object[][] dpGetListAuthorsFromFile() { //A TestNG DataProvider must return either Object[][] or Iterator<Object[]>
-        ParsingAndConvertations parsingAndConvertations = new ParsingAndConvertations();
-        List<Author> authorsObjList = parsingAndConvertations.getAuthorsList(FileNames.CSV_FILE_AUTHORS.getFileName());
+        ParsingAndConvert parsingAndConvert = new ParsingAndConvert();
+        List<Author> authorsObjList = parsingAndConvert.getAuthorsList(FileNames.CSV_FILE_AUTHORS.getFileName());
         // authorsObjList.forEach(System.out::println);
         Object[][] authorObj = new Object[authorsObjList.size()][];
 
@@ -37,9 +28,9 @@ public class DataProviderPOJO {
     }
 
     @DataProvider(name = "dpNewAuthor")
-    public Object[][] dpGetNewAuthorFromFile() { //A TestNG DataProvider must return either Object[][] or Iterator<Object[]>
-        ParsingAndConvertations parsingAndConvertations = new ParsingAndConvertations();
-        List<Author> authorsObjList = parsingAndConvertations.getAuthorsList(FileNames.CSV_FILE_NEW_AUTHOR.getFileName());
+    public Object[][] dpGetNewAuthorFromFile() {
+        ParsingAndConvert parsingAndConvert = new ParsingAndConvert();
+        List<Author> authorsObjList = parsingAndConvert.getAuthorsList(FileNames.CSV_FILE_NEW_AUTHOR.getFileName());
         // authorsObjList.forEach(System.out::println);
         Object[][] authorObj = new Object[authorsObjList.size()][];
 
@@ -54,8 +45,8 @@ public class DataProviderPOJO {
 
     @DataProvider(name = "dpTestBook")
     public Object[][] dpGetListBooksFromFile() {
-        ParsingAndConvertations parsingAndConvertations = new ParsingAndConvertations();
-        List<Book> booksObjList = parsingAndConvertations.getBooksList(FileNames.CSV_FILE_BOOKS.getFileName());
+        ParsingAndConvert parsingAndConvert = new ParsingAndConvert();
+        List<Book> booksObjList = parsingAndConvert.getBooksList(FileNames.CSV_FILE_BOOKS.getFileName());
         // authorsObjList.forEach(System.out::println);
         Object[][] bookObj = new Object[booksObjList.size()][];
 
@@ -70,8 +61,8 @@ public class DataProviderPOJO {
 
     @DataProvider(name = "dpNewBook")
     public Object[][] dpGetNewBookFromFile() {
-        ParsingAndConvertations parsingAndConvertations = new ParsingAndConvertations();
-        List<Book> booksObjList = parsingAndConvertations.getBooksList(FileNames.CSV_FILE_NEW_BOOK.getFileName());
+        ParsingAndConvert parsingAndConvert = new ParsingAndConvert();
+        List<Book> booksObjList = parsingAndConvert.getBooksList(FileNames.CSV_FILE_NEW_BOOK.getFileName());
         // authorsObjList.forEach(System.out::println);
         Object[][] bookObj = new Object[booksObjList.size()][];
 
@@ -86,8 +77,8 @@ public class DataProviderPOJO {
 
     @DataProvider(name = "dpTestGenre")
     public Object[][] dpGetListGenresFromFile() {
-        ParsingAndConvertations parsingAndConvertations = new ParsingAndConvertations();
-        List<Genre> genresObjList = parsingAndConvertations.getGenresList(FileNames.CSV_FILE_GENRES.getFileName());
+        ParsingAndConvert parsingAndConvert = new ParsingAndConvert();
+        List<Genre> genresObjList = parsingAndConvert.getGenresList(FileNames.CSV_FILE_GENRES.getFileName());
         // authorsObjList.forEach(System.out::println);
         Object[][] genreObj = new Object[genresObjList.size()][];
 
@@ -102,8 +93,8 @@ public class DataProviderPOJO {
 
     @DataProvider(name = "dpNewGenre")
     public Object[][] dpGetNewGenreFromFile() {
-        ParsingAndConvertations parsingAndConvertations = new ParsingAndConvertations();
-        List<Genre> genresObjList = parsingAndConvertations.getGenresList(FileNames.CSV_FILE_NEW_GENRE.getFileName());
+        ParsingAndConvert parsingAndConvert = new ParsingAndConvert();
+        List<Genre> genresObjList = parsingAndConvert.getGenresList(FileNames.CSV_FILE_NEW_GENRE.getFileName());
         // authorsObjList.forEach(System.out::println);
         Object[][] genreObj = new Object[genresObjList.size()][];
 
@@ -118,36 +109,34 @@ public class DataProviderPOJO {
 
     @DataProvider(name = "combinedDPNewBookOldAuthorOldGenre")
     public Object[][] combinedDataProvider() {
-
-        Object a[][] = dpGetNewBookFromFile();
-        Object b[][] = dpGetListAuthorsFromFile();
-        Object c[][] = dpGetListGenresFromFile();
+        Object newBookFromFile[][] = dpGetNewBookFromFile();
+        Object oldAuthorFromFile[][] = dpGetListAuthorsFromFile();
+        Object oldGenreFromFile[][] = dpGetListGenresFromFile();
 
         int size = dpGetNewBookFromFile().length;
         Object[][] combined = new Object[size][];
 
         for (int i = 0; i < size; i++) {
             combined[i] = new Object[3];
-            combined[i][0] = a[i][i];
-            combined[i][1] = b[i][i];
-            combined[i][2] = c[i][i];
+            combined[i][0] = newBookFromFile[i][i];
+            combined[i][1] = oldAuthorFromFile[i][i];
+            combined[i][2] = oldGenreFromFile[i][i];
         }
         return combined;
     }
 
     @DataProvider(name = "combinedDPOldAuthorOldGenre")
     public Object[][] combinedDataProviderOldAOldG() {
+        Object oldAuthorFromFile[][] = dpGetListAuthorsFromFile();
+        Object oldGenreFromFile[][] = dpGetListGenresFromFile();
 
-        Object b[][] = dpGetListAuthorsFromFile();
-        Object c[][] = dpGetListGenresFromFile();
-
-        int size = b.length;
+        int size = oldAuthorFromFile.length;
         Object[][] combined = new Object[size][];
 
         for (int i = 0; i < size; i++) {
             combined[i] = new Object[2];
-            combined[i][0] = b[i][i];
-            combined[i][1] = c[i][i];
+            combined[i][0] = oldAuthorFromFile[i][i];
+            combined[i][1] = oldGenreFromFile[i][i];
         }
         return combined;
     }

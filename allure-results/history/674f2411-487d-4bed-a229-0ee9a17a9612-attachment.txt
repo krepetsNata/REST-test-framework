@@ -1,0 +1,8 @@
+
+
+REQUEST:
+method: PUT
+uri: http://localhost:8080/api/library/genre/
+queryParam: 
+body:
+{"genreDescription":"updated genre description", "genreId":9999, "genreName":"genre name"}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="11.275" tests="28" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="10.628" tests="28" errors="0" skipped="0" failures="3">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\USER\AppData\Local\Temp\surefire1673133804233026915\surefirebooter4622874467991824924.jar C:\Users\USER\AppData\Local\Temp\surefire1673133804233026915 2021-08-17T21-27-26_772-jvmRun1 surefire7041997748285637tmp surefire_06832641099736094412tmp"/>
+    <property name="sun.java.command" value="C:\Users\USER\AppData\Local\Temp\surefire463683545025916046\surefirebooter1789274739564142170.jar C:\Users\USER\AppData\Local\Temp\surefire463683545025916046 2021-08-18T17-04-10_970-jvmRun1 surefire4485184500484547998tmp surefire_05067832592674035103tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\USER\IdeaProjects\REST-test-framework-template\target\test-classes;C:\Users\USER\IdeaProjects\REST-test-framework-template\target\classes;C:\Users\USER\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\USER\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\USER\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\USER\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\USER\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\USER\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\USER\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\USER\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\USER\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\USER\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\USER\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\USER\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\USER\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\USER\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\USER\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\USER\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\USER\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\USER\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\USER\.m2\repository\com\google\code\gson\gson\2.8.7\gson-2.8.7.jar;C:\Users\USER\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\USER\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\USER\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\USER\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\USER\.m2\repository\io\qameta\allure\allure-testng\2.14.0\allure-testng-2.14.0.jar;C:\Users\USER\.m2\repository\io\qameta\allure\allure-test-filter\2.14.0\allure-test-filter-2.14.0.jar;C:\Users\USER\.m2\repository\io\qameta\allure\allure-java-commons\2.14.0\allure-java-commons-2.14.0.jar;C:\Users\USER\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\USER\.m2\repository\io\qameta\allure\allure-model\2.14.0\allure-model-2.14.0.jar;C:\Users\USER\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\USER\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\USER\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\USER\.m2\repository\org\apache\tika\tika-core\1.26\tika-core-1.26.jar;C:\Users\USER\.m2\repository\org\jooq\joor-java-8\0.9.14\joor-java-8-0.9.14.jar;C:\Users\USER\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.8.1\maven-compiler-plugin-3.8.1.jar;C:\Users\USER\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\USER\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\USER\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\USER\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\USER\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\USER\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\USER\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\USER\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\USER\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\USER\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\USER\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\USER\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\USER\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\USER\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\USER\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\USER\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\USER\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\USER\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\USER\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\USER\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\USER\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\USER\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\USER\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\USER\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\USER\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\USER\.m2\repository\org\codehaus\plexus\plexus-java\0.9.10\plexus-java-0.9.10.jar;C:\Users\USER\.m2\repository\org\ow2\asm\asm\6.2\asm-6.2.jar;C:\Users\USER\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M8\qdox-2.0-M8.jar;C:\Users\USER\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.4\plexus-compiler-api-2.8.4.jar;C:\Users\USER\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.4\plexus-compiler-manager-2.8.4.jar;C:\Users\USER\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.4\plexus-compiler-javac-2.8.4.jar;C:\Users\USER\.m2\repository\org\apache\maven\plugins\maven-surefire-plugin\3.0.0-M5\maven-surefire-plugin-3.0.0-M5.jar;C:\Users\USER\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.0.0-M5\maven-surefire-common-3.0.0-M5.jar;C:\Users\USER\.m2\repository\org\apache\maven\surefire\surefire-api\3.0.0-M5\surefire-api-3.0.0-M5.jar;C:\Users\USER\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.0.0-M5\surefire-logger-api-3.0.0-M5.jar;C:\Users\USER\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.0.0-M5\surefire-extensions-api-3.0.0-M5.jar;C:\Users\USER\.m2\repository\org\apache\maven\surefire\surefire-booter\3.0.0-M5\surefire-booter-3.0.0-M5.jar;C:\Users\USER\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.0.0-M5\surefire-extensions-spi-3.0.0-M5.jar;C:\Users\USER\.m2\repository\org\apache\maven\maven-toolchain\3.0-alpha-2\maven-toolchain-3.0-alpha-2.jar;C:\Users\USER\.m2\repository\org\apache\maven\shared\maven-artifact-transfer\0.11.0\maven-artifact-transfer-0.11.0.jar;C:\Users\USER\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.0.1\maven-common-artifact-filters-3.0.1.jar;C:\Users\USER\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.0.0-M4\surefire-shared-utils-3.0.0-M4.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\USER"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\USER\AppData\Local\Temp\surefire1673133804233026915\surefirebooter4622874467991824924.jar;C:\Users\USER\.m2\repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\USER\AppData\Local\Temp\surefire463683545025916046\surefirebooter1789274739564142170.jar;C:\Users\USER\.m2\repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_221\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,20 +60,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="verifyCreatingBookPostRequest[{&quot;bookId&quot;:536, &quot;bookName&quot;:&quot;Sed sunt et quas&quot;, &quot;bookLanguage&quot;:&quot;spanish&quot;, &quot;bookDescription&quot;:&quot;Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.&quot;, &quot;publicationYear&quot;:1974, &quot;additional&quot;:{&quot;pageCount&quot;:573, &quot;size&quot;:{&quot;height&quot;:14.9, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}](1)" classname="BookTest" time="3.985">
+  <testcase name="verifyCreatingBookPostRequest[{&quot;bookId&quot;:536, &quot;bookName&quot;:&quot;Sed sunt et quas&quot;, &quot;bookLanguage&quot;:&quot;spanish&quot;, &quot;bookDescription&quot;:&quot;Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.&quot;, &quot;publicationYear&quot;:1974, &quot;additional&quot;:{&quot;pageCount&quot;:573, &quot;size&quot;:{&quot;height&quot;:14.9, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}, {&quot;authorDescription&quot;:&quot;Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.&quot;, &quot;authorId&quot;:37, &quot;authorName&quot;:{&quot;first&quot;:&quot;Alexandro&quot;, &quot;second&quot;:&quot;Kris&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Doylechester&quot;, &quot;country&quot;:&quot;Venezuela&quot;, &quot;date&quot;:&quot;1930-09-19&quot;}, &quot;nationality&quot;:&quot;Turkish&quot;}, {&quot;genreDescription&quot;:&quot;Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.&quot;, &quot;genreId&quot;:7448, &quot;genreName&quot;:&quot;Folklore&quot;}](1)" classname="BookTest" time="3.831">
     <system-out><![CDATA[beforeGroupBook
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyCreatingBookPostRequest' started.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyCreatingBookPostRequest' started.
 beforeMethodBook
-
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@351ede23
-uri: io.restassured.internal.RequestSpecificationImpl@351ede23
+method: POST
+uri: http://localhost:8080/api/library/book/37/7448/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@351ede23
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+{"bookId":536, "bookName":"Sed sunt et quas", "bookLanguage":"spanish", "bookDescription":"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.", "publicationYear":1974, "additional":{"pageCount":573, "size":{"height":14.9, "width":0.0, "lenght":0.0}}}
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 201 
@@ -94,45 +95,47 @@ body:
     },
     "publicationYear": 1974
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="verifyDeletingBookByIdDeleteRequest[{&quot;bookId&quot;:536, &quot;bookName&quot;:&quot;Sed sunt et quas&quot;, &quot;bookLanguage&quot;:&quot;spanish&quot;, &quot;bookDescription&quot;:&quot;Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.&quot;, &quot;publicationYear&quot;:1974, &quot;additional&quot;:{&quot;pageCount&quot;:573, &quot;size&quot;:{&quot;height&quot;:14.9, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}](1)" classname="BookTest" time="0.112">
+  <testcase name="verifyDeletingBookByIdDeleteRequest[{&quot;bookId&quot;:536, &quot;bookName&quot;:&quot;Sed sunt et quas&quot;, &quot;bookLanguage&quot;:&quot;spanish&quot;, &quot;bookDescription&quot;:&quot;Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.&quot;, &quot;publicationYear&quot;:1974, &quot;additional&quot;:{&quot;pageCount&quot;:573, &quot;size&quot;:{&quot;height&quot;:14.9, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}](1)" classname="BookTest" time="0.064">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyCreatingBookPostRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyCreatingBookPostRequest' completed.
 afterMethodBook
-
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@6eb5b9e7
-uri: io.restassured.internal.RequestSpecificationImpl@6eb5b9e7
+method: DELETE
+uri: http://localhost:8080/api/library/book/536/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@6eb5b9e7
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 204 
 location: null
 body:
 
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
-beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyDeletingBookByIdDeleteRequest' started.
-beforeMethodBook
 
+beforeMethod
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyDeletingBookByIdDeleteRequest' started.
+beforeMethodBook
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@351e86b2
-uri: io.restassured.internal.RequestSpecificationImpl@351e86b2
+method: POST
+uri: http://localhost:8080/api/library/book/37/7448/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@351e86b2
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+{"bookId":536, "bookName":"Sed sunt et quas", "bookLanguage":"spanish", "bookDescription":"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.", "publicationYear":1974, "additional":{"pageCount":573, "size":{"height":14.9, "width":0.0, "lenght":0.0}}}
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 201 
@@ -153,62 +156,65 @@ body:
     },
     "publicationYear": 1974
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@48da64f2
-uri: io.restassured.internal.RequestSpecificationImpl@48da64f2
+method: DELETE
+uri: http://localhost:8080/api/library/book/536/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@48da64f2
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 204 
 location: null
 body:
 
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@5ca4c88a
-uri: io.restassured.internal.RequestSpecificationImpl@5ca4c88a
+method: GET
+uri: http://localhost:8080/api/library/book/536/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@5ca4c88a
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 404 
 location: null
 body:
 {
-    "timeStamp": "21:27:35.750 17-08-2021",
+    "timeStamp": "17:04:19.521 18-08-2021",
     "statusCode": 404,
     "error": "Not Found",
     "errorMessage": "Book with 'bookId' = '536' doesn't exist!"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyUpdatingBookPutRequest[{&quot;bookId&quot;:536, &quot;bookName&quot;:&quot;Sed sunt et quas&quot;, &quot;bookLanguage&quot;:&quot;spanish&quot;, &quot;bookDescription&quot;:&quot;updated book description&quot;, &quot;publicationYear&quot;:1974, &quot;additional&quot;:{&quot;pageCount&quot;:573, &quot;size&quot;:{&quot;height&quot;:14.9, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}](1)" classname="BookTest" time="0.062">
+  <testcase name="verifyUpdatingBookPutRequest[{&quot;bookId&quot;:536, &quot;bookName&quot;:&quot;Sed sunt et quas&quot;, &quot;bookLanguage&quot;:&quot;spanish&quot;, &quot;bookDescription&quot;:&quot;updated book description&quot;, &quot;publicationYear&quot;:1974, &quot;additional&quot;:{&quot;pageCount&quot;:573, &quot;size&quot;:{&quot;height&quot;:14.9, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}](1)" classname="BookTest" time="0.056">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyDeletingBookByIdDeleteRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyDeletingBookByIdDeleteRequest' completed.
 afterMethodBook
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyUpdatingBookPutRequest' started.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyUpdatingBookPutRequest' started.
 beforeMethodBook
-
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@25f14e93
-uri: io.restassured.internal.RequestSpecificationImpl@25f14e93
+method: POST
+uri: http://localhost:8080/api/library/book/37/7448/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@25f14e93
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+{"bookId":536, "bookName":"Sed sunt et quas", "bookLanguage":"spanish", "bookDescription":"Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.", "publicationYear":1974, "additional":{"pageCount":573, "size":{"height":14.9, "width":0.0, "lenght":0.0}}}
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 201 
@@ -229,16 +235,17 @@ body:
     },
     "publicationYear": 1974
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@4888425d
-uri: io.restassured.internal.RequestSpecificationImpl@4888425d
+method: PUT
+uri: http://localhost:8080/api/library/book/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@4888425d
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+{"bookId":536, "bookName":"Sed sunt et quas", "bookLanguage":"spanish", "bookDescription":"updated book description", "publicationYear":1974, "additional":{"pageCount":573, "size":{"height":14.9, "width":0.0, "lenght":0.0}}}
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -259,41 +266,43 @@ body:
     },
     "publicationYear": 1974
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetAllBooksGetRequest" classname="BookTest" time="0.475">
+  <testcase name="verifyGetAllBooksGetRequest" classname="BookTest" time="0.709">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyUpdatingBookPutRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyUpdatingBookPutRequest' completed.
 afterMethodBook
-
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@602a3237
-uri: io.restassured.internal.RequestSpecificationImpl@602a3237
+method: DELETE
+uri: http://localhost:8080/api/library/book/536/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@602a3237
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 204 
 location: null
 body:
 
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 afterGroupBook
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAllBooksGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAllBooksGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@34f48d1
-uri: io.restassured.internal.RequestSpecificationImpl@34f48d1
+method: GET
+uri: http://localhost:8080/api/library/books?page=1&pagination=true&size=10/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@34f48d1
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -451,23 +460,24 @@ body:
         "publicationYear": 2002
     }
 ]
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetBookByIdGetRequest[{&quot;bookId&quot;:292, &quot;bookName&quot;:&quot;Ipsa dolor laboriosam&quot;, &quot;bookLanguage&quot;:&quot;croatian&quot;, &quot;bookDescription&quot;:&quot;Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.&quot;, &quot;publicationYear&quot;:2008, &quot;additional&quot;:{&quot;pageCount&quot;:682, &quot;size&quot;:{&quot;height&quot;:16.1, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}](1)" classname="BookTest" time="0.101">
+  <testcase name="verifyGetBookByIdGetRequest[{&quot;bookId&quot;:292, &quot;bookName&quot;:&quot;Ipsa dolor laboriosam&quot;, &quot;bookLanguage&quot;:&quot;croatian&quot;, &quot;bookDescription&quot;:&quot;Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.&quot;, &quot;publicationYear&quot;:2008, &quot;additional&quot;:{&quot;pageCount&quot;:682, &quot;size&quot;:{&quot;height&quot;:16.1, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}](1)" classname="BookTest" time="0.052">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAllBooksGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAllBooksGetRequest' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetBookByIdGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetBookByIdGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@56e8a8a0
-uri: io.restassured.internal.RequestSpecificationImpl@56e8a8a0
+method: GET
+uri: http://localhost:8080/api/library/book/292/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@56e8a8a0
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -488,23 +498,24 @@ body:
     },
     "publicationYear": 2008
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetBooksByAuthorIdGenreIdGetRequest" classname="BookTest" time="0.115">
+  <testcase name="verifyGetBooksByAuthorIdGenreIdGetRequest[{&quot;authorDescription&quot;:&quot;Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.&quot;, &quot;authorId&quot;:37, &quot;authorName&quot;:{&quot;first&quot;:&quot;Alexandro&quot;, &quot;second&quot;:&quot;Kris&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Doylechester&quot;, &quot;country&quot;:&quot;Venezuela&quot;, &quot;date&quot;:&quot;1930-09-19&quot;}, &quot;nationality&quot;:&quot;Turkish&quot;}, {&quot;genreDescription&quot;:&quot;Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.&quot;, &quot;genreId&quot;:7448, &quot;genreName&quot;:&quot;Folklore&quot;}](1)" classname="BookTest" time="0.101">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetBookByIdGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetBookByIdGetRequest' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetBooksByAuthorIdGenreIdGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetBooksByAuthorIdGenreIdGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@776e7dfb
-uri: io.restassured.internal.RequestSpecificationImpl@776e7dfb
+method: GET
+uri: http://localhost:8080/api/library/author/37/genre/7448/books?page=1&pagination=true&size=10/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@776e7dfb
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -542,23 +553,24 @@ body:
         "publicationYear": 1997
     }
 ]
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetBooksByAuthorIdGetRequest[{&quot;authorDescription&quot;:&quot;Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.&quot;, &quot;authorId&quot;:37, &quot;authorName&quot;:{&quot;first&quot;:&quot;Alexandro&quot;, &quot;second&quot;:&quot;Kris&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Doylechester&quot;, &quot;country&quot;:&quot;Venezuela&quot;, &quot;date&quot;:&quot;1930-09-19&quot;}, &quot;nationality&quot;:&quot;Turkish&quot;}](1)" classname="BookTest" time="0.234">
+  <testcase name="verifyGetBooksByAuthorIdGetRequest[{&quot;authorDescription&quot;:&quot;Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.&quot;, &quot;authorId&quot;:37, &quot;authorName&quot;:{&quot;first&quot;:&quot;Alexandro&quot;, &quot;second&quot;:&quot;Kris&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Doylechester&quot;, &quot;country&quot;:&quot;Venezuela&quot;, &quot;date&quot;:&quot;1930-09-19&quot;}, &quot;nationality&quot;:&quot;Turkish&quot;}](1)" classname="BookTest" time="0.242">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetBooksByAuthorIdGenreIdGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetBooksByAuthorIdGenreIdGetRequest' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetBooksByAuthorIdGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetBooksByAuthorIdGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@611587f7
-uri: io.restassured.internal.RequestSpecificationImpl@611587f7
+method: GET
+uri: http://localhost:8080/api/library/author/37/books?page=1&pagination=true&size=10/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@611587f7
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -641,23 +653,24 @@ body:
         "publicationYear": 1997
     }
 ]
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetBooksByGenreIdGetRequest[{&quot;genreDescription&quot;:&quot;Id voluptatibus qui ullam omnis laboriosam maxime laudantium. Vel aut dolorem dolorem facilis officiis. Voluptate impedit repellendus iure enim. Modi in sed alias eum. Eaque sunt nihil rerum.&quot;, &quot;genreId&quot;:644, &quot;genreName&quot;:&quot;Metafiction&quot;}](1)" classname="BookTest" time="0.482">
+  <testcase name="verifyGetBooksByGenreIdGetRequest[{&quot;genreDescription&quot;:&quot;Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.&quot;, &quot;genreId&quot;:7448, &quot;genreName&quot;:&quot;Folklore&quot;}](1)" classname="BookTest" time="0.487">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetBooksByAuthorIdGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetBooksByAuthorIdGetRequest' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetBooksByGenreIdGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetBooksByGenreIdGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@73958426
-uri: io.restassured.internal.RequestSpecificationImpl@73958426
+method: GET
+uri: http://localhost:8080/api/library/genre/7448/books?page=1&pagination=true&size=10/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@73958426
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -665,229 +678,232 @@ location: null
 body:
 [
     {
-        "bookId": 292,
-        "bookName": "Ipsa dolor laboriosam",
-        "bookLanguage": "croatian",
-        "bookDescription": "Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.",
-        "additional": {
-            "pageCount": 682,
-            "size": {
-                "height": 16.1,
-                "width": 22.4,
-                "length": 3.2
-            }
-        },
-        "publicationYear": 2008
-    },
-    {
-        "bookId": 1278,
-        "bookName": "Animi ab aliquid",
-        "bookLanguage": "portuguese",
-        "bookDescription": "Enim perferendis magni quaerat officia. Minima minus dolorum quibusdam illum aut dolorum non. Illo porro et sunt.",
-        "additional": {
-            "pageCount": 605,
-            "size": {
-                "height": 15.8,
-                "width": 25.7,
-                "length": 2.9
-            }
-        },
-        "publicationYear": 2010
-    },
-    {
-        "bookId": 1440,
-        "bookName": "Numquam consequatur rerum",
-        "bookLanguage": "polish",
-        "bookDescription": "Eos id est rerum voluptas rem laborum. Aut aut nisi consequuntur explicabo. Dolor amet quas quidem expedita. Consequatur vel accusantium voluptatum quia.",
-        "additional": {
-            "pageCount": 634,
-            "size": {
-                "height": 13.6,
-                "width": 27.9,
-                "length": 3.1
-            }
-        },
-        "publicationYear": 1972
-    },
-    {
-        "bookId": 1669,
-        "bookName": "Commodi quos ea non",
+        "bookId": 852,
+        "bookName": "Quis quaerat asperiores voluptates",
         "bookLanguage": "arabic",
-        "bookDescription": "Illo officia quae adipisci ipsam corporis voluptatem. Vel non dolores dolorem perferendis. Adipisci dolorem dignissimos quis a aut ad. Aperiam aliquam ut ipsum impedit.",
+        "bookDescription": "Enim sit quisquam ad saepe. Maiores dolor officiis maxime voluptatem. Nesciunt doloremque rerum voluptas quis aut rerum dolores. Repellat et ipsa officiis non.",
         "additional": {
-            "pageCount": 665,
+            "pageCount": 264,
             "size": {
-                "height": 34.0,
-                "width": 31.7,
-                "length": 1.5
-            }
-        },
-        "publicationYear": 1972
-    },
-    {
-        "bookId": 1984,
-        "bookName": "Ut et odio vitae",
-        "bookLanguage": "german",
-        "bookDescription": "Sit nulla voluptas et et nihil pariatur dignissimos. Blanditiis occaecati consequatur incidunt ut delectus eum. Asperiores itaque et molestias expedita dicta error et.",
-        "additional": {
-            "pageCount": 520,
-            "size": {
-                "height": 13.9,
-                "width": 16.1,
-                "length": 3.9
-            }
-        },
-        "publicationYear": 2004
-    },
-    {
-        "bookId": 2470,
-        "bookName": "Debitis voluptate enim ut",
-        "bookLanguage": "belorussian",
-        "bookDescription": "Molestiae explicabo iste. Illo corrupti nihil eum ad rerum unde. Sed et laboriosam voluptas accusantium. Dolores earum voluptate ullam quia. Sunt culpa explicabo voluptas magnam dicta.",
-        "additional": {
-            "pageCount": 417,
-            "size": {
-                "height": 8.7,
-                "width": 13.9,
-                "length": 2.3
-            }
-        },
-        "publicationYear": 2010
-    },
-    {
-        "bookId": 3135,
-        "bookName": "Rerum minus omnis aliquid",
-        "bookLanguage": "farsi",
-        "bookDescription": "Aliquid ex ut inventore ut nihil reiciendis molestiae. Sit maxime quam tempora ipsum officia aliquam. Cum sed magnam mollitia neque laborum est.",
-        "additional": {
-            "pageCount": 506,
-            "size": {
-                "height": 24.1,
-                "width": 21.3,
-                "length": 3.2
-            }
-        },
-        "publicationYear": 1985
-    },
-    {
-        "bookId": 4943,
-        "bookName": "Est sed perspiciatis et",
-        "bookLanguage": "spanish",
-        "bookDescription": "Voluptatem saepe qui. Eum voluptatem ut. Voluptatum quia consequatur culpa.",
-        "additional": {
-            "pageCount": 926,
-            "size": {
-                "height": 22.0,
-                "width": 9.6,
-                "length": 1.8
+                "height": 9.5,
+                "width": 29.5,
+                "length": 1.3
             }
         },
         "publicationYear": 2001
     },
     {
-        "bookId": 5168,
-        "bookName": "Similique vitae quia reiciendis",
-        "bookLanguage": "polish",
-        "bookDescription": "Labore eos error et dicta delectus autem. Est quis dignissimos dolores reprehenderit. Cum laboriosam molestias accusamus.",
+        "bookId": 863,
+        "bookName": "Accusamus saepe voluptatem harum",
+        "bookLanguage": "russian",
+        "bookDescription": "Sed occaecati quia id enim itaque ullam consequatur. Perferendis consequuntur quis quidem. Est necessitatibus alias et. A et odit. Architecto ut adipisci debitis officia et quod.",
         "additional": {
-            "pageCount": 231,
+            "pageCount": 829,
             "size": {
-                "height": 13.0,
-                "width": 6.5,
-                "length": 3.0
+                "height": 11.0,
+                "width": 18.2,
+                "length": 4.0
             }
         },
-        "publicationYear": 1975
+        "publicationYear": 2017
     },
     {
-        "bookId": 5530,
-        "bookName": "Laboriosam quia amet repellendus",
-        "bookLanguage": "portuguese",
-        "bookDescription": "Nihil suscipit aliquid velit velit. Ratione in dolor corrupti. Modi at officia vitae non explicabo.",
+        "bookId": 1023,
+        "bookName": "Consequatur est quae",
+        "bookLanguage": "ukrainian",
+        "bookDescription": "Magnam et est facere facere aperiam est. Quia inventore cumque architecto voluptatibus. Illo nulla repellendus quidem veritatis nulla maiores. Praesentium nam ad voluptatem earum dolor.",
         "additional": {
-            "pageCount": 885,
+            "pageCount": 214,
             "size": {
-                "height": 10.8,
-                "width": 15.3,
-                "length": 4.7
+                "height": 34.1,
+                "width": 14.5,
+                "length": 2.4
             }
         },
-        "publicationYear": 1986
+        "publicationYear": 1970
+    },
+    {
+        "bookId": 1450,
+        "bookName": "Asperiores eius qui",
+        "bookLanguage": "armenian",
+        "bookDescription": "Iste voluptates expedita eaque cum. Repellat inventore suscipit adipisci sed debitis commodi. Aliquam eius delectus corporis consequatur.",
+        "additional": {
+            "pageCount": 889,
+            "size": {
+                "height": 10.2,
+                "width": 33.3,
+                "length": 3.9
+            }
+        },
+        "publicationYear": 1994
+    },
+    {
+        "bookId": 1731,
+        "bookName": "Vel nemo voluptas",
+        "bookLanguage": "arabic",
+        "bookDescription": "Beatae sapiente eum harum dicta sapiente nostrum aut. Quia provident in praesentium molestiae vitae. Beatae voluptas est. Quaerat vero excepturi maiores.",
+        "additional": {
+            "pageCount": 774,
+            "size": {
+                "height": 27.5,
+                "width": 12.7,
+                "length": 2.5
+            }
+        },
+        "publicationYear": 2017
+    },
+    {
+        "bookId": 2713,
+        "bookName": "Et rem labore",
+        "bookLanguage": "english",
+        "bookDescription": "Autem omnis placeat autem. Quaerat praesentium non sapiente quae deleniti. Porro voluptatem cupiditate. Sed sit sed accusantium labore quas nulla. Tempore quod voluptas consequatur odio autem.",
+        "additional": {
+            "pageCount": 295,
+            "size": {
+                "height": 16.9,
+                "width": 20.5,
+                "length": 1.8
+            }
+        },
+        "publicationYear": 1999
+    },
+    {
+        "bookId": 2918,
+        "bookName": "Laboriosam quae quas nam",
+        "bookLanguage": "belorussian",
+        "bookDescription": "Eum odio eaque totam sunt omnis. Mollitia asperiores perferendis. Commodi tenetur totam repudiandae sit porro est.",
+        "additional": {
+            "pageCount": 785,
+            "size": {
+                "height": 16.0,
+                "width": 12.9,
+                "length": 2.3
+            }
+        },
+        "publicationYear": 1977
+    },
+    {
+        "bookId": 3673,
+        "bookName": "Et iure labore nisi",
+        "bookLanguage": "farsi",
+        "bookDescription": "Quibusdam sit aliquam dolore est sed fuga. Esse doloremque iusto. Quia praesentium rerum. Dolorum aut ducimus assumenda est. Sed debitis minima perspiciatis quidem cumque non.",
+        "additional": {
+            "pageCount": 462,
+            "size": {
+                "height": 25.0,
+                "width": 10.6,
+                "length": 1.1
+            }
+        },
+        "publicationYear": 2012
+    },
+    {
+        "bookId": 3946,
+        "bookName": "Adipisci sunt non",
+        "bookLanguage": "armenian",
+        "bookDescription": "Placeat id voluptas dolores officiis placeat culpa. Laudantium non eum dolores eaque corrupti officia. Nam mollitia culpa. Est tenetur cum repellat sed.",
+        "additional": {
+            "pageCount": 254,
+            "size": {
+                "height": 26.8,
+                "width": 18.4,
+                "length": 3.1
+            }
+        },
+        "publicationYear": 2018
+    },
+    {
+        "bookId": 4013,
+        "bookName": "Omnis debitis reprehenderit",
+        "bookLanguage": "german",
+        "bookDescription": "Quas omnis hic officia molestiae adipisci ut. Necessitatibus perspiciatis accusantium sunt minus odio eos. Ex incidunt sunt hic ut maiores est.",
+        "additional": {
+            "pageCount": 771,
+            "size": {
+                "height": 28.6,
+                "width": 5.8,
+                "length": 4.9
+            }
+        },
+        "publicationYear": 1988
     }
 ]
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetNotFoundBookByIdGetRequestNegativeCase[{&quot;bookId&quot;:536, &quot;bookName&quot;:&quot;Sed sunt et quas&quot;, &quot;bookLanguage&quot;:&quot;spanish&quot;, &quot;bookDescription&quot;:&quot;Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.&quot;, &quot;publicationYear&quot;:1974, &quot;additional&quot;:{&quot;pageCount&quot;:573, &quot;size&quot;:{&quot;height&quot;:14.9, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}](1)" classname="BookTest" time="0.052">
+  <testcase name="verifyGetNotFoundBookByIdGetRequestNegativeCase[{&quot;bookId&quot;:536, &quot;bookName&quot;:&quot;Sed sunt et quas&quot;, &quot;bookLanguage&quot;:&quot;spanish&quot;, &quot;bookDescription&quot;:&quot;Qui quisquam omnis dolores voluptates ut. Ad officia suscipit nihil et vero. Ut veniam esse aliquam eum ea. Est nesciunt est id iure fuga.&quot;, &quot;publicationYear&quot;:1974, &quot;additional&quot;:{&quot;pageCount&quot;:573, &quot;size&quot;:{&quot;height&quot;:14.9, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}](1)" classname="BookTest" time="0.028">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetBooksByGenreIdGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetBooksByGenreIdGetRequest' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetNotFoundBookByIdGetRequestNegativeCase' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetNotFoundBookByIdGetRequestNegativeCase' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@1c787389
-uri: io.restassured.internal.RequestSpecificationImpl@1c787389
+method: GET
+uri: http://localhost:8080/api/library/book/536/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@1c787389
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 404 
 location: null
 body:
 {
-    "timeStamp": "21:27:36.596 17-08-2021",
+    "timeStamp": "17:04:20.522 18-08-2021",
     "statusCode": 404,
     "error": "Not Found",
     "errorMessage": "Book with 'bookId' = '536' doesn't exist!"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifySearchBooksGetRequest" classname="BookTest" time="0.037">
+  <testcase name="verifySearchBooksGetRequest" classname="BookTest" time="0.02">
     <failure message="Actual StatusCode not matching to Expected one. expected [200] but found [400]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
-	at BookTest.verifySearchBooksGetRequest(BookTest.java:118)
+	at BookTest.verifySearchBooksGetRequest(BookTest.java:116)
 ]]></failure>
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetNotFoundBookByIdGetRequestNegativeCase' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetNotFoundBookByIdGetRequestNegativeCase' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifySearchBooksGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifySearchBooksGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@718ad3a6
-uri: io.restassured.internal.RequestSpecificationImpl@718ad3a6
+method: GET
+uri: http://localhost:8080/api/library/books/search?q=Dolor&page=1&pagination=true&size=10/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@718ad3a6
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 400 
 location: null
 body:
 
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyCreatingAuthorPostRequest[{&quot;authorDescription&quot;:&quot;updated author descr&quot;, &quot;authorId&quot;:9999, &quot;authorName&quot;:{&quot;first&quot;:&quot;firstName&quot;, &quot;second&quot;:&quot;secondName&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Mykolaiv&quot;, &quot;country&quot;:&quot;Ukraine&quot;, &quot;date&quot;:&quot;1990-11-17&quot;}, &quot;nationality&quot;:&quot;ukrainian&quot;}](1)" classname="AuthorTest" time="0.062">
+  <testcase name="verifyCreatingAuthorPostRequest[{&quot;authorDescription&quot;:&quot;updated author descr&quot;, &quot;authorId&quot;:9999, &quot;authorName&quot;:{&quot;first&quot;:&quot;firstName&quot;, &quot;second&quot;:&quot;secondName&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Mykolaiv&quot;, &quot;country&quot;:&quot;Ukraine&quot;, &quot;date&quot;:&quot;1990-11-17&quot;}, &quot;nationality&quot;:&quot;ukrainian&quot;}](1)" classname="AuthorTest" time="0.053">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifySearchBooksGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifySearchBooksGetRequest' completed.
 beforeGroupAuthor
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyCreatingAuthorPostRequest' started.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyCreatingAuthorPostRequest' started.
 beforeMethodAuthor
-
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@4e79c25
-uri: io.restassured.internal.RequestSpecificationImpl@4e79c25
+method: POST
+uri: http://localhost:8080/api/library/author/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@4e79c25
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+{"authorDescription":"updated author descr", "authorId":9999, "authorName":{"first":"firstName", "second":"secondName"}, "birth":{"city":"Mykolaiv", "country":"Ukraine", "date":"1990-11-17"}, "nationality":"ukrainian"}
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 201 
@@ -907,41 +923,43 @@ body:
     },
     "authorDescription": "updated author descr"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyDeletingAuthorByIdDeleteRequest[{&quot;authorDescription&quot;:&quot;updated author descr&quot;, &quot;authorId&quot;:9999, &quot;authorName&quot;:{&quot;first&quot;:&quot;firstName&quot;, &quot;second&quot;:&quot;secondName&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Mykolaiv&quot;, &quot;country&quot;:&quot;Ukraine&quot;, &quot;date&quot;:&quot;1990-11-17&quot;}, &quot;nationality&quot;:&quot;ukrainian&quot;}](1)" classname="AuthorTest" time="0.082">
+  <testcase name="verifyDeletingAuthorByIdDeleteRequest[{&quot;authorDescription&quot;:&quot;updated author descr&quot;, &quot;authorId&quot;:9999, &quot;authorName&quot;:{&quot;first&quot;:&quot;firstName&quot;, &quot;second&quot;:&quot;secondName&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Mykolaiv&quot;, &quot;country&quot;:&quot;Ukraine&quot;, &quot;date&quot;:&quot;1990-11-17&quot;}, &quot;nationality&quot;:&quot;ukrainian&quot;}](1)" classname="AuthorTest" time="0.059">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyCreatingAuthorPostRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyCreatingAuthorPostRequest' completed.
 afterMethodAuthor
-
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@3b42b729
-uri: io.restassured.internal.RequestSpecificationImpl@3b42b729
+method: DELETE
+uri: http://localhost:8080/api/library/author/9999/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@3b42b729
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 204 
 location: null
 body:
 
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
-beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyDeletingAuthorByIdDeleteRequest' started.
-beforeMethodAuthor
 
+beforeMethod
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyDeletingAuthorByIdDeleteRequest' started.
+beforeMethodAuthor
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@1c0680b0
-uri: io.restassured.internal.RequestSpecificationImpl@1c0680b0
+method: POST
+uri: http://localhost:8080/api/library/author/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@1c0680b0
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+{"authorDescription":"updated author descr", "authorId":9999, "authorName":{"first":"firstName", "second":"secondName"}, "birth":{"city":"Mykolaiv", "country":"Ukraine", "date":"1990-11-17"}, "nationality":"ukrainian"}
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 201 
@@ -961,62 +979,65 @@ body:
     },
     "authorDescription": "updated author descr"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@11dbcb3b
-uri: io.restassured.internal.RequestSpecificationImpl@11dbcb3b
+method: DELETE
+uri: http://localhost:8080/api/library/author/9999/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@11dbcb3b
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 204 
 location: null
 body:
 
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@7c840fe3
-uri: io.restassured.internal.RequestSpecificationImpl@7c840fe3
+method: GET
+uri: http://localhost:8080/api/library/author/9999/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@7c840fe3
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 404 
 location: null
 body:
 {
-    "timeStamp": "21:27:36.954 17-08-2021",
+    "timeStamp": "17:04:20.863 18-08-2021",
     "statusCode": 404,
     "error": "Not Found",
     "errorMessage": "Author with 'authorId' = '9999' doesn't exist!"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyUpdatingAuthorPutRequest[{&quot;authorDescription&quot;:&quot;updated author description&quot;, &quot;authorId&quot;:9999, &quot;authorName&quot;:{&quot;first&quot;:&quot;firstName&quot;, &quot;second&quot;:&quot;secondName&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Mykolaiv&quot;, &quot;country&quot;:&quot;Ukraine&quot;, &quot;date&quot;:&quot;1990-11-17&quot;}, &quot;nationality&quot;:&quot;ukrainian&quot;}](1)" classname="AuthorTest" time="0.063">
+  <testcase name="verifyUpdatingAuthorPutRequest[{&quot;authorDescription&quot;:&quot;updated author description&quot;, &quot;authorId&quot;:9999, &quot;authorName&quot;:{&quot;first&quot;:&quot;firstName&quot;, &quot;second&quot;:&quot;secondName&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Mykolaiv&quot;, &quot;country&quot;:&quot;Ukraine&quot;, &quot;date&quot;:&quot;1990-11-17&quot;}, &quot;nationality&quot;:&quot;ukrainian&quot;}](1)" classname="AuthorTest" time="0.055">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyDeletingAuthorByIdDeleteRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyDeletingAuthorByIdDeleteRequest' completed.
 afterMethodAuthor
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyUpdatingAuthorPutRequest' started.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyUpdatingAuthorPutRequest' started.
 beforeMethodAuthor
-
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@1f547af8
-uri: io.restassured.internal.RequestSpecificationImpl@1f547af8
+method: POST
+uri: http://localhost:8080/api/library/author/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@1f547af8
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+{"authorDescription":"updated author descr", "authorId":9999, "authorName":{"first":"firstName", "second":"secondName"}, "birth":{"city":"Mykolaiv", "country":"Ukraine", "date":"1990-11-17"}, "nationality":"ukrainian"}
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 201 
@@ -1036,16 +1057,17 @@ body:
     },
     "authorDescription": "updated author descr"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@774304ca
-uri: io.restassured.internal.RequestSpecificationImpl@774304ca
+method: PUT
+uri: http://localhost:8080/api/library/author/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@774304ca
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+{"authorDescription":"updated author description", "authorId":9999, "authorName":{"first":"firstName", "second":"secondName"}, "birth":{"city":"Mykolaiv", "country":"Ukraine", "date":"1990-11-17"}, "nationality":"ukrainian"}
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -1065,41 +1087,43 @@ body:
     },
     "authorDescription": "updated author description"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetAllAuthorsGetRequest" classname="AuthorTest" time="0.496">
+  <testcase name="verifyGetAllAuthorsGetRequest" classname="AuthorTest" time="0.367">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyUpdatingAuthorPutRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyUpdatingAuthorPutRequest' completed.
 afterMethodAuthor
-
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@43e7f104
-uri: io.restassured.internal.RequestSpecificationImpl@43e7f104
+method: DELETE
+uri: http://localhost:8080/api/library/author/9999/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@43e7f104
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 204 
 location: null
 body:
 
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 afterGroupAuthor
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAllAuthorsGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAllAuthorsGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@40b70f31
-uri: io.restassured.internal.RequestSpecificationImpl@40b70f31
+method: GET
+uri: http://localhost:8080/api/library/authors?page=1&pagination=true&size=10/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@40b70f31
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -1247,23 +1271,24 @@ body:
         "authorDescription": "Ullam et minus dolor accusantium non voluptatem esse. Enim maxime alias voluptates et omnis minus. Id id sint eligendi occaecati. Consequatur consequuntur incidunt voluptate dolore sapiente totam perferendis."
     }
 ]
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetAuthorByBookIdGetRequest[{&quot;bookId&quot;:292, &quot;bookName&quot;:&quot;Ipsa dolor laboriosam&quot;, &quot;bookLanguage&quot;:&quot;croatian&quot;, &quot;bookDescription&quot;:&quot;Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.&quot;, &quot;publicationYear&quot;:2008, &quot;additional&quot;:{&quot;pageCount&quot;:682, &quot;size&quot;:{&quot;height&quot;:16.1, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}](1)" classname="AuthorTest" time="0.062">
+  <testcase name="verifyGetAuthorByBookIdGetRequest[{&quot;bookId&quot;:292, &quot;bookName&quot;:&quot;Ipsa dolor laboriosam&quot;, &quot;bookLanguage&quot;:&quot;croatian&quot;, &quot;bookDescription&quot;:&quot;Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.&quot;, &quot;publicationYear&quot;:2008, &quot;additional&quot;:{&quot;pageCount&quot;:682, &quot;size&quot;:{&quot;height&quot;:16.1, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}](1)" classname="AuthorTest" time="0.058">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAllAuthorsGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAllAuthorsGetRequest' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAuthorByBookIdGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAuthorByBookIdGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@1800c1e3
-uri: io.restassured.internal.RequestSpecificationImpl@1800c1e3
+method: GET
+uri: http://localhost:8080/api/library/book/292/author/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@1800c1e3
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -1283,23 +1308,24 @@ body:
     },
     "authorDescription": "Ullam et minus dolor accusantium non voluptatem esse. Enim maxime alias voluptates et omnis minus. Id id sint eligendi occaecati. Consequatur consequuntur incidunt voluptate dolore sapiente totam perferendis."
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetAuthorByIdGetRequest[{&quot;authorDescription&quot;:&quot;Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.&quot;, &quot;authorId&quot;:37, &quot;authorName&quot;:{&quot;first&quot;:&quot;Alexandro&quot;, &quot;second&quot;:&quot;Kris&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Doylechester&quot;, &quot;country&quot;:&quot;Venezuela&quot;, &quot;date&quot;:&quot;1930-09-19&quot;}, &quot;nationality&quot;:&quot;Turkish&quot;}](1)" classname="AuthorTest" time="0.067">
+  <testcase name="verifyGetAuthorByIdGetRequest[{&quot;authorDescription&quot;:&quot;Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.&quot;, &quot;authorId&quot;:37, &quot;authorName&quot;:{&quot;first&quot;:&quot;Alexandro&quot;, &quot;second&quot;:&quot;Kris&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Doylechester&quot;, &quot;country&quot;:&quot;Venezuela&quot;, &quot;date&quot;:&quot;1930-09-19&quot;}, &quot;nationality&quot;:&quot;Turkish&quot;}](1)" classname="AuthorTest" time="0.171">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAuthorByBookIdGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAuthorByBookIdGetRequest' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAuthorByIdGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAuthorByIdGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@2059f785
-uri: io.restassured.internal.RequestSpecificationImpl@2059f785
+method: GET
+uri: http://localhost:8080/api/library/author/37/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@2059f785
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -1319,23 +1345,24 @@ body:
     },
     "authorDescription": "Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint."
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetAuthorsByGenreIdGetRequest[{&quot;genreDescription&quot;:&quot;Id voluptatibus qui ullam omnis laboriosam maxime laudantium. Vel aut dolorem dolorem facilis officiis. Voluptate impedit repellendus iure enim. Modi in sed alias eum. Eaque sunt nihil rerum.&quot;, &quot;genreId&quot;:644, &quot;genreName&quot;:&quot;Metafiction&quot;}](1)" classname="AuthorTest" time="0.322">
+  <testcase name="verifyGetAuthorsByGenreIdGetRequest[{&quot;genreDescription&quot;:&quot;Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.&quot;, &quot;genreId&quot;:7448, &quot;genreName&quot;:&quot;Folklore&quot;}](1)" classname="AuthorTest" time="0.349">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAuthorByIdGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAuthorByIdGetRequest' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAuthorsByGenreIdGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAuthorsByGenreIdGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@771d4db
-uri: io.restassured.internal.RequestSpecificationImpl@771d4db
+method: GET
+uri: http://localhost:8080/api/library/genre/7448/authors?page=1&pagination=true&size=10/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@771d4db
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -1343,74 +1370,88 @@ location: null
 body:
 [
     {
-        "authorId": 97,
+        "authorId": 37,
         "authorName": {
-            "first": "Willa",
-            "second": "Herzog"
+            "first": "Alexandro",
+            "second": "Kris"
+        },
+        "nationality": "Turkish",
+        "birth": {
+            "date": "1930-09-19",
+            "country": "Venezuela",
+            "city": "Doylechester"
+        },
+        "authorDescription": "Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint."
+    },
+    {
+        "authorId": 44,
+        "authorName": {
+            "first": "Dennis",
+            "second": "Will"
+        },
+        "nationality": "Mexican",
+        "birth": {
+            "date": "1990-02-25",
+            "country": "Syrian Arab Republic",
+            "city": "Port Tyreek"
+        },
+        "authorDescription": "Qui velit perspiciatis qui mollitia quidem nihil velit. Doloremque dolorem veniam culpa qui soluta quisquam porro. Consectetur iure est temporibus nihil ut. Aut et provident."
+    },
+    {
+        "authorId": 2539,
+        "authorName": {
+            "first": "Manuel",
+            "second": "Gusikowski"
+        },
+        "nationality": "Cuban",
+        "birth": {
+            "date": "1966-11-25",
+            "country": "Dominican Republic",
+            "city": "New Dangelochester"
+        },
+        "authorDescription": "Quisquam error deserunt. Est ad aut dolores vel in aut quasi. Quas accusamus fuga delectus non quibusdam itaque."
+    },
+    {
+        "authorId": 2827,
+        "authorName": {
+            "first": "Reagan",
+            "second": "Reilly"
+        },
+        "nationality": "Liechtensteiner",
+        "birth": {
+            "date": "1958-06-25",
+            "country": "Guinea",
+            "city": "Port Trisha"
+        },
+        "authorDescription": "Aperiam molestiae veniam dolorem facere libero velit. Ea aliquam molestiae ab qui ducimus eligendi. Aut iure consequatur dolores. Ratione eos et nobis beatae. Nam est eum nesciunt perspiciatis laborum eveniet minus."
+    },
+    {
+        "authorId": 3475,
+        "authorName": {
+            "first": "Mustafa",
+            "second": "Ritchie"
         },
         "nationality": "Irish",
         "birth": {
-            "date": "1965-03-28",
-            "country": "Kiribati",
-            "city": "Port Terrill"
+            "date": "1959-10-10",
+            "country": "Virgin Islands, U.S.",
+            "city": "South Isac"
         },
-        "authorDescription": "Dolorum voluptatem quo aspernatur illo sed mollitia blanditiis. Quia voluptas libero. Facilis nobis et aliquid voluptatem enim est consequuntur. Velit non nisi tempora modi fugit dolorum sequi. Dolores similique voluptate at."
+        "authorDescription": "Eos ut quia cum aliquid. Officia rerum a laborum. Dolores qui et non explicabo molestias ab est. Ad quos fuga beatae culpa temporibus voluptates commodi."
     },
     {
-        "authorId": 763,
+        "authorId": 4882,
         "authorName": {
-            "first": "Arjun",
-            "second": "Hettinger"
+            "first": "Dee",
+            "second": "Smith"
         },
-        "nationality": "Nepalese",
+        "nationality": "Romanian",
         "birth": {
-            "date": "1977-04-21",
-            "country": "Finland",
-            "city": "Fletcherside"
+            "date": "1981-07-04",
+            "country": "Bhutan",
+            "city": "Ornborough"
         },
-        "authorDescription": "Autem amet nam quo pariatur unde iste omnis. Eos dolore deleniti dolorem sunt velit sunt. Quisquam ut iusto. Qui blanditiis quos voluptates. Unde eum a dicta repellendus."
-    },
-    {
-        "authorId": 835,
-        "authorName": {
-            "first": "Nyah",
-            "second": "Hermann"
-        },
-        "nationality": "Angolan",
-        "birth": {
-            "date": "1982-10-02",
-            "country": "Bouvet Island (Bouvetoya)",
-            "city": "Gilberttown"
-        },
-        "authorDescription": "Qui aliquam dolorem accusamus esse vitae. Vitae ducimus odit modi. Iusto nisi quas eius quo harum. Voluptatem officia est sit iste quibusdam. Repudiandae laudantium corporis aut dignissimos."
-    },
-    {
-        "authorId": 2207,
-        "authorName": {
-            "first": "Caleb",
-            "second": "Jast"
-        },
-        "nationality": "Belgian",
-        "birth": {
-            "date": "1997-05-14",
-            "country": "Bahrain",
-            "city": "New Marcia"
-        },
-        "authorDescription": "Ullam et minus dolor accusantium non voluptatem esse. Enim maxime alias voluptates et omnis minus. Id id sint eligendi occaecati. Consequatur consequuntur incidunt voluptate dolore sapiente totam perferendis."
-    },
-    {
-        "authorId": 5202,
-        "authorName": {
-            "first": "Emily",
-            "second": "Parisian"
-        },
-        "nationality": "New Zealander",
-        "birth": {
-            "date": "1959-01-09",
-            "country": "Equatorial Guinea",
-            "city": "South Demetriusfurt"
-        },
-        "authorDescription": "Nulla assumenda ipsum. Voluptatem non ratione quas quo. Rerum voluptas nihil eaque et ea. Doloribus repudiandae cumque."
+        "authorDescription": "Cupiditate amet et eveniet et. Perspiciatis ratione ipsa dolor. Rerum tempora cumque in et quo ea fugit. Quia minima similique nostrum autem sit facere."
     },
     {
         "authorId": 5294,
@@ -1427,6 +1468,34 @@ body:
         "authorDescription": "Facere similique non sint eius quos dolores. Eum cupiditate fugiat consequatur eum sequi. Sunt nihil quis."
     },
     {
+        "authorId": 5413,
+        "authorName": {
+            "first": "Prudence",
+            "second": "Block"
+        },
+        "nationality": "Luxembourger",
+        "birth": {
+            "date": "1922-11-29",
+            "country": "Virgin Islands, British",
+            "city": "New Lupe"
+        },
+        "authorDescription": "At est nulla iure aliquid quod in. Dolores vel ut esse eaque. Id consequatur iusto culpa dolor expedita veritatis. Et recusandae commodi recusandae qui amet officiis."
+    },
+    {
+        "authorId": 5540,
+        "authorName": {
+            "first": "Kacie",
+            "second": "Bartoletti"
+        },
+        "nationality": "Liechtensteiner",
+        "birth": {
+            "date": "1998-04-07",
+            "country": "Samoa",
+            "city": "West Breanneville"
+        },
+        "authorDescription": "Aspernatur magni id. Unde ea aut facere corporis. Nihil quia qui possimus eligendi occaecati."
+    },
+    {
         "authorId": 5628,
         "authorName": {
             "first": "Cassie",
@@ -1439,123 +1508,84 @@ body:
             "city": "New Domenicashire"
         },
         "authorDescription": "Minima quia libero numquam deserunt quia ut. Ut nam repellat. Placeat laudantium quos et. Saepe ut exercitationem doloremque aut."
-    },
-    {
-        "authorId": 5877,
-        "authorName": {
-            "first": "Grace",
-            "second": "Herzog"
-        },
-        "nationality": "Slovenian",
-        "birth": {
-            "date": "1932-05-18",
-            "country": "Spain",
-            "city": "Ivoryfurt"
-        },
-        "authorDescription": "Repellat culpa nulla sapiente veritatis et qui. Tempore molestiae laborum magnam delectus est nulla. Tempore minima ut cum aliquid iste ut voluptas."
-    },
-    {
-        "authorId": 7310,
-        "authorName": {
-            "first": "Eden",
-            "second": "Stoltenberg"
-        },
-        "nationality": "Maldivan",
-        "birth": {
-            "date": "1933-12-31",
-            "country": "Moldova",
-            "city": "Port Jana"
-        },
-        "authorDescription": "Voluptates iste incidunt aut voluptatum. Et tempore quis enim ex quas. Ducimus quo voluptates iure. Officiis dignissimos corrupti voluptas."
-    },
-    {
-        "authorId": 7715,
-        "authorName": {
-            "first": "Noe",
-            "second": "Maggio"
-        },
-        "nationality": "French",
-        "birth": {
-            "date": "1960-10-30",
-            "country": "Botswana",
-            "city": "Brodyberg"
-        },
-        "authorDescription": "Sed aliquam vel quasi quaerat perferendis. Omnis modi vitae aspernatur omnis. Vel iure sed dignissimos. Voluptatem dolor ab minima."
     }
 ]
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetNotFoundAuthorByIdGetRequestNegativeCase[{&quot;authorDescription&quot;:&quot;updated author descr&quot;, &quot;authorId&quot;:9999, &quot;authorName&quot;:{&quot;first&quot;:&quot;firstName&quot;, &quot;second&quot;:&quot;secondName&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Mykolaiv&quot;, &quot;country&quot;:&quot;Ukraine&quot;, &quot;date&quot;:&quot;1990-11-17&quot;}, &quot;nationality&quot;:&quot;ukrainian&quot;}](1)" classname="AuthorTest" time="0.038">
+  <testcase name="verifyGetNotFoundAuthorByIdGetRequestNegativeCase[{&quot;authorDescription&quot;:&quot;updated author descr&quot;, &quot;authorId&quot;:9999, &quot;authorName&quot;:{&quot;first&quot;:&quot;firstName&quot;, &quot;second&quot;:&quot;secondName&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Mykolaiv&quot;, &quot;country&quot;:&quot;Ukraine&quot;, &quot;date&quot;:&quot;1990-11-17&quot;}, &quot;nationality&quot;:&quot;ukrainian&quot;}](1)" classname="AuthorTest" time="0.02">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAuthorsByGenreIdGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAuthorsByGenreIdGetRequest' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetNotFoundAuthorByIdGetRequestNegativeCase' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetNotFoundAuthorByIdGetRequestNegativeCase' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@54a5496f
-uri: io.restassured.internal.RequestSpecificationImpl@54a5496f
+method: GET
+uri: http://localhost:8080/api/library/author/9999/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@54a5496f
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 404 
 location: null
 body:
 {
-    "timeStamp": "21:27:37.473 17-08-2021",
+    "timeStamp": "17:04:21.399 18-08-2021",
     "statusCode": 404,
     "error": "Not Found",
     "errorMessage": "Author with 'authorId' = '9999' doesn't exist!"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifySearchAuthorsGetRequest" classname="AuthorTest" time="0.03">
+  <testcase name="verifySearchAuthorsGetRequest" classname="AuthorTest" time="0.011">
     <failure message="Actual StatusCode not matching to Expected one. expected [200] but found [400]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
 	at AuthorTest.verifySearchAuthorsGetRequest(AuthorTest.java:101)
 ]]></failure>
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetNotFoundAuthorByIdGetRequestNegativeCase' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetNotFoundAuthorByIdGetRequestNegativeCase' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifySearchAuthorsGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifySearchAuthorsGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@6b899971
-uri: io.restassured.internal.RequestSpecificationImpl@6b899971
+method: GET
+uri: http://localhost:8080/api/library/authors/search?query=Sch&page=1&pagination=true&size=10/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@6b899971
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 400 
 location: null
 body:
 
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyCreatingGenrePostRequest[{&quot;genreDescription&quot;:&quot;genre description&quot;, &quot;genreId&quot;:9999, &quot;genreName&quot;:&quot;genre name&quot;}](1)" classname="GenreTest" time="0.04">
+  <testcase name="verifyCreatingGenrePostRequest[{&quot;genreDescription&quot;:&quot;genre description&quot;, &quot;genreId&quot;:9999, &quot;genreName&quot;:&quot;genre name&quot;}](1)" classname="GenreTest" time="0.024">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifySearchAuthorsGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifySearchAuthorsGetRequest' completed.
 beforeGroupGenre
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyCreatingGenrePostRequest' started.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyCreatingGenrePostRequest' started.
 beforeMethodGenre
-
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@9763e61
-uri: io.restassured.internal.RequestSpecificationImpl@9763e61
+method: POST
+uri: http://localhost:8080/api/library/genre/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@9763e61
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+{"genreDescription":"genre description", "genreId":9999, "genreName":"genre name"}
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 201 
@@ -1566,41 +1596,43 @@ body:
     "genreName": "genre name",
     "genreDescription": "genre description"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyDeletingGenreByIdDeleteRequest[{&quot;genreDescription&quot;:&quot;genre description&quot;, &quot;genreId&quot;:9999, &quot;genreName&quot;:&quot;genre name&quot;}](1)" classname="GenreTest" time="0.073">
+  <testcase name="verifyDeletingGenreByIdDeleteRequest[{&quot;genreDescription&quot;:&quot;genre description&quot;, &quot;genreId&quot;:9999, &quot;genreName&quot;:&quot;genre name&quot;}](1)" classname="GenreTest" time="0.037">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyCreatingGenrePostRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyCreatingGenrePostRequest' completed.
 afterMethodGenre
-
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@1071ae7c
-uri: io.restassured.internal.RequestSpecificationImpl@1071ae7c
+method: DELETE
+uri: http://localhost:8080/api/library/genre/9999/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@1071ae7c
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 204 
 location: null
 body:
 
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
-beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyDeletingGenreByIdDeleteRequest' started.
-beforeMethodGenre
 
+beforeMethod
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyDeletingGenreByIdDeleteRequest' started.
+beforeMethodGenre
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@6669cba
-uri: io.restassured.internal.RequestSpecificationImpl@6669cba
+method: POST
+uri: http://localhost:8080/api/library/genre/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@6669cba
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+{"genreDescription":"genre description", "genreId":9999, "genreName":"genre name"}
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 201 
@@ -1611,62 +1643,65 @@ body:
     "genreName": "genre name",
     "genreDescription": "genre description"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@7f894a6f
-uri: io.restassured.internal.RequestSpecificationImpl@7f894a6f
+method: DELETE
+uri: http://localhost:8080/api/library/genre/9999/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@7f894a6f
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 204 
 location: null
 body:
 
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@59278072
-uri: io.restassured.internal.RequestSpecificationImpl@59278072
+method: GET
+uri: http://localhost:8080/api/library/genre/9999/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@59278072
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 404 
 location: null
 body:
 {
-    "timeStamp": "21:27:37.724 17-08-2021",
+    "timeStamp": "17:04:21.687 18-08-2021",
     "statusCode": 404,
     "error": "Not Found",
     "errorMessage": "Genre with 'genreId' = '9999' doesn't exist!"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyUpdatingGenrePutRequest[{&quot;genreDescription&quot;:&quot;updated genre description&quot;, &quot;genreId&quot;:9999, &quot;genreName&quot;:&quot;genre name&quot;}](1)" classname="GenreTest" time="0.035">
+  <testcase name="verifyUpdatingGenrePutRequest[{&quot;genreDescription&quot;:&quot;updated genre description&quot;, &quot;genreId&quot;:9999, &quot;genreName&quot;:&quot;genre name&quot;}](1)" classname="GenreTest" time="0.04">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyDeletingGenreByIdDeleteRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyDeletingGenreByIdDeleteRequest' completed.
 afterMethodGenre
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyUpdatingGenrePutRequest' started.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyUpdatingGenrePutRequest' started.
 beforeMethodGenre
-
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@369fb99a
-uri: io.restassured.internal.RequestSpecificationImpl@369fb99a
+method: POST
+uri: http://localhost:8080/api/library/genre/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@369fb99a
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+{"genreDescription":"genre description", "genreId":9999, "genreName":"genre name"}
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 201 
@@ -1677,16 +1712,17 @@ body:
     "genreName": "genre name",
     "genreDescription": "genre description"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@2919aff3
-uri: io.restassured.internal.RequestSpecificationImpl@2919aff3
+method: PUT
+uri: http://localhost:8080/api/library/genre/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@2919aff3
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+{"genreDescription":"updated genre description", "genreId":9999, "genreName":"genre name"}
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -1697,41 +1733,43 @@ body:
     "genreName": "genre name",
     "genreDescription": "updated genre description"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetAllGenresByAuthorIdGetRequest[{&quot;authorDescription&quot;:&quot;Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.&quot;, &quot;authorId&quot;:37, &quot;authorName&quot;:{&quot;first&quot;:&quot;Alexandro&quot;, &quot;second&quot;:&quot;Kris&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Doylechester&quot;, &quot;country&quot;:&quot;Venezuela&quot;, &quot;date&quot;:&quot;1930-09-19&quot;}, &quot;nationality&quot;:&quot;Turkish&quot;}](1)" classname="GenreTest" time="0.103">
+  <testcase name="verifyGetAllGenresByAuthorIdGetRequest[{&quot;authorDescription&quot;:&quot;Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.&quot;, &quot;authorId&quot;:37, &quot;authorName&quot;:{&quot;first&quot;:&quot;Alexandro&quot;, &quot;second&quot;:&quot;Kris&quot;}, &quot;birth&quot;:{&quot;city&quot;:&quot;Doylechester&quot;, &quot;country&quot;:&quot;Venezuela&quot;, &quot;date&quot;:&quot;1930-09-19&quot;}, &quot;nationality&quot;:&quot;Turkish&quot;}](1)" classname="GenreTest" time="0.076">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyUpdatingGenrePutRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyUpdatingGenrePutRequest' completed.
 afterMethodGenre
-
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@7f41d979
-uri: io.restassured.internal.RequestSpecificationImpl@7f41d979
+method: DELETE
+uri: http://localhost:8080/api/library/genre/9999/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@7f41d979
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 204 
 location: null
 body:
 
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 afterGroupGenre
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAllGenresByAuthorIdGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAllGenresByAuthorIdGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@19f1be04
-uri: io.restassured.internal.RequestSpecificationImpl@19f1be04
+method: GET
+uri: http://localhost:8080/api/library/author/37/genres?page=1&pagination=true&size=10/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@19f1be04
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -1759,23 +1797,24 @@ body:
         "genreDescription": "Reiciendis est quia accusantium tenetur. Hic cupiditate eligendi cumque quo. Suscipit ut veniam dolorem in reprehenderit tenetur. Quaerat autem aliquid ab repudiandae et molestias ea."
     }
 ]
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetAllGenresGetRequest" classname="GenreTest" time="0.213">
+  <testcase name="verifyGetAllGenresGetRequest" classname="GenreTest" time="0.158">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAllGenresByAuthorIdGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAllGenresByAuthorIdGetRequest' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAllGenresGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAllGenresGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@467a2584
-uri: io.restassured.internal.RequestSpecificationImpl@467a2584
+method: GET
+uri: http://localhost:8080/api/library/genres?page=1&pagination=true&size=10/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@467a2584
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -1833,23 +1872,24 @@ body:
         "genreDescription": "Laborum facilis sint iure tenetur asperiores. Et perspiciatis nesciunt dolorum. Eaque rerum omnis porro."
     }
 ]
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetGenreByBookIdGetRequest[{&quot;bookId&quot;:292, &quot;bookName&quot;:&quot;Ipsa dolor laboriosam&quot;, &quot;bookLanguage&quot;:&quot;croatian&quot;, &quot;bookDescription&quot;:&quot;Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.&quot;, &quot;publicationYear&quot;:2008, &quot;additional&quot;:{&quot;pageCount&quot;:682, &quot;size&quot;:{&quot;height&quot;:16.1, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}](1)" classname="GenreTest" time="0.051">
+  <testcase name="verifyGetGenreByBookIdGetRequest[{&quot;bookId&quot;:292, &quot;bookName&quot;:&quot;Ipsa dolor laboriosam&quot;, &quot;bookLanguage&quot;:&quot;croatian&quot;, &quot;bookDescription&quot;:&quot;Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.&quot;, &quot;publicationYear&quot;:2008, &quot;additional&quot;:{&quot;pageCount&quot;:682, &quot;size&quot;:{&quot;height&quot;:16.1, &quot;width&quot;:0.0, &quot;lenght&quot;:0.0}}}](1)" classname="GenreTest" time="0.033">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetAllGenresGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetAllGenresGetRequest' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetGenreByBookIdGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetGenreByBookIdGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@3ef089ce
-uri: io.restassured.internal.RequestSpecificationImpl@3ef089ce
+method: GET
+uri: http://localhost:8080/api/library/book/292/genre?page=1&pagination=true&size=10/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@3ef089ce
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
@@ -1860,88 +1900,91 @@ body:
     "genreName": "Metafiction",
     "genreDescription": "Id voluptatibus qui ullam omnis laboriosam maxime laudantium. Vel aut dolorem dolorem facilis officiis. Voluptate impedit repellendus iure enim. Modi in sed alias eum. Eaque sunt nihil rerum."
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetGenreByIdGetRequest[{&quot;genreDescription&quot;:&quot;Id voluptatibus qui ullam omnis laboriosam maxime laudantium. Vel aut dolorem dolorem facilis officiis. Voluptate impedit repellendus iure enim. Modi in sed alias eum. Eaque sunt nihil rerum.&quot;, &quot;genreId&quot;:644, &quot;genreName&quot;:&quot;Metafiction&quot;}](1)" classname="GenreTest" time="0.053">
+  <testcase name="verifyGetGenreByIdGetRequest[{&quot;genreDescription&quot;:&quot;Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.&quot;, &quot;genreId&quot;:7448, &quot;genreName&quot;:&quot;Folklore&quot;}](1)" classname="GenreTest" time="0.025">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetGenreByBookIdGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetGenreByBookIdGetRequest' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetGenreByIdGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetGenreByIdGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@5f803481
-uri: io.restassured.internal.RequestSpecificationImpl@5f803481
+method: GET
+uri: http://localhost:8080/api/library/genre/7448/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@5f803481
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 200 
 location: null
 body:
 {
-    "genreId": 644,
-    "genreName": "Metafiction",
-    "genreDescription": "Id voluptatibus qui ullam omnis laboriosam maxime laudantium. Vel aut dolorem dolorem facilis officiis. Voluptate impedit repellendus iure enim. Modi in sed alias eum. Eaque sunt nihil rerum."
+    "genreId": 7448,
+    "genreName": "Folklore",
+    "genreDescription": "Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum."
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGetNotFoundGenreByIdGetRequestNegativeCase[{&quot;genreDescription&quot;:&quot;genre description&quot;, &quot;genreId&quot;:9999, &quot;genreName&quot;:&quot;genre name&quot;}](1)" classname="GenreTest" time="0.045">
+  <testcase name="verifyGetNotFoundGenreByIdGetRequestNegativeCase[{&quot;genreDescription&quot;:&quot;genre description&quot;, &quot;genreId&quot;:9999, &quot;genreName&quot;:&quot;genre name&quot;}](1)" classname="GenreTest" time="0.025">
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetGenreByIdGetRequest' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetGenreByIdGetRequest' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetNotFoundGenreByIdGetRequestNegativeCase' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetNotFoundGenreByIdGetRequestNegativeCase' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@2e4339c1
-uri: io.restassured.internal.RequestSpecificationImpl@2e4339c1
+method: GET
+uri: http://localhost:8080/api/library/genre/9999/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@2e4339c1
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 404 
 location: null
 body:
 {
-    "timeStamp": "21:27:38.109 17-08-2021",
+    "timeStamp": "17:04:22.107 18-08-2021",
     "statusCode": 404,
     "error": "Not Found",
     "errorMessage": "Genre with 'genreId' = '9999' doesn't exist!"
 }
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifySearchGenresGetRequest" classname="GenreTest" time="0.029">
+  <testcase name="verifySearchGenresGetRequest" classname="GenreTest" time="0.012">
     <failure message="Actual StatusCode not matching to Expected one. expected [200] but found [400]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Actual StatusCode not matching to Expected one. expected [200] but found [400]
 	at GenreTest.verifySearchGenresGetRequest(GenreTest.java:106)
 ]]></failure>
     <system-out><![CDATA[afterMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifyGetNotFoundGenreByIdGetRequestNegativeCase' completed.
+2021-08-18 17:04 INFO  BaseTest - Test 'verifyGetNotFoundGenreByIdGetRequestNegativeCase' completed.
 beforeMethod
-2021-08-17 21:27 INFO  BaseTest - Test 'verifySearchGenresGetRequest' started.
-
+2021-08-18 17:04 INFO  BaseTest - Test 'verifySearchGenresGetRequest' started.
+2021-08-18 17:04 INFO  HttpClient - 
 
 REQUEST:
-method: io.restassured.internal.RequestSpecificationImpl@54ae1240
-uri: io.restassured.internal.RequestSpecificationImpl@54ae1240
+method: GET
+uri: http://localhost:8080/api/library/genres/search?query=Myt&page=1&pagination=true&size=10/
+queryParam: 
 body:
-io.restassured.internal.RequestSpecificationImpl@54ae1240
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+null
 
+2021-08-18 17:04 INFO  HttpClient - 
 
 RESPONSE:
 status line: HTTP/1.1 400 
 location: null
 body:
 
-2021-08-17 21:27 INFO  HttpClient - org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream@7c69e1e1
+
 ]]></system-out>
   </testcase>
 </testsuite>

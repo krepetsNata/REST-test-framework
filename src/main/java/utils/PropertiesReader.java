@@ -12,13 +12,13 @@ public class PropertiesReader {
 
     public PropertiesReader(String fileName) {
 //        String rootPath = Thread.currentThread().getContextClassLoader().getResource(".").getPath();
-        Path resourceDirectory = Paths.get("src","main","resources");
+        Path resourceDirectory = Paths.get("src", "main", "resources");
         String filePath = resourceDirectory.toFile().getAbsolutePath() + "\\" + fileName;
 
         try (InputStream input = new FileInputStream(filePath)) {
             this.props = new Properties();
             this.props.load(input);
-        } catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

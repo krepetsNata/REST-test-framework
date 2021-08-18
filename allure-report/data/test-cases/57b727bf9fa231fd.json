@@ -1,0 +1,218 @@
+{
+  "uid" : "57b727bf9fa231fd",
+  "name" : "Verifying getting List of Books object by Author id and Genre id with GET method",
+  "fullName" : "BookTest.verifyGetBooksByAuthorIdGenreIdGetRequest",
+  "historyId" : "d82a4ab1be9f79a0976a2f4102c00641",
+  "time" : {
+    "start" : 1629295460133,
+    "stop" : 1629295460227,
+    "duration" : 94
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1629295460128,
+      "stop" : 1629295460129,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get all Books of special Author in special Genre.",
+      "time" : {
+        "start" : 1629295460134,
+        "stop" : 1629295460208,
+        "duration" : 74
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5be4e3763a1276fa",
+        "name" : "My request",
+        "source" : "5be4e3763a1276fa.txt",
+        "type" : "text/plain",
+        "size" : 145
+      }, {
+        "uid" : "9a6514498d3cfb77",
+        "name" : "My response",
+        "source" : "9a6514498d3cfb77.txt",
+        "type" : "text/plain",
+        "size" : 1170
+      }, {
+        "uid" : "b1363e8381f12ddc",
+        "name" : "sendRequest",
+        "source" : "b1363e8381f12ddc.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "options",
+        "value" : "entity.ListOptions@1425e531"
+      }, {
+        "name" : "authorId",
+        "value" : "37"
+      }, {
+        "name" : "genreId",
+        "value" : "7448"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629295460209,
+        "stop" : 1629295460211,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f7118eea03acde08",
+        "name" : "Response for validate status code",
+        "source" : "f7118eea03acde08.txt",
+        "type" : "text/plain",
+        "size" : 1109
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@5d22ed6c"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "200"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Return actual Book List from response.",
+      "time" : {
+        "start" : 1629295460213,
+        "stop" : 1629295460224,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@5d22ed6c"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "6e41184446135fa2",
+      "name" : "validateStatusCode",
+      "source" : "6e41184446135fa2.txt",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "cb95fe2fdaba1311",
+      "name" : "List is empty attachment",
+      "source" : "cb95fe2fdaba1311.txt",
+      "type" : "text/plain",
+      "size" : 41
+    }, {
+      "uid" : "7839eacaa7c3b4fb",
+      "name" : "validateListIsEmpty",
+      "source" : "7839eacaa7c3b4fb.txt",
+      "type" : "text/plain",
+      "size" : 5
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1629295460230,
+      "stop" : 1629295460231,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "BookTest"
+  }, {
+    "name" : "testClass",
+    "value" : "BookTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyGetBooksByAuthorIdGenreIdGetRequest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "book_tests_in_groups"
+  }, {
+    "name" : "suite",
+    "value" : "book_tests_without_precondition"
+  }, {
+    "name" : "subSuite",
+    "value" : "BookTest"
+  }, {
+    "name" : "host",
+    "value" : "NATA-PC"
+  }, {
+    "name" : "thread",
+    "value" : "23996@NATA-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Book api tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{\"authorDescription\":\"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.\", \"authorId\":37, \"authorName\":{\"first\":\"Alexandro\", \"second\":\"Kris\"}, \"birth\":{\"city\":\"Doylechester\", \"country\":\"Venezuela\", \"date\":\"1930-09-19\"}, \"nationality\":\"Turkish\"}"
+  }, {
+    "name" : "arg1",
+    "value" : "{\"genreDescription\":\"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.\", \"genreId\":7448, \"genreName\":\"Folklore\"}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "57b727bf9fa231fd.json",
+  "parameterValues" : [ "{\"authorDescription\":\"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.\", \"authorId\":37, \"authorName\":{\"first\":\"Alexandro\", \"second\":\"Kris\"}, \"birth\":{\"city\":\"Doylechester\", \"country\":\"Venezuela\", \"date\":\"1930-09-19\"}, \"nationality\":\"Turkish\"}", "{\"genreDescription\":\"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.\", \"genreId\":7448, \"genreName\":\"Folklore\"}" ]
+}
