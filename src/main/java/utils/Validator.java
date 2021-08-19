@@ -38,7 +38,7 @@ public class Validator {
         Allure.addAttachment("Response for validate same objects", baseResponse.getResponse().asPrettyString());
         Response response1 = baseResponse.getResponse();
         Object actualObj = response1.jsonPath().getObject(".", expectedObj.getClass());
-        Assert.assertEquals(actualObj, expectedObj, "Objects are not match");
+        Assert.assertTrue(Objects.equals(actualObj, expectedObj), "Objects are not match");
         return actualObj;
     }
 

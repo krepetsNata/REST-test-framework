@@ -1,0 +1,82 @@
+
+
+RESPONSE:
+status line: HTTP/1.1 200 
+body:
+[
+    {
+        "bookId": 1407,
+        "bookName": "Aut ratione ab",
+        "bookLanguage": "arabic",
+        "bookDescription": "Qui non recusandae. Vitae delectus dolor voluptas rerum. Consequatur sapiente quod similique eum.",
+        "additional": {
+            "pageCount": 104,
+            "size": {
+                "height": 17.0,
+                "width": 21.9,
+                "length": 4.8
+            }
+        },
+        "publicationYear": 1987
+    },
+    {
+        "bookId": 3792,
+        "bookName": "Est eveniet et",
+        "bookLanguage": "polish",
+        "bookDescription": "Voluptas autem sint eos minus culpa fugiat unde. Velit ut iste voluptatum et tempora iusto hic. Nisi enim est occaecati reiciendis voluptas.",
+        "additional": {
+            "pageCount": 393,
+            "size": {
+                "height": 28.0,
+                "width": 22.3,
+                "length": 1.3
+            }
+        },
+        "publicationYear": 1991
+    },
+    {
+        "bookId": 7019,
+        "bookName": "Aliquam quia ut",
+        "bookLanguage": "german",
+        "bookDescription": "Vel praesentium in illo natus aliquam. Dolor excepturi qui est et velit magnam. Quaerat earum nulla dolores quisquam. Aut saepe in quo laborum sed. Ut repellendus nihil similique voluptatem tenetur.",
+        "additional": {
+            "pageCount": 766,
+            "size": {
+                "height": 28.2,
+                "width": 13.9,
+                "length": 1.2
+            }
+        },
+        "publicationYear": 1976
+    },
+    {
+        "bookId": 7904,
+        "bookName": "Eos quasi ipsum quaerat",
+        "bookLanguage": "croatian",
+        "bookDescription": "Molestiae eligendi sunt autem sint ut pariatur voluptatem. Dolore aut accusantium sit quidem. Aspernatur sed velit minima voluptatibus sequi et. Velit doloribus tempora ea eos molestiae.",
+        "additional": {
+            "pageCount": 961,
+            "size": {
+                "height": 9.9,
+                "width": 23.6,
+                "length": 3.7
+            }
+        },
+        "publicationYear": 2014
+    },
+    {
+        "bookId": 9377,
+        "bookName": "Necessitatibus debitis aut",
+        "bookLanguage": "spanish",
+        "bookDescription": "Unde similique cum praesentium quo molestias ut nihil. Voluptas quibusdam qui perspiciatis vel. Eveniet repellat molestias ratione vel. Aspernatur expedita minima.",
+        "additional": {
+            "pageCount": 713,
+            "size": {
+                "height": 27.1,
+                "width": 25.5,
+                "length": 3.1
+            }
+        },
+        "publicationYear": 1997
+    }
+]
