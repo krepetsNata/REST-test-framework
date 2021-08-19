@@ -1,5 +1,0 @@
-{
-    "genreId": 9999,
-    "genreName": "genre name",
-    "genreDescription": "updated genre description"
-}

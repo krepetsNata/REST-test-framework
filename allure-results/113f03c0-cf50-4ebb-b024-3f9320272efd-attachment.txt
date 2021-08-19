@@ -1,8 +1,0 @@
-
-
-REQUEST:
-method: GET
-uri: http://localhost:8080/api/library/author/37/genres?page=1&pagination=true&size=10/
-queryParam: 
-body:
-null

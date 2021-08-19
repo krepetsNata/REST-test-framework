@@ -2,6 +2,7 @@ package pojo;
 
 import java.time.LocalDate;
 import java.util.Date;
+import java.util.Objects;
 
 public class AuthorBirth {
     String city;
@@ -44,6 +45,19 @@ public class AuthorBirth {
     public AuthorBirth setDate(String date) {
         this.date = date;
         return this;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AuthorBirth that = (AuthorBirth) o;
+        return city.equals(that.city) && country.equals(that.country) && date.equals(that.date);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(city, country, date);
     }
 
     @Override

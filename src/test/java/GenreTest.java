@@ -99,7 +99,7 @@ public class GenreTest extends BaseTest {
     }
 
     @Test(description = "Verifying searching Genres by its name",
-            groups = "withoutPreconditionGroup")
+            groups = "withoutPreconditionGroup", enabled = false)
     @Description("Verify searching Genres by its name")
     public void verifySearchGenresGetRequest() {//add DP for serching
         BaseResponse<Genre> baseResponse = genreService.getGenresSearchGet(new ListOptions(), "Myt");

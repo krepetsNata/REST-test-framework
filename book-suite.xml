@@ -20,9 +20,6 @@
         </groups>
         <classes>
             <class name="BookTest">
-<!--                <methods>-->
-<!--                    <include name="verifySearchBooksGetRequest"/>-->
-<!--                </methods>-->
             </class>
         </classes>
     </test>

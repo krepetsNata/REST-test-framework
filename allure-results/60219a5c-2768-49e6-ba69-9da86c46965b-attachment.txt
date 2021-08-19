@@ -1,1 +1,0 @@
-list.isNull()=true, expectedState=true

@@ -113,6 +113,7 @@ public class BookTest extends BaseTest {
     @Description("Verify searching books by its name")
     public void verifySearchBooksGetRequest() {//add DP for searching
         BaseResponse<Book> baseResponse = bookService.getBooksSearchGet(new ListOptions(), "Dolor");
+        System.out.println("==>>"+baseResponse.getResponse().asString());
         Validator.validateStatusCode(baseResponse, SC_OK);
         List<Book> bookActualList = bookService.getActualListBooks(baseResponse);
         Validator.validateListIsEmpty(bookActualList, false);

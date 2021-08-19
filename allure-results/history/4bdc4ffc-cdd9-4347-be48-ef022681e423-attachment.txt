@@ -1,8 +1,0 @@
-
-
-REQUEST:
-method: PUT
-uri: http://localhost:8080/api/library/book/
-queryParam: 
-body:
-{"bookId":536, "bookName":"Sed sunt et quas", "bookLanguage":"spanish", "bookDescription":"updated book description", "publicationYear":1974, "additional":{"pageCount":573, "size":{"height":14.9, "width":0.0, "lenght":0.0}}}

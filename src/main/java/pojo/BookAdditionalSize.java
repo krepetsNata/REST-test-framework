@@ -1,5 +1,7 @@
 package pojo;
 
+import java.util.Objects;
+
 public class BookAdditionalSize {
     float height;
     float length;
@@ -39,6 +41,19 @@ public class BookAdditionalSize {
     public BookAdditionalSize setWidth(float width) {
         this.width = width;
         return this;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        BookAdditionalSize that = (BookAdditionalSize) o;
+        return Float.compare(that.height, height) == 0 && Float.compare(that.length, length) == 0 && Float.compare(that.width, width) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(height, length, width);
     }
 
     @Override

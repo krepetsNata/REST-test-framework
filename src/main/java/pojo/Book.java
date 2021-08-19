@@ -1,5 +1,7 @@
 package pojo;
 
+import java.util.Objects;
+
 //@JsonIgnoreProperties(ignoreUnknown = true)
 public class Book {
     int bookId;
@@ -73,6 +75,19 @@ public class Book {
     public Book setAdditional(BookAdditional additional) {
         this.additional = additional;
         return this;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return bookId == book.bookId && publicationYear == book.publicationYear && bookName.equals(book.bookName) && bookLanguage.equals(book.bookLanguage) && bookDescription.equals(book.bookDescription) && additional.equals(book.additional);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(bookId, bookName, bookLanguage, bookDescription, publicationYear, additional);
     }
 
     @Override

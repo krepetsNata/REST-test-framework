@@ -94,7 +94,7 @@ public class AuthorTest extends BaseTest {
     }
 
     @Test(description = "Verifying searching books by its name",
-            groups = "withoutPreconditionGroup")
+            groups = "withoutPreconditionGroup", enabled = false)
     @Description("Verify searching books by its name")
     public void verifySearchAuthorsGetRequest() {//add DP for searching
         BaseResponse<Author> baseResponse = authorService.getAuthorsSearchGet(new ListOptions(), "Sch");

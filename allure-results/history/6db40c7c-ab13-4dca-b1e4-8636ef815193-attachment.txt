@@ -1,8 +1,0 @@
-
-
-REQUEST:
-method: GET
-uri: http://localhost:8080/api/library/genres/search?query=Myt&page=1&pagination=true&size=10/
-queryParam: 
-body:
-null

@@ -37,9 +37,8 @@ public class Validator {
     public static Object validateSameObjects(BaseResponse baseResponse, Object expectedObj) {
         Allure.addAttachment("Response for validate same objects", baseResponse.getResponse().asPrettyString());
         Response response1 = baseResponse.getResponse();
-        //System.out.println(PrettyJsonPrinting.getPrettyJsonString(response1.getBody().asString()));
         Object actualObj = response1.jsonPath().getObject(".", expectedObj.getClass());
-        Assert.assertEquals(actualObj.toString(), expectedObj.toString(), "Objects are not match");
+        Assert.assertEquals(actualObj, expectedObj, "Objects are not match");
         return actualObj;
     }
 
@@ -65,19 +64,14 @@ public class Validator {
      */
     @Attachment
     public static boolean validateListIsEmpty(List list, boolean expectedState) {
-
         boolean empty = list.isEmpty();
-
         boolean result = empty & expectedState;
-//        if(!expectedState)
-//            result = true;
-//        if(!empty & !expectedState)
-//            result = true;
 
         if (result)
             Assert.assertTrue(empty, "List is Not empty");
         else
             Assert.assertFalse(empty, "List is empty");
+
         Allure.addAttachment("List is empty attachment", String.format("list.isEmpty()=%s, expectedState=%s", list.isEmpty(), expectedState));
         return result;
     }
@@ -91,19 +85,14 @@ public class Validator {
      */
     @Attachment
     public static boolean validateObjectIsNull(Object obj, boolean expectedState) {
-
         boolean empty = Objects.isNull(obj);
-
         boolean result = empty & expectedState;
-//        if(expectedState == false)
-//            result = empty & expectedState?true:true;
-//        if(empty == false & expectedState == false)
-//            result = empty & expectedState?false:true;
 
         if (result)
             Assert.assertTrue(empty, "Obj is NOT null");
         else
             Assert.assertFalse(empty, "Obj is null");
+
         Allure.addAttachment("List is empty attachment", String.format("list.isNull()=%s, expectedState=%s", empty, expectedState));
         return result;
     }

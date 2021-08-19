@@ -1,5 +1,7 @@
 package pojo;
 
+import java.util.Objects;
+
 public class Author {
     String authorDescription;
     int authorId;
@@ -61,6 +63,19 @@ public class Author {
     public Author setNationality(String nationality) {
         this.nationality = nationality;
         return this;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return authorId == author.authorId && authorDescription.equals(author.authorDescription) && authorName.equals(author.authorName) && birth.equals(author.birth) && nationality.equals(author.nationality);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(authorDescription, authorId, authorName, birth, nationality);
     }
 
     @Override

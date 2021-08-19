@@ -1,8 +1,0 @@
-
-
-REQUEST:
-method: GET
-uri: http://localhost:8080/api/library/genre/7448/
-queryParam: 
-body:
-null
