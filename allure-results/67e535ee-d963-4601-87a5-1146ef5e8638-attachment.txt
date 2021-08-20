@@ -1,0 +1,157 @@
+
+
+RESPONSE:
+status line: HTTP/1.1 200 
+body:
+[
+    {
+        "bookId": 52,
+        "bookName": "Dolorem ut explicabo",
+        "bookLanguage": "russian",
+        "bookDescription": "Reiciendis recusandae voluptas eaque eligendi aliquid voluptatem possimus. Qui voluptatum quo maiores nemo totam cum consequatur. Et neque hic temporibus totam exercitationem temporibus itaque. Praesentium ut sunt aliquid nesciunt id animi. Possimus unde fugit repudiandae.",
+        "additional": {
+            "pageCount": 183,
+            "size": {
+                "height": 27.8,
+                "width": 26.1,
+                "length": 4.9
+            }
+        },
+        "publicationYear": 1988
+    },
+    {
+        "bookId": 94,
+        "bookName": "Illum labore nesciunt inventore",
+        "bookLanguage": "farsi",
+        "bookDescription": "Quidem quae corrupti aut animi ea omnis culpa. Dignissimos id est ea labore aliquam fugit. Maiores neque occaecati voluptatem. Vero consequuntur qui sit id. Odio a ea non provident aut magni omnis.",
+        "additional": {
+            "pageCount": 885,
+            "size": {
+                "height": 34.1,
+                "width": 24.4,
+                "length": 1.6
+            }
+        },
+        "publicationYear": 1971
+    },
+    {
+        "bookId": 111,
+        "bookName": "Eaque recusandae voluptatibus",
+        "bookLanguage": "spanish",
+        "bookDescription": "Molestias autem quam voluptas perferendis sed dicta dolorem. Vero ipsum et minima qui quo quis quaerat. Explicabo optio velit tempora iure voluptatibus. Consequatur officia ea laborum asperiores ut consequatur.",
+        "additional": {
+            "pageCount": 936,
+            "size": {
+                "height": 10.0,
+                "width": 32.7,
+                "length": 4.4
+            }
+        },
+        "publicationYear": 1991
+    },
+    {
+        "bookId": 167,
+        "bookName": "Esse facilis architecto",
+        "bookLanguage": "farsi",
+        "bookDescription": "Odit voluptatem totam. Voluptatibus ut vel qui. Non quos autem dicta. Sed qui debitis. Delectus et corporis voluptas enim minima.",
+        "additional": {
+            "pageCount": 846,
+            "size": {
+                "height": 18.6,
+                "width": 14.5,
+                "length": 3.4
+            }
+        },
+        "publicationYear": 2010
+    },
+    {
+        "bookId": 210,
+        "bookName": "Qui vitae rerum",
+        "bookLanguage": "german",
+        "bookDescription": "Vel repellat architecto ullam culpa dolorem dignissimos sint. Aliquam qui dolor. Et dolor ab vel rerum cupiditate dignissimos exercitationem.",
+        "additional": {
+            "pageCount": 675,
+            "size": {
+                "height": 15.9,
+                "width": 9.3,
+                "length": 2.7
+            }
+        },
+        "publicationYear": 1971
+    },
+    {
+        "bookId": 238,
+        "bookName": "Eum maxime blanditiis",
+        "bookLanguage": "armenian",
+        "bookDescription": "Fugit repudiandae sapiente. Est non culpa et hic autem laudantium autem. Iste assumenda officiis dolores quo fugit. Non non iste autem culpa.",
+        "additional": {
+            "pageCount": 610,
+            "size": {
+                "height": 32.5,
+                "width": 15.2,
+                "length": 2.7
+            }
+        },
+        "publicationYear": 2000
+    },
+    {
+        "bookId": 292,
+        "bookName": "Ipsa dolor laboriosam",
+        "bookLanguage": "croatian",
+        "bookDescription": "Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.",
+        "additional": {
+            "pageCount": 682,
+            "size": {
+                "height": 16.1,
+                "width": 22.4,
+                "length": 3.2
+            }
+        },
+        "publicationYear": 2008
+    },
+    {
+        "bookId": 327,
+        "bookName": "Eius iure sint",
+        "bookLanguage": "russian",
+        "bookDescription": "Consequatur non ducimus minima. Placeat et placeat nesciunt officia vel eius accusantium. Dolore ut est modi atque alias laudantium molestias.",
+        "additional": {
+            "pageCount": 908,
+            "size": {
+                "height": 15.8,
+                "width": 16.6,
+                "length": 2.4
+            }
+        },
+        "publicationYear": 1988
+    },
+    {
+        "bookId": 421,
+        "bookName": "Fugiat sit architecto",
+        "bookLanguage": "urdu",
+        "bookDescription": "Voluptatem distinctio dolor voluptatem praesentium consequatur et. Beatae suscipit vero. Beatae hic sed optio.",
+        "additional": {
+            "pageCount": 13,
+            "size": {
+                "height": 14.2,
+                "width": 8.8,
+                "length": 1.7
+            }
+        },
+        "publicationYear": 1985
+    },
+    {
+        "bookId": 562,
+        "bookName": "Cumque magni quisquam",
+        "bookLanguage": "belorussian",
+        "bookDescription": "Saepe sapiente amet nemo porro voluptate occaecati. Ipsa sapiente et illo quis molestiae. Quaerat ullam rerum nostrum perspiciatis. Harum commodi non nesciunt at exercitationem.",
+        "additional": {
+            "pageCount": 530,
+            "size": {
+                "height": 30.0,
+                "width": 12.2,
+                "length": 1.5
+            }
+        },
+        "publicationYear": 2002
+    }
+]

@@ -1,0 +1,281 @@
+[ {
+  "uid" : "c1b63b28b62b594f",
+  "name" : "Verifying getting all Book objects with GET method",
+  "time" : {
+    "start" : 1629295459787,
+    "stop" : 1629295459944,
+    "duration" : 157
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c2584f18fb1642e",
+  "name" : "Verifying getting all Genre objects with GET method",
+  "time" : {
+    "start" : 1629297396490,
+    "stop" : 1629297396553,
+    "duration" : 63
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "836bf01da76e4eb0",
+  "name" : "Verifying creating new Book object by Author id and Genre idwith POST method",
+  "time" : {
+    "start" : 1629295455502,
+    "stop" : 1629295459241,
+    "duration" : 3739
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "57b727bf9fa231fd",
+  "name" : "Verifying getting List of Books object by Author id and Genre id with GET method",
+  "time" : {
+    "start" : 1629295460133,
+    "stop" : 1629295460227,
+    "duration" : 94
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9fd5d43e1999bab1",
+  "name" : "Verifying deleting 1 Book object by id with DELETE method",
+  "time" : {
+    "start" : 1629295459413,
+    "stop" : 1629295459536,
+    "duration" : 123
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3dea1c5055516d25",
+  "name" : "Verifying getting 1 Author object by Book id with GET method",
+  "time" : {
+    "start" : 1629295461159,
+    "stop" : 1629295461213,
+    "duration" : 54
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bff9f7e51795604b",
+  "name" : "Verifying getting List of Books object by Author id with GET method",
+  "time" : {
+    "start" : 1629295460238,
+    "stop" : 1629295460345,
+    "duration" : 107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4e1a8788a6b9c7d9",
+  "name" : "Verifying creating new Genre object with POST method",
+  "time" : {
+    "start" : 1629297392213,
+    "stop" : 1629297395997,
+    "duration" : 3784
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "214583d6f3774687",
+  "name" : "Verifying searching books by its name",
+  "time" : {
+    "start" : 1629295460544,
+    "stop" : 1629295460578,
+    "duration" : 34
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9130212e603004e1",
+  "name" : "Verifying getting 1 Author object by id with GET method",
+  "time" : {
+    "start" : 1629295461228,
+    "stop" : 1629295461281,
+    "duration" : 53
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6fce0590f7e281b9",
+  "name" : "Verifying updating Book object with PUT method",
+  "time" : {
+    "start" : 1629295459610,
+    "stop" : 1629295459692,
+    "duration" : 82
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b3447f69a5322f4",
+  "name" : "Verifying getting 1 Author object by Book id with GET method",
+  "time" : {
+    "start" : 1629295461293,
+    "stop" : 1629295461355,
+    "duration" : 62
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "264d1afccc3adaf2",
+  "name" : "Negative case when element not found - verifying getting 1 Author object by id with GET method",
+  "time" : {
+    "start" : 1629295461364,
+    "stop" : 1629295461412,
+    "duration" : 48
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70af82236b81c36b",
+  "name" : "Verifying searching books by its name",
+  "time" : {
+    "start" : 1629295461421,
+    "stop" : 1629295461454,
+    "duration" : 33
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1dca6d80f5384d5f",
+  "name" : "Negative case when element not found - verifying getting 1 Genre object by id with GET method",
+  "time" : {
+    "start" : 1629297396708,
+    "stop" : 1629297396770,
+    "duration" : 62
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a5a3d55c7d148ce",
+  "name" : "Verifying getting 1 Genre object by id with GET method",
+  "time" : {
+    "start" : 1629297396650,
+    "stop" : 1629297396685,
+    "duration" : 35
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44268785da01886",
+  "name" : "Verifying getting List of Books object by Genre id with GET method",
+  "time" : {
+    "start" : 1629295460357,
+    "stop" : 1629295460467,
+    "duration" : 110
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "725d6220cfa737c3",
+  "name" : "Verifying getting all Genre objects by AuthorId with GET method",
+  "time" : {
+    "start" : 1629297396405,
+    "stop" : 1629297396478,
+    "duration" : 73
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eb3498d5b555ada8",
+  "name" : "Verifying deleting 1 Author object by id with DELETE method",
+  "time" : {
+    "start" : 1629295460778,
+    "stop" : 1629295460877,
+    "duration" : 99
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6eb8e4473af3fac",
+  "name" : "Verifying searching Genres by its name",
+  "time" : {
+    "start" : 1629297396780,
+    "stop" : 1629297396808,
+    "duration" : 28
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "448688141fda4b6d",
+  "name" : "Verifying getting all Genre objects by BookId with GET method",
+  "time" : {
+    "start" : 1629297396569,
+    "stop" : 1629297396640,
+    "duration" : 71
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a742f804cafeca12",
+  "name" : "Verifying creating new Author object with POST method",
+  "time" : {
+    "start" : 1629295460613,
+    "stop" : 1629295460676,
+    "duration" : 63
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e6a6c40ebbc2f91b",
+  "name" : "Verifying getting all Author objects with GET method",
+  "time" : {
+    "start" : 1629295461074,
+    "stop" : 1629295461146,
+    "duration" : 72
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90b535470107b9b5",
+  "name" : "Verifying updating Author object with PUT method",
+  "time" : {
+    "start" : 1629295460945,
+    "stop" : 1629295461009,
+    "duration" : 64
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4ba2a4c8a13cb6a",
+  "name" : "Negative case when element not found - verifying getting 1 Book object by id with GET method",
+  "time" : {
+    "start" : 1629295460478,
+    "stop" : 1629295460535,
+    "duration" : 57
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "943d62750974e3b1",
+  "name" : "Verifying getting 1 Book object by id with GET method",
+  "time" : {
+    "start" : 1629295459973,
+    "stop" : 1629295460122,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a0e5e0a40388a5e",
+  "name" : "Verifying deleting 1 Genre object by id with DELETE method",
+  "time" : {
+    "start" : 1629297396140,
+    "stop" : 1629297396223,
+    "duration" : 83
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8362c4e76167ec08",
+  "name" : "Verifying updating Genre object with PUT method",
+  "time" : {
+    "start" : 1629297396291,
+    "stop" : 1629297396338,
+    "duration" : 47
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

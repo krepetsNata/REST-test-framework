@@ -1,0 +1,206 @@
+{
+  "uid" : "e6a6c40ebbc2f91b",
+  "name" : "Verifying getting all Author objects with GET method",
+  "fullName" : "AuthorTest.verifyGetAllAuthorsGetRequest",
+  "historyId" : "e2c77dbf494f259d5b2cf653ddaa6d6f",
+  "time" : {
+    "start" : 1629295461074,
+    "stop" : 1629295461146,
+    "duration" : 72
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1629295461071,
+      "stop" : 1629295461071,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get all Authors.",
+      "time" : {
+        "start" : 1629295461075,
+        "stop" : 1629295461117,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e2d660797c3ab68",
+        "name" : "My request",
+        "source" : "e2d660797c3ab68.txt",
+        "type" : "text/plain",
+        "size" : 126
+      }, {
+        "uid" : "263b6bb3d2be2a30",
+        "name" : "My response",
+        "source" : "263b6bb3d2be2a30.txt",
+        "type" : "text/plain",
+        "size" : 5299
+      }, {
+        "uid" : "dff8cafbc9ce921d",
+        "name" : "sendRequest",
+        "source" : "dff8cafbc9ce921d.txt",
+        "type" : "text/plain",
+        "size" : 55
+      } ],
+      "parameters" : [ {
+        "name" : "options",
+        "value" : "entity.ListOptions@3f3a6091"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629295461117,
+        "stop" : 1629295461120,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bf924a5819c9fb17",
+        "name" : "Response for validate status code",
+        "source" : "bf924a5819c9fb17.txt",
+        "type" : "text/plain",
+        "size" : 5238
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@6df31abf"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "200"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Return actual list of Authors from response.",
+      "time" : {
+        "start" : 1629295461121,
+        "stop" : 1629295461143,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@6df31abf"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "78aac31f2c1cc530",
+      "name" : "validateStatusCode",
+      "source" : "78aac31f2c1cc530.txt",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "8f4f4be3365fce56",
+      "name" : "List is empty attachment",
+      "source" : "8f4f4be3365fce56.txt",
+      "type" : "text/plain",
+      "size" : 41
+    }, {
+      "uid" : "5949f372f42f314",
+      "name" : "validateListIsEmpty",
+      "source" : "5949f372f42f314.txt",
+      "type" : "text/plain",
+      "size" : 5
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1629295461149,
+      "stop" : 1629295461149,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "testClass",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyGetAllAuthorsGetRequest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "author_tests_in_groups"
+  }, {
+    "name" : "suite",
+    "value" : "author_tests_without_precondition"
+  }, {
+    "name" : "subSuite",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "host",
+    "value" : "NATA-PC"
+  }, {
+    "name" : "thread",
+    "value" : "23996@NATA-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Author api test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e6a6c40ebbc2f91b.json",
+  "parameterValues" : [ ]
+}

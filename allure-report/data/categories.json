@@ -1,0 +1,52 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Actual StatusCode not matching to Expected one. expected [200] but found [400]",
+      "children" : [ {
+        "name" : "Verifying searching books by its name",
+        "uid" : "214583d6f3774687",
+        "parentUid" : "105617ffffce29c9a3fdd9c5b185844e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629295460544,
+          "stop" : 1629295460578,
+          "duration" : 34
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verifying searching books by its name",
+        "uid" : "70af82236b81c36b",
+        "parentUid" : "105617ffffce29c9a3fdd9c5b185844e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629295461421,
+          "stop" : 1629295461454,
+          "duration" : 33
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verifying searching Genres by its name",
+        "uid" : "a6eb8e4473af3fac",
+        "parentUid" : "105617ffffce29c9a3fdd9c5b185844e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629297396780,
+          "stop" : 1629297396808,
+          "duration" : 28
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "105617ffffce29c9a3fdd9c5b185844e"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

@@ -1,0 +1,179 @@
+{
+  "uid" : "943d62750974e3b1",
+  "name" : "Verifying getting 1 Book object by id with GET method",
+  "fullName" : "BookTest.verifyGetBookByIdGetRequest",
+  "historyId" : "4ce55212bc0b42e5df7507c1ca7c43c2",
+  "time" : {
+    "start" : 1629295459973,
+    "stop" : 1629295460122,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1629295459962,
+      "stop" : 1629295459963,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get Book object by 'bookId'.",
+      "time" : {
+        "start" : 1629295459973,
+        "stop" : 1629295460118,
+        "duration" : 145
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a46fc790800443de",
+        "name" : "My request",
+        "source" : "a46fc790800443de.txt",
+        "type" : "text/plain",
+        "size" : 96
+      }, {
+        "uid" : "ecf47bc47e7cce75",
+        "name" : "My response",
+        "source" : "ecf47bc47e7cce75.txt",
+        "type" : "text/plain",
+        "size" : 504
+      }, {
+        "uid" : "10565f9eee09eb39",
+        "name" : "sendRequest",
+        "source" : "10565f9eee09eb39.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "bookId",
+        "value" : "292"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629295460118,
+        "stop" : 1629295460120,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e9b987d36bcf500c",
+        "name" : "Response for validate status code",
+        "source" : "e9b987d36bcf500c.txt",
+        "type" : "text/plain",
+        "size" : 443
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@7a021f49"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "200"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "58495857c388bc9c",
+      "name" : "validateStatusCode",
+      "source" : "58495857c388bc9c.txt",
+      "type" : "text/plain",
+      "size" : 4
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1629295460124,
+      "stop" : 1629295460124,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "BookTest"
+  }, {
+    "name" : "testClass",
+    "value" : "BookTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyGetBookByIdGetRequest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "book_tests_in_groups"
+  }, {
+    "name" : "suite",
+    "value" : "book_tests_without_precondition"
+  }, {
+    "name" : "subSuite",
+    "value" : "BookTest"
+  }, {
+    "name" : "host",
+    "value" : "NATA-PC"
+  }, {
+    "name" : "thread",
+    "value" : "23996@NATA-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Book api tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{\"bookId\":292, \"bookName\":\"Ipsa dolor laboriosam\", \"bookLanguage\":\"croatian\", \"bookDescription\":\"Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.\", \"publicationYear\":2008, \"additional\":{\"pageCount\":682, \"size\":{\"height\":16.1, \"width\":0.0, \"lenght\":0.0}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "943d62750974e3b1.json",
+  "parameterValues" : [ "{\"bookId\":292, \"bookName\":\"Ipsa dolor laboriosam\", \"bookLanguage\":\"croatian\", \"bookDescription\":\"Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.\", \"publicationYear\":2008, \"additional\":{\"pageCount\":682, \"size\":{\"height\":16.1, \"width\":0.0, \"lenght\":0.0}}}" ]
+}

@@ -1,0 +1,8 @@
+
+
+REQUEST:
+method: GET
+uri: http://localhost:8080/api/library/author/9999/
+queryParam: 
+body:
+null

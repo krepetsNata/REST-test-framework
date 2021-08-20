@@ -1,0 +1,220 @@
+{
+  "uid" : "448688141fda4b6d",
+  "name" : "Verifying getting all Genre objects by BookId with GET method",
+  "fullName" : "GenreTest.verifyGetGenreByBookIdGetRequest",
+  "historyId" : "fbab47c225e93136412ab11ea44a14f5",
+  "time" : {
+    "start" : 1629297396569,
+    "stop" : 1629297396640,
+    "duration" : 71
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1629297396563,
+      "stop" : 1629297396563,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get Genre of special Book.",
+      "time" : {
+        "start" : 1629297396569,
+        "stop" : 1629297396631,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "37fcac870962d8e7",
+        "name" : "My request",
+        "source" : "37fcac870962d8e7.txt",
+        "type" : "text/plain",
+        "size" : 133
+      }, {
+        "uid" : "66b1faef748c1bac",
+        "name" : "My response",
+        "source" : "66b1faef748c1bac.txt",
+        "type" : "text/plain",
+        "size" : 319
+      }, {
+        "uid" : "ea41d55e4181ff3f",
+        "name" : "sendRequest",
+        "source" : "ea41d55e4181ff3f.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "options",
+        "value" : "entity.ListOptions@4f82248f"
+      }, {
+        "name" : "bookId",
+        "value" : "292"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629297396631,
+        "stop" : 1629297396633,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "72e99bd5131e1a97",
+        "name" : "Response for validate status code",
+        "source" : "72e99bd5131e1a97.txt",
+        "type" : "text/plain",
+        "size" : 273
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@7f1fec57"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "200"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Return actual Genre object from response",
+      "time" : {
+        "start" : 1629297396634,
+        "stop" : 1629297396637,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@7f1fec57"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "7a8f8cc0856d0530",
+      "name" : "validateStatusCode",
+      "source" : "7a8f8cc0856d0530.txt",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "a5405f158a2b7049",
+      "name" : "List is empty attachment",
+      "source" : "a5405f158a2b7049.txt",
+      "type" : "text/plain",
+      "size" : 40
+    }, {
+      "uid" : "3c676093a44b3446",
+      "name" : "validateObjectIsNull",
+      "source" : "3c676093a44b3446.txt",
+      "type" : "text/plain",
+      "size" : 5
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1629297396642,
+      "stop" : 1629297396642,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "GenreTest"
+  }, {
+    "name" : "testClass",
+    "value" : "GenreTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyGetGenreByBookIdGetRequest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "genre_tests_in_groups"
+  }, {
+    "name" : "suite",
+    "value" : "genre_tests_without_precondition"
+  }, {
+    "name" : "subSuite",
+    "value" : "GenreTest"
+  }, {
+    "name" : "host",
+    "value" : "NATA-PC"
+  }, {
+    "name" : "thread",
+    "value" : "19660@NATA-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Genre api tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{\"bookId\":292, \"bookName\":\"Ipsa dolor laboriosam\", \"bookLanguage\":\"croatian\", \"bookDescription\":\"Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.\", \"publicationYear\":2008, \"additional\":{\"pageCount\":682, \"size\":{\"height\":16.1, \"width\":0.0, \"lenght\":0.0}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b728e18432eee370",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629295461974,
+        "stop" : 1629295462046,
+        "duration" : 72
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "448688141fda4b6d.json",
+  "parameterValues" : [ "{\"bookId\":292, \"bookName\":\"Ipsa dolor laboriosam\", \"bookLanguage\":\"croatian\", \"bookDescription\":\"Sit aut architecto ab voluptatem. Rerum itaque voluptatem corrupti vero laboriosam. Officiis esse dolor. Qui sunt quasi laudantium.\", \"publicationYear\":2008, \"additional\":{\"pageCount\":682, \"size\":{\"height\":16.1, \"width\":0.0, \"lenght\":0.0}}}" ]
+}

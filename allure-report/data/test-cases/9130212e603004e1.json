@@ -1,0 +1,179 @@
+{
+  "uid" : "9130212e603004e1",
+  "name" : "Verifying getting 1 Author object by id with GET method",
+  "fullName" : "AuthorTest.verifyGetAuthorByIdGetRequest",
+  "historyId" : "4ffdde6b52a8d0cb5ac6764f08d4d735",
+  "time" : {
+    "start" : 1629295461228,
+    "stop" : 1629295461281,
+    "duration" : 53
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1629295461220,
+      "stop" : 1629295461221,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get Author object by 'authorId'.",
+      "time" : {
+        "start" : 1629295461229,
+        "stop" : 1629295461277,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "52607961d5f734d0",
+        "name" : "My request",
+        "source" : "52607961d5f734d0.txt",
+        "type" : "text/plain",
+        "size" : 97
+      }, {
+        "uid" : "b7a55b2d9993495d",
+        "name" : "My response",
+        "source" : "b7a55b2d9993495d.txt",
+        "type" : "text/plain",
+        "size" : 548
+      }, {
+        "uid" : "d8320ef9d822e97a",
+        "name" : "sendRequest",
+        "source" : "d8320ef9d822e97a.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "authorId",
+        "value" : "37"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629295461277,
+        "stop" : 1629295461279,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dfeafc0965239fe",
+        "name" : "Response for validate status code",
+        "source" : "dfeafc0965239fe.txt",
+        "type" : "text/plain",
+        "size" : 487
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@2586e878"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "200"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "278726ec43de65d4",
+      "name" : "validateStatusCode",
+      "source" : "278726ec43de65d4.txt",
+      "type" : "text/plain",
+      "size" : 4
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1629295461285,
+      "stop" : 1629295461286,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "testClass",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyGetAuthorByIdGetRequest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "author_tests_in_groups"
+  }, {
+    "name" : "suite",
+    "value" : "author_tests_without_precondition"
+  }, {
+    "name" : "subSuite",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "host",
+    "value" : "NATA-PC"
+  }, {
+    "name" : "thread",
+    "value" : "23996@NATA-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Author api test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{\"authorDescription\":\"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.\", \"authorId\":37, \"authorName\":{\"first\":\"Alexandro\", \"second\":\"Kris\"}, \"birth\":{\"city\":\"Doylechester\", \"country\":\"Venezuela\", \"date\":\"1930-09-19\"}, \"nationality\":\"Turkish\"}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9130212e603004e1.json",
+  "parameterValues" : [ "{\"authorDescription\":\"Neque natus sequi. Sunt molestiae quia numquam qui qui quasi ipsa. Vel ea iusto assumenda voluptatem eos qui. Qui excepturi dolor vitae ea et repudiandae. Voluptas mollitia vero autem minima unde commodi sint.\", \"authorId\":37, \"authorName\":{\"first\":\"Alexandro\", \"second\":\"Kris\"}, \"birth\":{\"city\":\"Doylechester\", \"country\":\"Venezuela\", \"date\":\"1930-09-19\"}, \"nationality\":\"Turkish\"}" ]
+}

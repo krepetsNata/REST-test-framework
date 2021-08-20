@@ -1,0 +1,8 @@
+
+
+REQUEST:
+method: PUT
+uri: http://localhost:8080/api/library/author/
+queryParam: 
+body:
+{"authorDescription":"updated author description", "authorId":9999, "authorName":{"first":"firstName", "second":"secondName"}, "birth":{"city":"Mykolaiv", "country":"Ukraine", "date":"1990-11-17"}, "nationality":"ukrainian"}

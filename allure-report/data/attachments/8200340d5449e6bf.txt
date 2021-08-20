@@ -1,0 +1,11 @@
+
+
+RESPONSE:
+status line: HTTP/1.1 200 
+location: null
+body:
+{
+    "genreId": 9999,
+    "genreName": "genre name",
+    "genreDescription": "updated genre description"
+}

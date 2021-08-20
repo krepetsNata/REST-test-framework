@@ -1,0 +1,346 @@
+{
+  "uid" : "eb3498d5b555ada8",
+  "name" : "Verifying deleting 1 Author object by id with DELETE method",
+  "fullName" : "AuthorTest.verifyDeletingAuthorByIdDeleteRequest",
+  "historyId" : "9a59c9c5bdc8138f5a80c9b459ca6c69",
+  "time" : {
+    "start" : 1629295460778,
+    "stop" : 1629295460877,
+    "duration" : 99
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethodAuthor",
+    "time" : {
+      "start" : 1629295460741,
+      "stop" : 1629295460774,
+      "duration" : 33
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create new Author.",
+      "time" : {
+        "start" : 1629295460741,
+        "stop" : 1629295460774,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4736a8d409752b8",
+        "name" : "My request",
+        "source" : "4736a8d409752b8.txt",
+        "type" : "text/plain",
+        "size" : 309
+      }, {
+        "uid" : "8ebd7b4a1b5291a4",
+        "name" : "My response",
+        "source" : "8ebd7b4a1b5291a4.txt",
+        "type" : "text/plain",
+        "size" : 363
+      }, {
+        "uid" : "c85d1ef4ddb9c534",
+        "name" : "sendRequest",
+        "source" : "c85d1ef4ddb9c534.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "author",
+        "value" : "{\"authorDescription\":\"updated author descr\", \"authorId\":9999, \"authorName\":{\"first\":\"firstName\", \"second\":\"secondName\"}, \"birth\":{\"city\":\"Mykolaiv\", \"country\":\"Ukraine\", \"date\":\"1990-11-17\"}, \"nationality\":\"ukrainian\"}"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1629295460739,
+      "stop" : 1629295460740,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Delete existed Author.",
+      "time" : {
+        "start" : 1629295460778,
+        "stop" : 1629295460825,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2ffc46d0e218d0f0",
+        "name" : "My request",
+        "source" : "2ffc46d0e218d0f0.txt",
+        "type" : "text/plain",
+        "size" : 102
+      }, {
+        "uid" : "fe25f0efd1604ce",
+        "name" : "My response",
+        "source" : "fe25f0efd1604ce.txt",
+        "type" : "text/plain",
+        "size" : 61
+      }, {
+        "uid" : "72ce47eb5906f615",
+        "name" : "sendRequest",
+        "source" : "72ce47eb5906f615.txt",
+        "type" : "text/plain",
+        "size" : 55
+      } ],
+      "parameters" : [ {
+        "name" : "authorId",
+        "value" : "9999"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629295460825,
+        "stop" : 1629295460826,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9b19153ae34f2a4f",
+        "name" : "Response for validate status code",
+        "source" : "9b19153ae34f2a4f.txt",
+        "type" : "text/plain",
+        "size" : 0
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@3458dab6"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "204"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Get Author object by 'authorId'.",
+      "time" : {
+        "start" : 1629295460828,
+        "stop" : 1629295460871,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8d1ca879143884af",
+        "name" : "My request",
+        "source" : "8d1ca879143884af.txt",
+        "type" : "text/plain",
+        "size" : 99
+      }, {
+        "uid" : "49aa47ebae846228",
+        "name" : "My response",
+        "source" : "49aa47ebae846228.txt",
+        "type" : "text/plain",
+        "size" : 226
+      }, {
+        "uid" : "d837068c6ffcd3b1",
+        "name" : "sendRequest",
+        "source" : "d837068c6ffcd3b1.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "authorId",
+        "value" : "9999"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629295460871,
+        "stop" : 1629295460873,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "364cd8fff9d927cf",
+        "name" : "Response for validate status code",
+        "source" : "364cd8fff9d927cf.txt",
+        "type" : "text/plain",
+        "size" : 165
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@33373f70"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "404"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Return actual Author object from response.",
+      "time" : {
+        "start" : 1629295460874,
+        "stop" : 1629295460874,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@33373f70"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "24a763bccfddb6fd",
+      "name" : "validateStatusCode",
+      "source" : "24a763bccfddb6fd.txt",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "a8a4e0e7c357dfa4",
+      "name" : "validateStatusCode",
+      "source" : "a8a4e0e7c357dfa4.txt",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "be348ed3bd1752a9",
+      "name" : "List is empty attachment",
+      "source" : "be348ed3bd1752a9.txt",
+      "type" : "text/plain",
+      "size" : 38
+    }, {
+      "uid" : "2de1ae71576cde1d",
+      "name" : "validateObjectIsNull",
+      "source" : "2de1ae71576cde1d.txt",
+      "type" : "text/plain",
+      "size" : 4
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 5,
+    "attachmentsCount" : 12,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethodAuthor",
+    "time" : {
+      "start" : 1629295460882,
+      "stop" : 1629295460882,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1629295460879,
+      "stop" : 1629295460879,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "testClass",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyDeletingAuthorByIdDeleteRequest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "author_tests_in_groups"
+  }, {
+    "name" : "suite",
+    "value" : "author_tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "host",
+    "value" : "NATA-PC"
+  }, {
+    "name" : "thread",
+    "value" : "23996@NATA-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Author api test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{\"authorDescription\":\"updated author descr\", \"authorId\":9999, \"authorName\":{\"first\":\"firstName\", \"second\":\"secondName\"}, \"birth\":{\"city\":\"Mykolaiv\", \"country\":\"Ukraine\", \"date\":\"1990-11-17\"}, \"nationality\":\"ukrainian\"}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eb3498d5b555ada8.json",
+  "parameterValues" : [ "{\"authorDescription\":\"updated author descr\", \"authorId\":9999, \"authorName\":{\"first\":\"firstName\", \"second\":\"secondName\"}, \"birth\":{\"city\":\"Mykolaiv\", \"country\":\"Ukraine\", \"date\":\"1990-11-17\"}, \"nationality\":\"ukrainian\"}" ]
+}

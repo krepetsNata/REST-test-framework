@@ -1,40 +1,68 @@
 package client;
 
 import config.ServiceConfig;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Attachment;
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
+import io.restassured.specification.FilterableRequestSpecification;
 import io.restassured.specification.RequestSpecification;
-import response.BaseResponse;
+import org.apache.log4j.Logger;
 
-import static io.restassured.RestAssured.*;
+import java.util.stream.Collectors;
 
 public class HttpClient {
 
-    public static BaseResponse get(String endpoint) {
+    private static final Logger LOG = Logger.getLogger(HttpClient.class);
+
+    public static Response get(String endpoint) {
         return HttpClient.sendRequest(Method.GET, endpoint);
     }
 
-    public static BaseResponse post(String endpoint, String body) {
+    public static Response post(String endpoint, String body) {
         return HttpClient.sendRequest(Method.POST, endpoint, body);
     }
 
-    public static BaseResponse put(String endpoint, String body) {
+    public static Response put(String endpoint, String body) {
         return HttpClient.sendRequest(Method.PUT, endpoint, body);
     }
 
-    public static BaseResponse delete(String endpoint) {
+    public static Response delete(String endpoint) {
         return HttpClient.sendRequest(Method.DELETE, endpoint);
     }
 
-    private static BaseResponse sendRequest(Method method, String endpoint) {
+    private static Response sendRequest(Method method, String endpoint) {
         return HttpClient.sendRequest(method, endpoint, null);
     }
 
-    private static BaseResponse sendRequest(Method method, String endpoint, String body) {
-        String url = ServiceConfig.HOST + endpoint;
-        RequestSpecification spec = given();
-        if (body != null) spec.body(body);
-        Response rawResponse = spec.request(method, url);
-        return new BaseResponse(rawResponse);
+    @Attachment
+    private static Response sendRequest(Method method, String endpoint, String body) {
+        RequestSpecBuilder builder = new RequestSpecBuilder();
+        builder.setBaseUri(ServiceConfig.HOST);
+        builder.setBasePath(endpoint.concat("/"));
+        builder.addHeader("Content-Type", "application/json");
+        if (body != null) builder.setBody(body);
+
+        RequestSpecification spec = builder.build().given();
+        Response rawResponse = RestAssured.given(spec).request(method);
+
+        //***logging***//
+        FilterableRequestSpecification httpRequest = (FilterableRequestSpecification) RestAssured.given(spec);
+        String contentQueryParams = httpRequest.getQueryParams().entrySet()
+                .stream()
+                .map(e -> e.getKey() + "=\"" + e.getValue() + "\"")
+                .collect(Collectors.joining(", "));
+        String myRequest = String.format("\n\nREQUEST:\nmethod: %s\nuri: %s\nqueryParam: %s\nbody:\n%s\n", method, httpRequest.getBaseUri()+httpRequest.getBasePath(), contentQueryParams, httpRequest.getBody());
+        String myResponse = String.format("\n\nRESPONSE:\nstatus line: %s\nbody:\n%s\n", rawResponse.getStatusLine(), rawResponse.getBody().asPrettyString());
+
+        Allure.addAttachment("My request", myRequest);
+        Allure.addAttachment("My response", myResponse);
+
+        LOG.info(myRequest);
+        LOG.info(myResponse);
+
+        return rawResponse;
     }
 }

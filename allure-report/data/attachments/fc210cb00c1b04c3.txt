@@ -1,0 +1,12 @@
+
+
+RESPONSE:
+status line: HTTP/1.1 404 
+location: null
+body:
+{
+    "timeStamp": "17:04:21.687 18-08-2021",
+    "statusCode": 404,
+    "error": "Not Found",
+    "errorMessage": "Genre with 'genreId' = '9999' doesn't exist!"
+}

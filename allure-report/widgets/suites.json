@@ -1,0 +1,37 @@
+{
+  "total" : 3,
+  "items" : [ {
+    "uid" : "8d7e00263d9b04d5e9e383ff4be7d67a",
+    "name" : "book_tests_in_groups",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 10
+    }
+  }, {
+    "uid" : "08c877d76f4cfb766c03276b88feb79f",
+    "name" : "author_tests_in_groups",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "8b39df3706d8afaec12c6812232152b8",
+    "name" : "genre_tests_in_groups",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 9
+    }
+  } ]
+}

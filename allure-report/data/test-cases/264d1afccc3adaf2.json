@@ -1,0 +1,209 @@
+{
+  "uid" : "264d1afccc3adaf2",
+  "name" : "Negative case when element not found - verifying getting 1 Author object by id with GET method",
+  "fullName" : "AuthorTest.verifyGetNotFoundAuthorByIdGetRequestNegativeCase",
+  "historyId" : "b1b0569342ddf998e2a097e2ebfc8846",
+  "time" : {
+    "start" : 1629295461364,
+    "stop" : 1629295461412,
+    "duration" : 48
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1629295461360,
+      "stop" : 1629295461360,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get Author object by 'authorId'.",
+      "time" : {
+        "start" : 1629295461365,
+        "stop" : 1629295461406,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a4403f2ed82bbc8d",
+        "name" : "My request",
+        "source" : "a4403f2ed82bbc8d.txt",
+        "type" : "text/plain",
+        "size" : 99
+      }, {
+        "uid" : "df1b161ab3d3e356",
+        "name" : "My response",
+        "source" : "df1b161ab3d3e356.txt",
+        "type" : "text/plain",
+        "size" : 226
+      }, {
+        "uid" : "daa29e3a7404ff16",
+        "name" : "sendRequest",
+        "source" : "daa29e3a7404ff16.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "authorId",
+        "value" : "9999"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629295461406,
+        "stop" : 1629295461408,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "768b88e73cfa13e0",
+        "name" : "Response for validate status code",
+        "source" : "768b88e73cfa13e0.txt",
+        "type" : "text/plain",
+        "size" : 165
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@520ee6b3"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "404"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Return actual Author object from response.",
+      "time" : {
+        "start" : 1629295461409,
+        "stop" : 1629295461409,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@520ee6b3"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "6f6a6157ae398f43",
+      "name" : "validateStatusCode",
+      "source" : "6f6a6157ae398f43.txt",
+      "type" : "text/plain",
+      "size" : 4
+    }, {
+      "uid" : "a9f9207e8e7c01d0",
+      "name" : "List is empty attachment",
+      "source" : "a9f9207e8e7c01d0.txt",
+      "type" : "text/plain",
+      "size" : 38
+    }, {
+      "uid" : "10b2355add026c54",
+      "name" : "validateObjectIsNull",
+      "source" : "10b2355add026c54.txt",
+      "type" : "text/plain",
+      "size" : 4
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1629295461414,
+      "stop" : 1629295461415,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "testClass",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyGetNotFoundAuthorByIdGetRequestNegativeCase"
+  }, {
+    "name" : "parentSuite",
+    "value" : "author_tests_in_groups"
+  }, {
+    "name" : "suite",
+    "value" : "author_tests_without_precondition"
+  }, {
+    "name" : "subSuite",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "host",
+    "value" : "NATA-PC"
+  }, {
+    "name" : "thread",
+    "value" : "23996@NATA-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Author api test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{\"authorDescription\":\"updated author descr\", \"authorId\":9999, \"authorName\":{\"first\":\"firstName\", \"second\":\"secondName\"}, \"birth\":{\"city\":\"Mykolaiv\", \"country\":\"Ukraine\", \"date\":\"1990-11-17\"}, \"nationality\":\"ukrainian\"}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "264d1afccc3adaf2.json",
+  "parameterValues" : [ "{\"authorDescription\":\"updated author descr\", \"authorId\":9999, \"authorName\":{\"first\":\"firstName\", \"second\":\"secondName\"}, \"birth\":{\"city\":\"Mykolaiv\", \"country\":\"Ukraine\", \"date\":\"1990-11-17\"}, \"nationality\":\"ukrainian\"}" ]
+}

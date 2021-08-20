@@ -1,0 +1,182 @@
+{
+  "uid" : "4b3447f69a5322f4",
+  "name" : "Verifying getting 1 Author object by Book id with GET method",
+  "fullName" : "AuthorTest.verifyGetAuthorsByGenreIdGetRequest",
+  "historyId" : "16d3083f1c193988c5203b358717ffb1",
+  "time" : {
+    "start" : 1629295461293,
+    "stop" : 1629295461355,
+    "duration" : 62
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1629295461289,
+      "stop" : 1629295461289,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get all Authors in special Genre.",
+      "time" : {
+        "start" : 1629295461293,
+        "stop" : 1629295461350,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b3cd975166a1a098",
+        "name" : "My request",
+        "source" : "b3cd975166a1a098.txt",
+        "type" : "text/plain",
+        "size" : 137
+      }, {
+        "uid" : "f6961f6d2bd6c455",
+        "name" : "My response",
+        "source" : "f6961f6d2bd6c455.txt",
+        "type" : "text/plain",
+        "size" : 4997
+      }, {
+        "uid" : "f81751344823b5bc",
+        "name" : "sendRequest",
+        "source" : "f81751344823b5bc.txt",
+        "type" : "text/plain",
+        "size" : 56
+      } ],
+      "parameters" : [ {
+        "name" : "options",
+        "value" : "entity.ListOptions@f08f8a9"
+      }, {
+        "name" : "genreId",
+        "value" : "7448"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate status code for received response.",
+      "time" : {
+        "start" : 1629295461350,
+        "stop" : 1629295461354,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "652ba441b60dc97e",
+        "name" : "Response for validate status code",
+        "source" : "652ba441b60dc97e.txt",
+        "type" : "text/plain",
+        "size" : 4936
+      } ],
+      "parameters" : [ {
+        "name" : "baseResponse",
+        "value" : "response.BaseResponse@1c2b65cc"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "200"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "f9d300fedd697e86",
+      "name" : "validateStatusCode",
+      "source" : "f9d300fedd697e86.txt",
+      "type" : "text/plain",
+      "size" : 4
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1629295461357,
+      "stop" : 1629295461357,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "testClass",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyGetAuthorsByGenreIdGetRequest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "author_tests_in_groups"
+  }, {
+    "name" : "suite",
+    "value" : "author_tests_without_precondition"
+  }, {
+    "name" : "subSuite",
+    "value" : "AuthorTest"
+  }, {
+    "name" : "host",
+    "value" : "NATA-PC"
+  }, {
+    "name" : "thread",
+    "value" : "23996@NATA-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Author api test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{\"genreDescription\":\"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.\", \"genreId\":7448, \"genreName\":\"Folklore\"}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4b3447f69a5322f4.json",
+  "parameterValues" : [ "{\"genreDescription\":\"Impedit velit distinctio fuga. Asperiores enim impedit et et. Aut cum eum.\", \"genreId\":7448, \"genreName\":\"Folklore\"}" ]
+}
