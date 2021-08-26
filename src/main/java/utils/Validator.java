@@ -96,4 +96,9 @@ public class Validator {
         Allure.addAttachment("List is empty attachment", String.format("list.isNull()=%s, expectedState=%s", empty, expectedState));
         return result;
     }
+
+    //for searching: verify if isContains=true for function containing queryWord in entities list
+    public static void isContainedQueryWordInEntitiesList(boolean isContains) {
+        Assert.assertTrue(isContains, "queryWord is not contained in some obj of list");
+    }
 }

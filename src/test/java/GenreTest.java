@@ -99,12 +99,15 @@ public class GenreTest extends BaseTest {
     }
 
     @Test(description = "Verifying searching Genres by its name",
-            groups = "withoutPreconditionGroup", enabled = false)
+            dataProvider = "searchGenresQueries", dataProviderClass = DataProviderPOJO.class,
+            groups = "withoutPreconditionGroup")
     @Description("Verify searching Genres by its name")
-    public void verifySearchGenresGetRequest() {//add DP for serching
-        BaseResponse<Genre> baseResponse = genreService.getGenresSearchGet(new ListOptions(), "Myt");
+    public void verifySearchGenresGetRequest(String queryWord) {
+        BaseResponse<Genre> baseResponse = genreService.getGenresSearchGet(new ListOptions(), queryWord);
         Validator.validateStatusCode(baseResponse, SC_OK);
         List<Genre> genresActualList = genreService.getActualListGenres(baseResponse);
         Validator.validateListIsEmpty(genresActualList, false);
+        Validator.isContainedQueryWordInEntitiesList(
+                genreService.isContainedQueryWordInGenresList(genresActualList, queryWord));
     }
 }

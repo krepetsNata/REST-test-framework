@@ -1,13 +1,20 @@
 package pojo;
 
+import com.opencsv.bean.CsvBindByPosition;
+
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 
 public class AuthorBirth {
+    @CsvBindByPosition(position = 6)
     String city;
+
+    @CsvBindByPosition(position = 5)
     String country;
     //LocalDate date;
+
+    @CsvBindByPosition(position = 4)
     String date;
 
     public AuthorBirth() {

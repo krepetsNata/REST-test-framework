@@ -109,13 +109,16 @@ public class BookTest extends BaseTest {
     }
 
     @Test(description = "Verifying searching books by its name",
+            dataProvider = "searchBooksQueries", dataProviderClass = DataProviderPOJO.class,
             groups = "withoutPreconditionGroup")
     @Description("Verify searching books by its name")
-    public void verifySearchBooksGetRequest() {//add DP for searching
-        BaseResponse<Book> baseResponse = bookService.getBooksSearchGet(new ListOptions(), "Dolor");
-        System.out.println("==>>"+baseResponse.getResponse().asString());
+    public void verifySearchBooksGetRequest(String queryWord) {
+        BaseResponse<Book> baseResponse = bookService.getBooksSearchGet(new ListOptions(), queryWord);
         Validator.validateStatusCode(baseResponse, SC_OK);
         List<Book> bookActualList = bookService.getActualListBooks(baseResponse);
         Validator.validateListIsEmpty(bookActualList, false);
+        Validator.isContainedQueryWordInEntitiesList(
+                bookService.isContainedQueryWordInBooksList(bookActualList, queryWord));
+
     }
 }

@@ -1,9 +1,14 @@
 package pojo;
 
+import com.opencsv.bean.CsvBindByPosition;
+
 import java.util.Objects;
 
 public class AuthorName {
+    @CsvBindByPosition(position = 1)
     String first;
+
+    @CsvBindByPosition(position = 2)
     String second;
 
     public AuthorName() {

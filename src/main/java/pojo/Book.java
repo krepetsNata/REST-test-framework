@@ -2,7 +2,6 @@ package pojo;
 
 import java.util.Objects;
 
-//@JsonIgnoreProperties(ignoreUnknown = true)
 public class Book {
     int bookId;
     String bookName;

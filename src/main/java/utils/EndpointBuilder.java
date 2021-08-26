@@ -1,5 +1,7 @@
 package utils;
 
+import entity.ListOptions;
+
 public class EndpointBuilder {
     private String endpoint;
 
@@ -30,6 +32,26 @@ public class EndpointBuilder {
 
     public EndpointBuilder queryParam(String param, boolean value) {
         return this.queryParam(param, String.valueOf(value));
+    }
+
+    public EndpointBuilder addListOptions(ListOptions options) {
+        if (options.orderType != null) this.queryParam("orderType", options.orderType);
+        this
+                .queryParam("page", options.page)
+                .queryParam("pagination", options.pagination)
+                .queryParam("size", options.size);
+        if (options.sortBy != null) this.queryParam("sortBy", options.sortBy);
+        return this;
+    }
+
+    public EndpointBuilder addListOptions(ListOptions options, int page, int size) {
+        if (options.orderType != null) this.queryParam("orderType", options.orderType);
+        this
+                .queryParam("page", options.setPage(page).page)
+                .queryParam("pagination", options.pagination)
+                .queryParam("size", options.setSize(size).size);
+        if (options.sortBy != null) this.queryParam("sortBy", options.sortBy);
+        return this;
     }
 
     public String get() {
