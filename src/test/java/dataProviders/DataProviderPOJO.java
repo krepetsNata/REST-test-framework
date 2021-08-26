@@ -7,6 +7,9 @@ import pojo.Book;
 import pojo.Genre;
 import utils.ParsingAndConvert;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 
 public class DataProviderPOJO {
@@ -15,7 +18,6 @@ public class DataProviderPOJO {
     public Object[][] dpGetListAuthorsFromFile() { //A TestNG DataProvider must return either Object[][] or Iterator<Object[]>
         ParsingAndConvert parsingAndConvert = new ParsingAndConvert();
         List<Author> authorsObjList = parsingAndConvert.getAuthorsList(FileNames.CSV_FILE_AUTHORS.getFileName());
-        // authorsObjList.forEach(System.out::println);
         Object[][] authorObj = new Object[authorsObjList.size()][];
 
         for (int i = 0; i < authorsObjList.size(); i++) {
@@ -31,7 +33,6 @@ public class DataProviderPOJO {
     public Object[][] dpGetNewAuthorFromFile() {
         ParsingAndConvert parsingAndConvert = new ParsingAndConvert();
         List<Author> authorsObjList = parsingAndConvert.getAuthorsList(FileNames.CSV_FILE_NEW_AUTHOR.getFileName());
-        // authorsObjList.forEach(System.out::println);
         Object[][] authorObj = new Object[authorsObjList.size()][];
 
         for (int i = 0; i < authorsObjList.size(); i++) {
@@ -47,7 +48,6 @@ public class DataProviderPOJO {
     public Object[][] dpGetListBooksFromFile() {
         ParsingAndConvert parsingAndConvert = new ParsingAndConvert();
         List<Book> booksObjList = parsingAndConvert.getBooksList(FileNames.CSV_FILE_BOOKS.getFileName());
-        // authorsObjList.forEach(System.out::println);
         Object[][] bookObj = new Object[booksObjList.size()][];
 
         for (int i = 0; i < booksObjList.size(); i++) {
@@ -63,7 +63,6 @@ public class DataProviderPOJO {
     public Object[][] dpGetNewBookFromFile() {
         ParsingAndConvert parsingAndConvert = new ParsingAndConvert();
         List<Book> booksObjList = parsingAndConvert.getBooksList(FileNames.CSV_FILE_NEW_BOOK.getFileName());
-        // authorsObjList.forEach(System.out::println);
         Object[][] bookObj = new Object[booksObjList.size()][];
 
         for (int i = 0; i < booksObjList.size(); i++) {
@@ -79,7 +78,6 @@ public class DataProviderPOJO {
     public Object[][] dpGetListGenresFromFile() {
         ParsingAndConvert parsingAndConvert = new ParsingAndConvert();
         List<Genre> genresObjList = parsingAndConvert.getGenresList(FileNames.CSV_FILE_GENRES.getFileName());
-        // authorsObjList.forEach(System.out::println);
         Object[][] genreObj = new Object[genresObjList.size()][];
 
         for (int i = 0; i < genresObjList.size(); i++) {
@@ -95,7 +93,6 @@ public class DataProviderPOJO {
     public Object[][] dpGetNewGenreFromFile() {
         ParsingAndConvert parsingAndConvert = new ParsingAndConvert();
         List<Genre> genresObjList = parsingAndConvert.getGenresList(FileNames.CSV_FILE_NEW_GENRE.getFileName());
-        // authorsObjList.forEach(System.out::println);
         Object[][] genreObj = new Object[genresObjList.size()][];
 
         for (int i = 0; i < genresObjList.size(); i++) {
@@ -139,5 +136,20 @@ public class DataProviderPOJO {
             combined[i][1] = oldGenreFromFile[i][i];
         }
         return combined;
+    }
+
+    @DataProvider(name = "searchAuthorsQueries")
+    public Object[][] dpSearchAuthorsQueriesFromFile() throws IOException {
+        return ParsingAndConvert.readCSVFileForDP(FileNames.CSV_FILE_SEARCH_AUTHORS.getFileName());
+    }
+
+    @DataProvider(name = "searchBooksQueries")
+    public Object[][] dpSearchBooksQueriesFromFile() throws IOException {
+        return ParsingAndConvert.readCSVFileForDP(FileNames.CSV_FILE_SEARCH_BOOKS.getFileName());
+    }
+
+    @DataProvider(name = "searchGenresQueries")
+    public Object[][] dpSearchGenresQueriesFromFile() throws IOException {
+        return ParsingAndConvert.readCSVFileForDP(FileNames.CSV_FILE_SEARCH_GENRES.getFileName());
     }
 }

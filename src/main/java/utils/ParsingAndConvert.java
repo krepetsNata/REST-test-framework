@@ -4,17 +4,22 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import com.opencsv.CSVReader;
+import com.opencsv.bean.ColumnPositionMappingStrategy;
+import com.opencsv.bean.CsvToBean;
+import com.opencsv.bean.CsvToBeanBuilder;
+import org.testng.annotations.DataProvider;
 import pojo.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class ParsingAndConvert {
+public class ParsingAndConvert<T> {
 
     public Book getNewBookObj(String CSV_FILE_NEW_BOOK) {
         Book bookObj = getBooksList(CSV_FILE_NEW_BOOK).get(0);
@@ -38,9 +43,74 @@ public class ParsingAndConvert {
         return prettyJsonString;
     }
 
+    public static Object[][] readCSVFileForDP(String CSV_FILE) throws IOException {
+        List<String> stringsList = Files.readAllLines(Paths.get(CSV_FILE));
+        Object[][] stringsObj = new Object[stringsList.size()][];
+
+        for (int i = 0; i < stringsList.size(); i++) {
+            for (int j = 0; j < 1; j++) {
+                stringsObj[i] = new Object[1];
+                stringsObj[i][j] = stringsList.get(i);
+            }
+        }
+        return stringsObj;
+    }
 
     //*********************************************************************************************
     //this methods use for convert csv file to pojo
+    private List<T> csvParser(String SAMPLE_CSV_FILE_PATH, Class clazz) {
+        List<T> list = null;
+
+        try (
+                Reader reader = Files.newBufferedReader(Paths.get(SAMPLE_CSV_FILE_PATH));
+        ) {
+            ColumnPositionMappingStrategy ms = new ColumnPositionMappingStrategy();
+            ms.setType(clazz);
+
+            CsvToBean<T> csvToBean = new CsvToBeanBuilder(reader)
+                    .withType(clazz)
+                    .withMappingStrategy(ms)
+                    .withIgnoreLeadingWhiteSpace(true)
+                    .build();
+
+            list = csvToBean.parse();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+    public List<Author> getAuthorsList2(String CSV_FILE_AUTHORS) {
+//        List<Author> authorsList = (List<Author>) csvParser(CSV_FILE_AUTHORS, Author.class);
+//        return authorsList;
+        List<Author> authorsList = null;
+
+        try (
+                Reader reader = Files.newBufferedReader(Paths.get(CSV_FILE_AUTHORS));
+        ) {
+            ColumnPositionMappingStrategy ms = new ColumnPositionMappingStrategy();
+
+            ms.setType(AuthorName.class);
+            ms.setType(AuthorBirth.class);
+            ms.setType(Author.class);
+
+            CsvToBean<Author> csvToBean = new CsvToBeanBuilder(reader)
+                    .withType(AuthorName.class)
+                    .withType(AuthorBirth.class)
+                    .withType(Author.class)
+                    .withMappingStrategy(ms)
+                    .withIgnoreLeadingWhiteSpace(true)
+                    .build();
+
+            authorsList = csvToBean.parse();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return authorsList;
+    }
+
 
     public List<Author> getAuthorsList(String CSV_FILE_AUTHORS) {
         List<Author> authorsList = new ArrayList<>();
@@ -120,30 +190,8 @@ public class ParsingAndConvert {
     }
 
     public List<Genre> getGenresList(String CSV_FILE_GENRES) {
-        List<Genre> genresList = new ArrayList<>();
-        Path pathToFile = Paths.get(CSV_FILE_GENRES);
-        try (BufferedReader buffer = Files.newBufferedReader(pathToFile)) {
-            String row = buffer.readLine();
-            while (row != null) {
-                String[] attrib = row.split(",");
-                Genre genre = setGenreObj(attrib);
-                genresList.add(genre);
-                row = buffer.readLine();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        List<Genre> genresList = (List<Genre>) csvParser(CSV_FILE_GENRES, Genre.class);
         return genresList;
-    }
-
-    private Genre setGenreObj(String[] attrib) {
-        Genre genre = new Genre();
-
-        genre.setGenreDescription(attrib[0].trim())
-                .setGenreId(Integer.parseInt(attrib[1].trim()))
-                .setGenreName(attrib[2].trim());
-
-        return genre;
     }
 
     //*******************************************************************************

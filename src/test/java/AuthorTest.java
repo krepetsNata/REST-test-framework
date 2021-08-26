@@ -94,12 +94,15 @@ public class AuthorTest extends BaseTest {
     }
 
     @Test(description = "Verifying searching books by its name",
-            groups = "withoutPreconditionGroup", enabled = false)
+            dataProvider = "searchAuthorsQueries", dataProviderClass = DataProviderPOJO.class,
+            groups = "withoutPreconditionGroup")
     @Description("Verify searching books by its name")
-    public void verifySearchAuthorsGetRequest() {//add DP for searching
-        BaseResponse<Author> baseResponse = authorService.getAuthorsSearchGet(new ListOptions(), "Sch");
+    public void verifySearchAuthorsGetRequest(String queryWord) {
+        BaseResponse<Author> baseResponse = authorService.getAuthorsSearchGet(new ListOptions(), queryWord);
         Validator.validateStatusCode(baseResponse, SC_OK);
         List<Author> authorsActualList = authorService.getActualListAuthors(baseResponse);
         Validator.validateListIsEmpty(authorsActualList, false);
+        Validator.isContainedQueryWordInEntitiesList(
+                authorService.isContainedQueryWordInAuthorsList(authorsActualList, queryWord));
     }
 }

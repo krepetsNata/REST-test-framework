@@ -1,12 +1,24 @@
 package pojo;
 
+import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvBindByPosition;
+
 import java.util.Objects;
 
 public class Author {
-    String authorDescription;
+    @CsvBindByPosition(position = 0)
     int authorId;
+
+    @CsvBindByPosition(position = 7)
+    String authorDescription;
+
+    @CsvBindByName
     AuthorName authorName;
+
+    @CsvBindByName
     AuthorBirth birth;
+
+    @CsvBindByPosition(position = 3)
     String nationality;
 
     public Author() {

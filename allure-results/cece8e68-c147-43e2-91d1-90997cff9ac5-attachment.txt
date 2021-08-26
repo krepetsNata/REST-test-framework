@@ -1,8 +1,0 @@
-
-
-REQUEST:
-method: DELETE
-uri: http://localhost:8080/api/library/book/536/
-queryParam: 
-body:
-null

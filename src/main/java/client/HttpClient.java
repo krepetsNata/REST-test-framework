@@ -11,7 +11,10 @@ import io.restassured.specification.FilterableRequestSpecification;
 import io.restassured.specification.RequestSpecification;
 import org.apache.log4j.Logger;
 
-import java.util.stream.Collectors;
+import java.util.HashMap;
+import java.util.Map;
+
+import static io.restassured.RestAssured.given;
 
 public class HttpClient {
 
@@ -19,6 +22,10 @@ public class HttpClient {
 
     public static Response get(String endpoint) {
         return HttpClient.sendRequest(Method.GET, endpoint);
+    }
+
+    public static Response get(String endpoint, HashMap<String, String> queryParams) {
+        return HttpClient.sendRequest(Method.GET, endpoint, null, queryParams);
     }
 
     public static Response post(String endpoint, String body) {
@@ -34,28 +41,43 @@ public class HttpClient {
     }
 
     private static Response sendRequest(Method method, String endpoint) {
-        return HttpClient.sendRequest(method, endpoint, null);
+        return HttpClient.sendRequest(method, endpoint, null, null);
+    }
+
+    private static Response sendRequest(Method method, String endpoint, String body) {
+        return HttpClient.sendRequest(method, endpoint, body, null);
+    }
+
+    private static Response sendRequest(Method method, String endpoint, HashMap<String, String> queryParams) {
+        return HttpClient.sendRequest(method, endpoint, null, queryParams);
     }
 
     @Attachment
-    private static Response sendRequest(Method method, String endpoint, String body) {
+    private static Response sendRequest(Method method, String endpoint, String body, HashMap<String, String> queryParams) {
         RequestSpecBuilder builder = new RequestSpecBuilder();
         builder.setBaseUri(ServiceConfig.HOST);
         builder.setBasePath(endpoint.concat("/"));
         builder.addHeader("Content-Type", "application/json");
+
         if (body != null) builder.setBody(body);
 
         RequestSpecification spec = builder.build().given();
+
+        if (!queryParams.isEmpty()) {
+            for (Map.Entry<String, String> entry : queryParams.entrySet()) {
+                spec.queryParam(entry.getKey(), entry.getValue());
+            }
+        }
+
         Response rawResponse = RestAssured.given(spec).request(method);
 
         //***logging***//
-        FilterableRequestSpecification httpRequest = (FilterableRequestSpecification) RestAssured.given(spec);
-        String contentQueryParams = httpRequest.getQueryParams().entrySet()
-                .stream()
-                .map(e -> e.getKey() + "=\"" + e.getValue() + "\"")
-                .collect(Collectors.joining(", "));
-        String myRequest = String.format("\n\nREQUEST:\nmethod: %s\nuri: %s\nqueryParam: %s\nbody:\n%s\n", method, httpRequest.getBaseUri()+httpRequest.getBasePath(), contentQueryParams, httpRequest.getBody());
-        String myResponse = String.format("\n\nRESPONSE:\nstatus line: %s\nbody:\n%s\n", rawResponse.getStatusLine(), rawResponse.getBody().asPrettyString());
+        FilterableRequestSpecification httpRequest = (FilterableRequestSpecification) given(spec);
+
+        String myRequest = String.format("\n\nREQUEST:\nmethod: %s\nheaders: %s\nuri: %s\nqueryParam: %s\nbody:\n%s\n",
+                method, httpRequest.getHeaders(), httpRequest.getURI(), httpRequest.getQueryParams(), httpRequest.getBody());
+        String myResponse = String.format("\n\nRESPONSE:\nstatus line: %s\nheaders: %s\nbody:\n%s\n",
+                rawResponse.getStatusLine(), rawResponse.getHeaders(), rawResponse.getBody().asPrettyString());
 
         Allure.addAttachment("My request", myRequest);
         Allure.addAttachment("My response", myResponse);

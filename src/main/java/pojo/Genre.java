@@ -1,10 +1,17 @@
 package pojo;
 
+import com.opencsv.bean.CsvBindByPosition;
+
 import java.util.Objects;
 
-public class Genre {
+public class Genre implements Comparable<Genre> {
+    @CsvBindByPosition(position = 0)
     int genreId;
+
+    @CsvBindByPosition(position = 1)
     String genreName;
+
+    @CsvBindByPosition(position = 2)
     String genreDescription;
 
     public Genre() {
@@ -63,5 +70,10 @@ public class Genre {
                 ", \"genreId\":" + genreId +
                 ", \"genreName\":\"" + genreName + "\"" +
                 "}";
+    }
+
+    @Override
+    public int compareTo(Genre o) {
+        return this.compareTo(o);
     }
 }
